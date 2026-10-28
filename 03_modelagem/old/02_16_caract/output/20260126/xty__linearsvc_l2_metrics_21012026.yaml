@@ -1,0 +1,27 @@
+- feature_set: xty
+  model_name: xty__LinearSVC L2
+  exec_time_minutes: 0.032855470975240074
+  train:
+    auc: 0.9975065944016482
+    average_precision: 0.9971007147293288
+    model_name: xty__linearsvc_l2_train
+    accuracy: 0.9731800766283525
+    recall: 0.9640883977900553
+    precision: 0.9775910364145658
+    f1: 0.9707927677329624
+    tn: 413
+    fp: 8
+    fn: 13
+    tp: 349
+  test:
+    auc: 0.6315516346652827
+    average_precision: 0.5336939185328358
+    model_name: xty__linearsvc_l2_test
+    accuracy: 0.5113636363636364
+    recall: 0.2926829268292683
+    precision: 0.46153846153846156
+    f1: 0.3582089552238806
+    tn: 33
+    fp: 14
+    fn: 29
+    tp: 12

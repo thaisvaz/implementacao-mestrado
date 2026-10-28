@@ -1,0 +1,27 @@
+- feature_set: xtx
+  model_name: xtx__SGD Classifier
+  exec_time_minutes: 0.0262072761853536
+  train:
+    auc: 0.9992847862888938
+    average_precision: 0.9991667033650771
+    model_name: xtx__sgd_classifier_train
+    accuracy: 0.9821200510855683
+    recall: 0.9668508287292817
+    precision: 0.9943181818181818
+    f1: 0.9803921568627451
+    tn: 419
+    fp: 2
+    fn: 12
+    tp: 350
+  test:
+    auc: 0.6045666839647121
+    average_precision: 0.56463760573251
+    model_name: xtx__sgd_classifier_test
+    accuracy: 0.5681818181818182
+    recall: 0.4878048780487805
+    precision: 0.5405405405405406
+    f1: 0.5128205128205128
+    tn: 30
+    fp: 17
+    fn: 21
+    tp: 20

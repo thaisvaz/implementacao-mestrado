@@ -1,0 +1,27 @@
+- feature_set: xts
+  model_name: xts__Ridge Classifier
+  exec_time_minutes: 0.04399396181106567
+  train:
+    auc: 0.9978084277109224
+    average_precision: 0.9975398222507386
+    model_name: xts__ridge_classifier_train
+    accuracy: 0.9782886334610472
+    recall: 0.9779005524861878
+    precision: 0.9752066115702479
+    f1: 0.976551724137931
+    tn: 412
+    fp: 9
+    fn: 8
+    tp: 354
+  test:
+    auc: 0.5396990140114167
+    average_precision: 0.5099734094601185
+    model_name: xts__ridge_classifier_test
+    accuracy: 0.5681818181818182
+    recall: 0.4878048780487805
+    precision: 0.5405405405405406
+    f1: 0.5128205128205128
+    tn: 30
+    fp: 17
+    fn: 21
+    tp: 20

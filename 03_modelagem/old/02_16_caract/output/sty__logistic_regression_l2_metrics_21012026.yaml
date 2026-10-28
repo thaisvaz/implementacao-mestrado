@@ -1,0 +1,27 @@
+- feature_set: sty
+  model_name: sty__Logistic Regression L2
+  exec_time_minutes: 0.736024037996928
+  train:
+    auc: 0.9449941601816249
+    average_precision: 0.9391831961257189
+    model_name: sty__logistic_regression_l2_train
+    accuracy: 0.8697318007662835
+    recall: 0.8314917127071824
+    precision: 0.8801169590643275
+    f1: 0.8551136363636364
+    tn: 380
+    fp: 41
+    fn: 61
+    tp: 301
+  test:
+    auc: 0.5438505448884277
+    average_precision: 0.4995348247027392
+    model_name: sty__logistic_regression_l2_test
+    accuracy: 0.5227272727272727
+    recall: 0.3902439024390244
+    precision: 0.48484848484848486
+    f1: 0.43243243243243246
+    tn: 30
+    fp: 17
+    fn: 25
+    tp: 16

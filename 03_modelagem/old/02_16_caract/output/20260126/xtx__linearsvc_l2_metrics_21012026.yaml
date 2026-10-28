@@ -1,0 +1,27 @@
+- feature_set: xtx
+  model_name: xtx__LinearSVC L2
+  exec_time_minutes: 0.3353915015856425
+  train:
+    auc: 0.9992454167268147
+    average_precision: 0.9991111560069303
+    model_name: xtx__linearsvc_l2_train
+    accuracy: 0.9846743295019157
+    recall: 0.988950276243094
+    precision: 0.9781420765027322
+    f1: 0.9835164835164835
+    tn: 413
+    fp: 8
+    fn: 4
+    tp: 358
+  test:
+    auc: 0.6113129216398546
+    average_precision: 0.5275794628776936
+    model_name: xtx__linearsvc_l2_test
+    accuracy: 0.625
+    recall: 0.5609756097560976
+    precision: 0.6052631578947368
+    f1: 0.5822784810126582
+    tn: 32
+    fp: 15
+    fn: 18
+    tp: 23

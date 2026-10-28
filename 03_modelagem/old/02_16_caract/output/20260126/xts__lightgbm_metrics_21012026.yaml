@@ -1,0 +1,27 @@
+- feature_set: xts
+  model_name: xts__LightGBM
+  exec_time_minutes: 2.8513647158940634
+  train:
+    auc: 1.0
+    average_precision: 0.9999999999999999
+    model_name: xts__lightgbm_train
+    accuracy: 1.0
+    recall: 1.0
+    precision: 1.0
+    f1: 1.0
+    tn: 421
+    fp: 0
+    fn: 0
+    tp: 362
+  test:
+    auc: 0.5661650233523612
+    average_precision: 0.48825602862874473
+    model_name: xts__lightgbm_test
+    accuracy: 0.5227272727272727
+    recall: 0.36585365853658536
+    precision: 0.4838709677419355
+    f1: 0.4166666666666667
+    tn: 31
+    fp: 16
+    fn: 26
+    tp: 15

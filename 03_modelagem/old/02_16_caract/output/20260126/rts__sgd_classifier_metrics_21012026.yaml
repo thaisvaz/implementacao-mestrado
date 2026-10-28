@@ -1,0 +1,27 @@
+- feature_set: rts
+  model_name: rts__SGD Classifier
+  exec_time_minutes: 0.02059795061747233
+  train:
+    auc: 1.0
+    average_precision: 0.9999999999999999
+    model_name: rts__sgd_classifier_train
+    accuracy: 1.0
+    recall: 1.0
+    precision: 1.0
+    f1: 1.0
+    tn: 421
+    fp: 0
+    fn: 0
+    tp: 362
+  test:
+    auc: 0.5604566683964711
+    average_precision: 0.5246774117922426
+    model_name: rts__sgd_classifier_test
+    accuracy: 0.48863636363636365
+    recall: 0.34146341463414637
+    precision: 0.4375
+    f1: 0.3835616438356164
+    tn: 29
+    fp: 18
+    fn: 27
+    tp: 14

@@ -1,0 +1,27 @@
+- feature_set: xts
+  model_name: xts__SGD Classifier
+  exec_time_minutes: 0.017502482732137045
+  train:
+    auc: 1.0
+    average_precision: 0.9999999999999999
+    model_name: xts__sgd_classifier_train
+    accuracy: 1.0
+    recall: 1.0
+    precision: 1.0
+    f1: 1.0
+    tn: 421
+    fp: 0
+    fn: 0
+    tp: 362
+  test:
+    auc: 0.580176440062273
+    average_precision: 0.5432828780052561
+    model_name: xts__sgd_classifier_test
+    accuracy: 0.5909090909090909
+    recall: 0.4634146341463415
+    precision: 0.5757575757575758
+    f1: 0.5135135135135135
+    tn: 33
+    fp: 14
+    fn: 22
+    tp: 19

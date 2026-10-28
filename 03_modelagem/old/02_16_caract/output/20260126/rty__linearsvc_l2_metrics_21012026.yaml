@@ -1,0 +1,27 @@
+- feature_set: rty
+  model_name: rty__LinearSVC L2
+  exec_time_minutes: 0.03503657579421997
+  train:
+    auc: 0.9973031849975722
+    average_precision: 0.996921722533704
+    model_name: rty__linearsvc_l2_train
+    accuracy: 0.9731800766283525
+    recall: 0.9640883977900553
+    precision: 0.9775910364145658
+    f1: 0.9707927677329624
+    tn: 413
+    fp: 8
+    fn: 13
+    tp: 349
+  test:
+    auc: 0.6735858847950182
+    average_precision: 0.6160466261472195
+    model_name: rty__linearsvc_l2_test
+    accuracy: 0.6022727272727273
+    recall: 0.5365853658536586
+    precision: 0.5789473684210527
+    f1: 0.5569620253164557
+    tn: 31
+    fp: 16
+    fn: 19
+    tp: 22

@@ -1,0 +1,25 @@
+- feature_set: rtr
+  model_name: rtr__Logistic Regression L2
+  exec_time_minutes: 10.517458736896515
+  train:
+    auc: 1.0
+    average_precision: 0.9999999999999999
+    accuracy: 1.0
+    recall: 1.0
+    precision: 1.0
+    f1: 1.0
+    tn: 421
+    fp: 0
+    fn: 0
+    tp: 362
+  test:
+    auc: 0.6860404774260509
+    average_precision: 0.6560947554444473
+    accuracy: 0.6136363636363636
+    recall: 0.5365853658536586
+    precision: 0.5945945945945946
+    f1: 0.5641025641025641
+    tn: 32
+    fp: 15
+    fn: 19
+    tp: 22

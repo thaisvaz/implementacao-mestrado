@@ -1,0 +1,9 @@
+pickle: rtr__lightgbm_21012026_model.pkl
+basename: rtr__lightgbm_21012026
+model_type: LGBMClassifier
+model_kind: lightgbm
+names_source: model
+n_features_names: 20100
+n_rows_df: 20100
+importance_used: gain
+cum_cutoff_pct_plotted: 1.0

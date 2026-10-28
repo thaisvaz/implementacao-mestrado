@@ -1,0 +1,165 @@
+- number: 0
+  penalized_ap: 0.304738
+  params:
+    max_depth: 2
+    min_samples_split: 39
+    min_samples_leaf: 8
+    max_features: 0.22431851872868758
+    criterion: gini
+  ap_train: 0.5095
+  ap_val: 0.4712
+  gap: 0.0383
+- number: 1
+  penalized_ap: -1.025935
+  params:
+    max_depth: 11
+    min_samples_split: 41
+    min_samples_leaf: 30
+    max_features: 0.6720946613171673
+    criterion: entropy
+  ap_train: 0.7368
+  ap_val: 0.4388
+  gap: 0.298
+- number: 2
+  penalized_ap: -1.298972
+  params:
+    max_depth: 9
+    min_samples_split: 13
+    min_samples_leaf: 4
+    max_features: 0.5496933403440593
+    criterion: entropy
+  ap_train: 0.8602
+  ap_val: 0.4962
+  gap: 0.364
+- number: 3
+  penalized_ap: -0.238075
+  params:
+    max_depth: 6
+    min_samples_split: 35
+    min_samples_leaf: 12
+    max_features: 0.9515440404670533
+    criterion: gini
+  ap_train: 0.7293
+  ap_val: 0.5639
+  gap: 0.1654
+- number: 4
+  penalized_ap: -1.542756
+  params:
+    max_depth: 10
+    min_samples_split: 33
+    min_samples_leaf: 9
+    max_features: 0.7751405337429039
+    criterion: entropy
+  ap_train: 0.8657
+  ap_val: 0.4601
+  gap: 0.4056
+- number: 5
+  penalized_ap: 0.287671
+  params:
+    max_depth: 1
+    min_samples_split: 35
+    min_samples_leaf: 17
+    max_features: 0.5984438322795046
+    criterion: gini
+  ap_train: 0.5007
+  ap_val: 0.4611
+  gap: 0.0397
+- number: 6
+  penalized_ap: -1.22154
+  params:
+    max_depth: 9
+    min_samples_split: 4
+    min_samples_leaf: 25
+    max_features: 0.7399602732082686
+    criterion: entropy
+  ap_train: 0.7472
+  ap_val: 0.4149
+  gap: 0.3323
+- number: 7
+  penalized_ap: 0.403039
+  params:
+    max_depth: 1
+    min_samples_split: 50
+    min_samples_leaf: 18
+    max_features: 0.2617649224882329
+    criterion: entropy
+  ap_train: 0.4935
+  ap_val: 0.4742
+  gap: 0.0192
+- number: 8
+  penalized_ap: -0.026134
+  params:
+    max_depth: 7
+    min_samples_split: 49
+    min_samples_leaf: 5
+    max_features: 0.7441070344325025
+    criterion: entropy
+  ap_train: 0.6823
+  ap_val: 0.56
+  gap: 0.1222
+- number: 9
+  penalized_ap: -1.090545
+  params:
+    max_depth: 15
+    min_samples_split: 34
+    min_samples_leaf: 29
+    max_features: 0.571804957193857
+    criterion: gini
+  ap_train: 0.7221
+  ap_val: 0.4158
+  gap: 0.3063
+- number: 10
+  penalized_ap: -0.239861
+  params:
+    max_depth: 4
+    min_samples_split: 21
+    min_samples_leaf: 19
+    max_features: 0.11644441694447183
+    criterion: entropy
+  ap_train: 0.6095
+  ap_val: 0.4638
+  gap: 0.1457
+- number: 11
+  penalized_ap: 0.403039
+  params:
+    max_depth: 1
+    min_samples_split: 49
+    min_samples_leaf: 21
+    max_features: 0.19928213224692942
+    criterion: gini
+  ap_train: 0.4935
+  ap_val: 0.4742
+  gap: 0.0192
+- number: 12
+  penalized_ap: -0.370543
+  params:
+    max_depth: 4
+    min_samples_split: 50
+    min_samples_leaf: 22
+    max_features: 0.34494962947083774
+    criterion: gini
+  ap_train: 0.6565
+  ap_val: 0.4812
+  gap: 0.1753
+- number: 13
+  penalized_ap: -0.066033
+  params:
+    max_depth: 3
+    min_samples_split: 45
+    min_samples_leaf: 14
+    max_features: 0.35830280383826163
+    criterion: gini
+  ap_train: 0.5844
+  ap_val: 0.4718
+  gap: 0.1126
+- number: 14
+  penalized_ap: 0.213693
+  params:
+    max_depth: 1
+    min_samples_split: 25
+    min_samples_leaf: 22
+    max_features: 0.391771690925686
+    criterion: entropy
+  ap_train: 0.4991
+  ap_val: 0.4474
+  gap: 0.0517

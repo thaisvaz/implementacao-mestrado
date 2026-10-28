@@ -1,0 +1,27 @@
+- feature_set: sts
+  model_name: sts__Ridge Classifier
+  exec_time_minutes: 0.03625322580337524
+  train:
+    auc: 0.9999803152189604
+    average_precision: 0.9999771907833321
+    model_name: sts__ridge_classifier_train
+    accuracy: 0.9961685823754789
+    recall: 1.0
+    precision: 0.9917808219178083
+    f1: 0.9958734525447043
+    tn: 418
+    fp: 3
+    fn: 0
+    tp: 362
+  test:
+    auc: 0.5568240788790867
+    average_precision: 0.5088506444846963
+    model_name: sts__ridge_classifier_test
+    accuracy: 0.5681818181818182
+    recall: 0.5365853658536586
+    precision: 0.5365853658536586
+    f1: 0.5365853658536586
+    tn: 28
+    fp: 19
+    fn: 19
+    tp: 22

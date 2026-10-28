@@ -1,0 +1,27 @@
+- feature_set: yty
+  model_name: yty__Logistic Regression L2
+  exec_time_minutes: 1.2678911725680033
+  train:
+    auc: 0.903249301190273
+    average_precision: 0.8839894111997273
+    model_name: yty__logistic_regression_l2_train
+    accuracy: 0.8109833971902938
+    recall: 0.7734806629834254
+    precision: 0.8092485549132948
+    f1: 0.7909604519774012
+    tn: 355
+    fp: 66
+    fn: 82
+    tp: 280
+  test:
+    auc: 0.4924753502854178
+    average_precision: 0.4582483613766528
+    model_name: yty__logistic_regression_l2_test
+    accuracy: 0.5113636363636364
+    recall: 0.34146341463414637
+    precision: 0.4666666666666667
+    f1: 0.39436619718309857
+    tn: 31
+    fp: 16
+    fn: 27
+    tp: 14

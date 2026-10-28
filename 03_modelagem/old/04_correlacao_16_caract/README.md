@@ -1,0 +1,1 @@
+aqui, para fazer a correlacao, ja estava arrumada a ideia das 16 caracteristicas usarem o mesmo train_test_split por subid. Garantindo assim a reprodutibilidade.

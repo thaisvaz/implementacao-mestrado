@@ -1,0 +1,224 @@
+- dataset: str_dmntodmn_pheno
+  features_file: str_dmntodmn.parquet
+  model_name: SVC L2
+  exec_time_minutes: 0.013615326086680094
+  train:
+    auc: 0.8197070904581305
+    average_precision: 0.7987187539678064
+    model_name: SVC L2_train
+    accuracy: 0.7369093231162197
+    recall: 0.7237569060773481
+    precision: 0.7119565217391305
+    f1: 0.7178082191780822
+    tn: 315
+    fp: 106
+    fn: 100
+    tp: 262
+  test:
+    auc: 0.5111572392319668
+    average_precision: 0.502221394337511
+    model_name: SVC L2_test
+    accuracy: 0.5340909090909091
+    recall: 0.4634146341463415
+    precision: 0.5
+    f1: 0.4810126582278481
+    tn: 28
+    fp: 19
+    fn: 22
+    tp: 19
+- dataset: str_dmntodmn_pheno
+  features_file: str_dmntodmn.parquet
+  model_name: SVC
+  exec_time_minutes: 0.016678210099538168
+  train:
+    auc: 0.8150286741643811
+    average_precision: 0.7584437287632713
+    model_name: SVC_train
+    accuracy: 0.7637292464878672
+    recall: 0.7955801104972375
+    precision: 0.7218045112781954
+    f1: 0.7568988173455979
+    tn: 310
+    fp: 111
+    fn: 74
+    tp: 288
+  test:
+    auc: 0.4810586403736378
+    average_precision: 0.48380893430164623
+    model_name: SVC_test
+    accuracy: 0.5
+    recall: 0.4878048780487805
+    precision: 0.46511627906976744
+    f1: 0.47619047619047616
+    tn: 24
+    fp: 23
+    fn: 21
+    tp: 20
+- dataset: str_dmntodmn_pheno
+  features_file: str_dmntodmn.parquet
+  model_name: Logistic Regression L2
+  exec_time_minutes: 0.005381373564402262
+  train:
+    auc: 0.8064526712247871
+    average_precision: 0.783507460363132
+    model_name: Logistic Regression L2_train
+    accuracy: 0.7254150702426565
+    recall: 0.6906077348066298
+    precision: 0.7082152974504249
+    f1: 0.6993006993006993
+    tn: 318
+    fp: 103
+    fn: 112
+    tp: 250
+  test:
+    auc: 0.5246497145822522
+    average_precision: 0.510155075937359
+    model_name: Logistic Regression L2_test
+    accuracy: 0.5227272727272727
+    recall: 0.4878048780487805
+    precision: 0.4878048780487805
+    f1: 0.4878048780487805
+    tn: 26
+    fp: 21
+    fn: 21
+    tp: 20
+- dataset: str_dmntodmn_pheno
+  features_file: str_dmntodmn.parquet
+  model_name: Logistic Regression ElasticNet
+  exec_time_minutes: 0.006313196818033854
+  train:
+    auc: 0.7617091639217333
+    average_precision: 0.7276342931826698
+    model_name: Logistic Regression ElasticNet_train
+    accuracy: 0.6922094508301405
+    recall: 0.6077348066298343
+    precision: 0.6896551724137931
+    f1: 0.6461086637298091
+    tn: 322
+    fp: 99
+    fn: 142
+    tp: 220
+  test:
+    auc: 0.5241307732226259
+    average_precision: 0.5023021644377421
+    model_name: Logistic Regression ElasticNet_test
+    accuracy: 0.5227272727272727
+    recall: 0.4146341463414634
+    precision: 0.4857142857142857
+    f1: 0.4473684210526316
+    tn: 29
+    fp: 18
+    fn: 24
+    tp: 17
+- dataset: str_dmntodmn_pheno
+  features_file: str_dmntodmn.parquet
+  model_name: Ridge Classifier
+  exec_time_minutes: 0.00014959176381429035
+  train:
+    auc: 0.815645463970289
+    average_precision: 0.7886906669224272
+    model_name: Ridge Classifier_train
+    accuracy: 0.7318007662835249
+    recall: 0.7071823204419889
+    precision: 0.7111111111111111
+    f1: 0.7091412742382271
+    tn: 317
+    fp: 104
+    fn: 106
+    tp: 256
+  test:
+    auc: 0.49091852620653864
+    average_precision: 0.4881019045418415
+    model_name: Ridge Classifier_test
+    accuracy: 0.5227272727272727
+    recall: 0.4634146341463415
+    precision: 0.48717948717948717
+    f1: 0.475
+    tn: 27
+    fp: 20
+    fn: 22
+    tp: 19
+- dataset: str_dmntodmn_pheno
+  features_file: str_dmntodmn.parquet
+  model_name: SGD Classifier
+  exec_time_minutes: 0.0003527363141377767
+  train:
+    auc: 0.7422409154735502
+    average_precision: 0.7168223883530739
+    model_name: SGD Classifier_train
+    accuracy: 0.6832694763729247
+    recall: 0.649171270718232
+    precision: 0.6601123595505618
+    f1: 0.6545961002785515
+    tn: 300
+    fp: 121
+    fn: 127
+    tp: 235
+  test:
+    auc: 0.47016087182148425
+    average_precision: 0.4708635333669895
+    model_name: SGD Classifier_test
+    accuracy: 0.45454545454545453
+    recall: 0.43902439024390244
+    precision: 0.4186046511627907
+    f1: 0.42857142857142855
+    tn: 22
+    fp: 25
+    fn: 23
+    tp: 18
+- dataset: str_dmntodmn_pheno
+  features_file: str_dmntodmn.parquet
+  model_name: Decision Tree
+  exec_time_minutes: 0.000969247023264567
+  train:
+    auc: 0.8091002742746158
+    average_precision: 0.7962266398388861
+    model_name: Decision Tree_train
+    accuracy: 0.7496807151979565
+    recall: 0.5331491712707183
+    precision: 0.8772727272727273
+    f1: 0.6632302405498282
+    tn: 394
+    fp: 27
+    fn: 169
+    tp: 193
+  test:
+    auc: 0.571613907628438
+    average_precision: 0.5674813514690196
+    model_name: Decision Tree_test
+    accuracy: 0.6136363636363636
+    recall: 0.3902439024390244
+    precision: 0.64
+    f1: 0.48484848484848486
+    tn: 38
+    fp: 9
+    fn: 25
+    tp: 16
+- dataset: str_dmntodmn_pheno
+  features_file: str_dmntodmn.parquet
+  model_name: LightGBM
+  exec_time_minutes: 0.3302878538767497
+  train:
+    auc: 0.8502152202726998
+    average_precision: 0.8379373150616066
+    model_name: lgbm_train
+    accuracy: 0.7151979565772669
+    recall: 0.43370165745856354
+    precision: 0.8971428571428571
+    f1: 0.5847299813780261
+    tn: 403
+    fp: 18
+    fn: 205
+    tp: 157
+  test:
+    auc: 0.661909704203425
+    average_precision: 0.712817600036918
+    model_name: lgbm_test
+    accuracy: 0.6477272727272727
+    recall: 0.3170731707317073
+    precision: 0.8125
+    f1: 0.45614035087719296
+    tn: 44
+    fp: 3
+    fn: 28
+    tp: 13

@@ -1,0 +1,105 @@
+- number: 0
+  penalized_ap: -0.446646
+  params:
+    alpha: 2.4554687252815718e-05
+  ap_train: 0.7261
+  ap_val: 0.5265
+  gap: 0.1996
+- number: 1
+  penalized_ap: -1.142382
+  params:
+    alpha: 0.011091719208511945
+  ap_train: 0.7825
+  ap_val: 0.4575
+  gap: 0.325
+- number: 2
+  penalized_ap: -0.59792
+  params:
+    alpha: 9.721916634251462e-05
+  ap_train: 0.7069
+  ap_val: 0.4853
+  gap: 0.2216
+- number: 3
+  penalized_ap: -0.503151
+  params:
+    alpha: 3.5688373047915124e-05
+  ap_train: 0.7229
+  ap_val: 0.5144
+  gap: 0.2085
+- number: 4
+  penalized_ap: -0.752055
+  params:
+    alpha: 0.0002117318796992674
+  ap_train: 0.7485
+  ap_val: 0.4943
+  gap: 0.2543
+- number: 5
+  penalized_ap: -0.361133
+  params:
+    alpha: 2.1478218690054963e-05
+  ap_train: 0.6528
+  ap_val: 0.4796
+  gap: 0.1731
+- number: 6
+  penalized_ap: -0.9813
+  params:
+    alpha: 0.004874255889616766
+  ap_train: 0.7698
+  ap_val: 0.4738
+  gap: 0.296
+- number: 7
+  penalized_ap: -1.164146
+  params:
+    alpha: 0.01684128373167507
+  ap_train: 0.7903
+  ap_val: 0.4604
+  gap: 0.3299
+- number: 8
+  penalized_ap: -0.76372
+  params:
+    alpha: 0.08530365861883267
+  ap_train: 0.7505
+  ap_val: 0.494
+  gap: 0.2565
+- number: 9
+  penalized_ap: -0.8368
+  params:
+    alpha: 0.0034885338323147035
+  ap_train: 0.7805
+  ap_val: 0.5068
+  gap: 0.2737
+- number: 10
+  penalized_ap: -0.510055
+  params:
+    alpha: 0.0003607502057477426
+  ap_train: 0.7239
+  ap_val: 0.5141
+  gap: 0.2098
+- number: 11
+  penalized_ap: -0.406935
+  params:
+    alpha: 1.2704022197274437e-05
+  ap_train: 0.7079
+  ap_val: 0.5179
+  gap: 0.19
+- number: 12
+  penalized_ap: -0.892165
+  params:
+    alpha: 1.0964512401566393e-05
+  ap_train: 0.7409
+  ap_val: 0.4646
+  gap: 0.2763
+- number: 13
+  penalized_ap: -0.315828
+  params:
+    alpha: 6.639167446314586e-05
+  ap_train: 0.7242
+  ap_val: 0.5467
+  gap: 0.1775
+- number: 14
+  penalized_ap: -0.497755
+  params:
+    alpha: 7.1792871310705e-05
+  ap_train: 0.6861
+  ap_val: 0.4847
+  gap: 0.2015

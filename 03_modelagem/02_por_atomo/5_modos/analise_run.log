@@ -1,0 +1,27 @@
+/home/thaisvaz/.venv/pesquisa/lib/python3.12/site-packages/plotnine/ggplot.py:623: PlotnineWarning: Saving 14 x 6 in image.
+/home/thaisvaz/.venv/pesquisa/lib/python3.12/site-packages/plotnine/ggplot.py:624: PlotnineWarning: Filename: /home/thaisvaz/pesquisa/implementacao/03_modelagem/02_por_caracteristica/5_caracteristica/output_modelagem/plots/average_precision_por_caracteristica.png
+/home/thaisvaz/.venv/pesquisa/lib/python3.12/site-packages/plotnine/ggplot.py:623: PlotnineWarning: Saving 14 x 6 in image.
+/home/thaisvaz/.venv/pesquisa/lib/python3.12/site-packages/plotnine/ggplot.py:624: PlotnineWarning: Filename: /home/thaisvaz/pesquisa/implementacao/03_modelagem/02_por_caracteristica/5_caracteristica/output_modelagem/plots/auc_por_caracteristica.png
+Encontrados 6 YAML(s) em /home/thaisvaz/pesquisa/implementacao/03_modelagem/02_por_caracteristica/5_caracteristica/output_modelagem
+ - /home/thaisvaz/pesquisa/implementacao/03_modelagem/02_por_caracteristica/5_caracteristica/output_modelagem/copy/model_metrics.yaml
+ - /home/thaisvaz/pesquisa/implementacao/03_modelagem/02_por_caracteristica/5_caracteristica/output_modelagem/downward/model_metrics.yaml
+ - /home/thaisvaz/pesquisa/implementacao/03_modelagem/02_por_caracteristica/5_caracteristica/output_modelagem/erasure/model_metrics.yaml
+ - /home/thaisvaz/pesquisa/implementacao/03_modelagem/02_por_caracteristica/5_caracteristica/output_modelagem/storage/model_metrics.yaml
+ - /home/thaisvaz/pesquisa/implementacao/03_modelagem/02_por_caracteristica/5_caracteristica/output_modelagem/transfer/model_metrics.yaml
+ - /home/thaisvaz/pesquisa/implementacao/03_modelagem/02_por_caracteristica/5_caracteristica/output_modelagem/upward/model_metrics.yaml
+
+DataFrame consolidado:
+  dataset feature_set  ...       auc average_precision
+0    copy        copy  ...  1.000000          1.000000
+1    copy        copy  ...  0.567722          0.559520
+2    copy        copy  ...  1.000000          1.000000
+3    copy        copy  ...  0.577582          0.557132
+4    copy        copy  ...  1.000000          1.000000
+
+[5 rows x 6 columns]
+
+Shape: (96, 6)
+CSV consolidado salvo em: /home/thaisvaz/pesquisa/implementacao/03_modelagem/02_por_caracteristica/5_caracteristica/output_modelagem/plots/metrics_consolidated.csv
+Gráfico salvo em: /home/thaisvaz/pesquisa/implementacao/03_modelagem/02_por_caracteristica/5_caracteristica/output_modelagem/plots/average_precision_por_caracteristica.png
+Gráfico salvo em: /home/thaisvaz/pesquisa/implementacao/03_modelagem/02_por_caracteristica/5_caracteristica/output_modelagem/plots/auc_por_caracteristica.png
+✔ Análise finalizada com sucesso

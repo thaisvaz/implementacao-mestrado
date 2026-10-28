@@ -1,0 +1,8 @@
+pickle: rtr__lightgbm_21012026_model.pkl
+model_type: LGBMClassifier
+names_source: model
+n_features_in_names: 20100
+n_rows_in_df: 20100
+importance_type_requested: gain
+importance_type_used: gain
+top_percent_plotted: 1.0

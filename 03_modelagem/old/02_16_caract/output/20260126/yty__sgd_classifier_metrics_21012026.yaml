@@ -1,0 +1,27 @@
+- feature_set: yty
+  model_name: yty__SGD Classifier
+  exec_time_minutes: 0.02872677246729533
+  train:
+    auc: 0.99948819569297
+    average_precision: 0.9994142625253097
+    model_name: yty__sgd_classifier_train
+    accuracy: 0.9808429118773946
+    recall: 0.9640883977900553
+    precision: 0.9943019943019943
+    f1: 0.9789621318373072
+    tn: 419
+    fp: 2
+    fn: 13
+    tp: 349
+  test:
+    auc: 0.5583809029579658
+    average_precision: 0.48519878578196285
+    model_name: yty__sgd_classifier_test
+    accuracy: 0.5
+    recall: 0.3170731707317073
+    precision: 0.4482758620689655
+    f1: 0.37142857142857144
+    tn: 31
+    fp: 16
+    fn: 28
+    tp: 13

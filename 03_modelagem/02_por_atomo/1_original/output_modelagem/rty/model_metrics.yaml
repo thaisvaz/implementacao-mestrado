@@ -1,0 +1,224 @@
+- dataset: rty
+  features_file: rty.parquet
+  model_name: SVC L2
+  exec_time_minutes: 0.036752593517303464
+  train:
+    auc: 1.0
+    average_precision: 0.9999999999999999
+    model_name: SVC L2_train
+    accuracy: 1.0
+    recall: 1.0
+    precision: 1.0
+    f1: 1.0
+    tn: 421
+    fp: 0
+    fn: 0
+    tp: 362
+  test:
+    auc: 0.6346652828230409
+    average_precision: 0.5570195432405141
+    model_name: SVC L2_test
+    accuracy: 0.5681818181818182
+    recall: 0.5609756097560976
+    precision: 0.5348837209302325
+    f1: 0.5476190476190477
+    tn: 27
+    fp: 20
+    fn: 18
+    tp: 23
+- dataset: rty
+  features_file: rty.parquet
+  model_name: SVC
+  exec_time_minutes: 0.8182796080907185
+  train:
+    auc: 1.0
+    average_precision: 0.9999999999999999
+    model_name: SVC_train
+    accuracy: 1.0
+    recall: 1.0
+    precision: 1.0
+    f1: 1.0
+    tn: 421
+    fp: 0
+    fn: 0
+    tp: 362
+  test:
+    auc: 0.6393357550596782
+    average_precision: 0.5603685492223444
+    model_name: SVC_test
+    accuracy: 0.5909090909090909
+    recall: 0.5365853658536586
+    precision: 0.5641025641025641
+    f1: 0.55
+    tn: 30
+    fp: 17
+    fn: 19
+    tp: 22
+- dataset: rty
+  features_file: rty.parquet
+  model_name: Logistic Regression L2
+  exec_time_minutes: 2.2585147420565286
+  train:
+    auc: 1.0
+    average_precision: 0.9999999999999999
+    model_name: Logistic Regression L2_train
+    accuracy: 1.0
+    recall: 1.0
+    precision: 1.0
+    f1: 1.0
+    tn: 421
+    fp: 0
+    fn: 0
+    tp: 362
+  test:
+    auc: 0.6408925791385574
+    average_precision: 0.5510228667013517
+    model_name: Logistic Regression L2_test
+    accuracy: 0.5795454545454546
+    recall: 0.5609756097560976
+    precision: 0.5476190476190477
+    f1: 0.5542168674698795
+    tn: 28
+    fp: 19
+    fn: 18
+    tp: 23
+- dataset: rty
+  features_file: rty.parquet
+  model_name: Logistic Regression ElasticNet
+  exec_time_minutes: 9.489387436707814
+  train:
+    auc: 1.0
+    average_precision: 0.9999999999999999
+    model_name: Logistic Regression ElasticNet_train
+    accuracy: 1.0
+    recall: 1.0
+    precision: 1.0
+    f1: 1.0
+    tn: 421
+    fp: 0
+    fn: 0
+    tp: 362
+  test:
+    auc: 0.6320705760249091
+    average_precision: 0.6040765939103173
+    model_name: Logistic Regression ElasticNet_test
+    accuracy: 0.5909090909090909
+    recall: 0.5365853658536586
+    precision: 0.5641025641025641
+    f1: 0.55
+    tn: 30
+    fp: 17
+    fn: 19
+    tp: 22
+- dataset: rty
+  features_file: rty.parquet
+  model_name: Ridge Classifier
+  exec_time_minutes: 0.007713957627614339
+  train:
+    auc: 1.0
+    average_precision: 0.9999999999999999
+    model_name: Ridge Classifier_train
+    accuracy: 1.0
+    recall: 1.0
+    precision: 1.0
+    f1: 1.0
+    tn: 421
+    fp: 0
+    fn: 0
+    tp: 362
+  test:
+    auc: 0.6393357550596782
+    average_precision: 0.5631898246948845
+    model_name: Ridge Classifier_test
+    accuracy: 0.6136363636363636
+    recall: 0.5609756097560976
+    precision: 0.5897435897435898
+    f1: 0.575
+    tn: 31
+    fp: 16
+    fn: 18
+    tp: 23
+- dataset: rty
+  features_file: rty.parquet
+  model_name: SGD Classifier
+  exec_time_minutes: 0.049701690673828125
+  train:
+    auc: 1.0
+    average_precision: 0.9999999999999999
+    model_name: SGD Classifier_train
+    accuracy: 0.9974457215836526
+    recall: 0.994475138121547
+    precision: 1.0
+    f1: 0.997229916897507
+    tn: 421
+    fp: 0
+    fn: 2
+    tp: 360
+  test:
+    auc: 0.6320705760249091
+    average_precision: 0.5708829579319746
+    model_name: SGD Classifier_test
+    accuracy: 0.5454545454545454
+    recall: 0.2682926829268293
+    precision: 0.5238095238095238
+    f1: 0.3548387096774194
+    tn: 37
+    fp: 10
+    fn: 30
+    tp: 11
+- dataset: rty
+  features_file: rty.parquet
+  model_name: Decision Tree
+  exec_time_minutes: 0.09525689284006754
+  train:
+    auc: 0.9098601068227451
+    average_precision: 0.8761303878352479
+    model_name: Decision Tree_train
+    accuracy: 0.855683269476373
+    recall: 0.8287292817679558
+    precision: 0.8547008547008547
+    f1: 0.8415147265077139
+    tn: 370
+    fp: 51
+    fn: 62
+    tp: 300
+  test:
+    auc: 0.5036325895173845
+    average_precision: 0.45342413594953285
+    model_name: Decision Tree_test
+    accuracy: 0.4659090909090909
+    recall: 0.4634146341463415
+    precision: 0.4318181818181818
+    f1: 0.4470588235294118
+    tn: 22
+    fp: 25
+    fn: 22
+    tp: 19
+- dataset: rty
+  features_file: rty.parquet
+  model_name: LightGBM
+  exec_time_minutes: 0.13093496958414713
+  train:
+    auc: 0.8791190404325402
+    average_precision: 0.8598251026329146
+    model_name: lgbm_train
+    accuracy: 0.6526181353767561
+    recall: 0.26795580110497236
+    precision: 0.9326923076923077
+    f1: 0.41630901287553645
+    tn: 414
+    fp: 7
+    fn: 265
+    tp: 97
+  test:
+    auc: 0.7210690192008303
+    average_precision: 0.7174536869521502
+    model_name: lgbm_test
+    accuracy: 0.6363636363636364
+    recall: 0.2682926829268293
+    precision: 0.8461538461538461
+    f1: 0.4074074074074074
+    tn: 45
+    fp: 2
+    fn: 30
+    tp: 11

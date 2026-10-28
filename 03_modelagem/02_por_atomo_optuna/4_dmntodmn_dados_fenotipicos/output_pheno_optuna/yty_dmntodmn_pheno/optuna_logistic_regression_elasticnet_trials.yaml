@@ -1,0 +1,120 @@
+- number: 0
+  penalized_ap: 0.465909
+  params:
+    C: 0.002455468725281573
+    l1_ratio: 0.7612497166748563
+  ap_train: 0.4623
+  ap_val: 0.4659
+  gap: -0.0036
+- number: 1
+  penalized_ap: 0.091774
+  params:
+    C: 0.009721916634251466
+    l1_ratio: 0.13813168747631954
+  ap_train: 0.6261
+  ap_val: 0.5329
+  gap: 0.0932
+- number: 2
+  penalized_ap: -0.612318
+  params:
+    C: 0.02117318796992676
+    l1_ratio: 0.08299956500689287
+  ap_train: 0.6945
+  ap_val: 0.4725
+  gap: 0.222
+- number: 3
+  penalized_ap: -0.845443
+  params:
+    C: 0.4874255889616768
+    l1_ratio: 0.8065937981616575
+  ap_train: 0.7693
+  ap_val: 0.496
+  gap: 0.2733
+- number: 4
+  penalized_ap: -1.06856
+  params:
+    C: 8.53036586188327
+    l1_ratio: 0.6356607347968526
+  ap_train: 0.7987
+  ap_val: 0.4833
+  gap: 0.3154
+- number: 5
+  penalized_ap: 0.465909
+  params:
+    C: 0.007306224692521041
+    l1_ratio: 0.5490274320842796
+  ap_train: 0.4623
+  ap_val: 0.4659
+  gap: -0.0036
+- number: 6
+  penalized_ap: -0.749754
+  params:
+    C: 0.15213874591771243
+    l1_ratio: 0.23407607314700163
+  ap_train: 0.759
+  ap_val: 0.5034
+  gap: 0.2556
+- number: 7
+  penalized_ap: 0.465909
+  params:
+    C: 0.0028503840032456113
+    l1_ratio: 0.4996592670489547
+  ap_train: 0.4623
+  ap_val: 0.4659
+  gap: -0.0036
+- number: 8
+  penalized_ap: 0.465909
+  params:
+    C: 0.00405913681533415
+    l1_ratio: 0.5326860805572696
+  ap_train: 0.4623
+  ap_val: 0.4659
+  gap: -0.0036
+- number: 9
+  penalized_ap: 0.293618
+  params:
+    C: 0.035320518780986424
+    l1_ratio: 0.6883273834221644
+  ap_train: 0.6078
+  ap_val: 0.5512
+  gap: 0.0565
+- number: 10
+  penalized_ap: 0.465909
+  params:
+    C: 0.00105931646279936
+    l1_ratio: 0.997923900952616
+  ap_train: 0.4623
+  ap_val: 0.4659
+  gap: -0.0036
+- number: 11
+  penalized_ap: 0.465909
+  params:
+    C: 0.0012134891371301457
+    l1_ratio: 0.3699353662702969
+  ap_train: 0.4623
+  ap_val: 0.4659
+  gap: -0.0036
+- number: 12
+  penalized_ap: 0.465909
+  params:
+    C: 0.00899616169168159
+    l1_ratio: 0.8424338455600121
+  ap_train: 0.4623
+  ap_val: 0.4659
+  gap: -0.0036
+- number: 13
+  penalized_ap: -0.642527
+  params:
+    C: 0.08782567826366097
+    l1_ratio: 0.40981642151107506
+  ap_train: 0.7073
+  ap_val: 0.4781
+  gap: 0.2291
+- number: 14
+  penalized_ap: -0.960709
+  params:
+    C: 0.8768282049290907
+    l1_ratio: 0.7411557784658341
+  ap_train: 0.7867
+  ap_val: 0.4913
+  gap: 0.2954

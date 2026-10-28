@@ -1,0 +1,27 @@
+- feature_set: yts
+  model_name: yts__LinearSVC L2
+  exec_time_minutes: 0.1441901644070943
+  train:
+    auc: 0.999947507250561
+    average_precision: 0.9999391396143322
+    model_name: yts__linearsvc_l2_train
+    accuracy: 0.9961685823754789
+    recall: 1.0
+    precision: 0.9917808219178083
+    f1: 0.9958734525447043
+    tn: 418
+    fp: 3
+    fn: 0
+    tp: 362
+  test:
+    auc: 0.551634665282823
+    average_precision: 0.5108069972539749
+    model_name: yts__linearsvc_l2_test
+    accuracy: 0.5113636363636364
+    recall: 0.4146341463414634
+    precision: 0.4722222222222222
+    f1: 0.44155844155844154
+    tn: 28
+    fp: 19
+    fn: 24
+    tp: 17

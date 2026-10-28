@@ -1,0 +1,26 @@
+- exec_time_minutes: 129.80156139930088
+  model_name: Logistic Regression ElasticNet
+  test:
+    accuracy: 0.5340909090909091
+    auc: 0.5604566683964712
+    average_precision: 0.5427966655148928
+    f1: 0.0
+    fn: 41
+    fp: 0
+    model_name: logistic_regression_elasticnet_test
+    precision: 0.0
+    recall: 0.0
+    tn: 47
+    tp: 0
+  train:
+    accuracy: 0.5376756066411239
+    auc: 0.5959501843807824
+    average_precision: 0.5425364127161544
+    f1: 0.0
+    fn: 362
+    fp: 0
+    model_name: logistic_regression_elasticnet_train
+    precision: 0.0
+    recall: 0.0
+    tn: 421
+    tp: 0

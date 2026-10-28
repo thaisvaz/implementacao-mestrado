@@ -1,0 +1,27 @@
+- feature_set: ytx
+  model_name: ytx__SGD Classifier
+  exec_time_minutes: 0.01634745200475057
+  train:
+    auc: 1.0
+    average_precision: 0.9999999999999999
+    model_name: ytx__sgd_classifier_train
+    accuracy: 1.0
+    recall: 1.0
+    precision: 1.0
+    f1: 1.0
+    tn: 421
+    fp: 0
+    fn: 0
+    tp: 362
+  test:
+    auc: 0.6258432797093929
+    average_precision: 0.5923168508506597
+    model_name: ytx__sgd_classifier_test
+    accuracy: 0.5681818181818182
+    recall: 0.4146341463414634
+    precision: 0.5483870967741935
+    f1: 0.4722222222222222
+    tn: 33
+    fp: 14
+    fn: 24
+    tp: 17

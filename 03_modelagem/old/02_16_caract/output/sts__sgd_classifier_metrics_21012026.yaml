@@ -1,0 +1,27 @@
+- feature_set: sts
+  model_name: sts__SGD Classifier
+  exec_time_minutes: 0.015237526098887125
+  train:
+    auc: 0.9972572538418131
+    average_precision: 0.9969562814887768
+    model_name: sts__sgd_classifier_train
+    accuracy: 0.9514687100893997
+    recall: 0.8950276243093923
+    precision: 1.0
+    f1: 0.9446064139941691
+    tn: 421
+    fp: 0
+    fn: 38
+    tp: 324
+  test:
+    auc: 0.5703165542293721
+    average_precision: 0.5103485484714423
+    model_name: sts__sgd_classifier_test
+    accuracy: 0.5340909090909091
+    recall: 0.2682926829268293
+    precision: 0.5
+    f1: 0.3492063492063492
+    tn: 36
+    fp: 11
+    fn: 30
+    tp: 11

@@ -1,0 +1,27 @@
+- feature_set: xtx
+  model_name: xtx__LightGBM
+  exec_time_minutes: 2.755840011437734
+  train:
+    auc: 1.0
+    average_precision: 0.9999999999999999
+    model_name: xtx__lightgbm_train
+    accuracy: 1.0
+    recall: 1.0
+    precision: 1.0
+    f1: 1.0
+    tn: 421
+    fp: 0
+    fn: 0
+    tp: 362
+  test:
+    auc: 0.5438505448884277
+    average_precision: 0.4960576524263395
+    model_name: xtx__lightgbm_test
+    accuracy: 0.5340909090909091
+    recall: 0.2926829268292683
+    precision: 0.5
+    f1: 0.36923076923076925
+    tn: 35
+    fp: 12
+    fn: 29
+    tp: 12

@@ -1,0 +1,27 @@
+- feature_set: ytr
+  model_name: ytr__LightGBM
+  exec_time_minutes: 2.3465834895769757
+  train:
+    auc: 1.0
+    average_precision: 0.9999999999999999
+    model_name: ytr__lightgbm_train
+    accuracy: 1.0
+    recall: 1.0
+    precision: 1.0
+    f1: 1.0
+    tn: 421
+    fp: 0
+    fn: 0
+    tp: 362
+  test:
+    auc: 0.5879605604566683
+    average_precision: 0.6118950332692199
+    model_name: ytr__lightgbm_test
+    accuracy: 0.5568181818181818
+    recall: 0.36585365853658536
+    precision: 0.5357142857142857
+    f1: 0.43478260869565216
+    tn: 34
+    fp: 13
+    fn: 26
+    tp: 15

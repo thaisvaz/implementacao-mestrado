@@ -1,0 +1,27 @@
+- feature_set: xty
+  model_name: xty__LightGBM
+  exec_time_minutes: 2.406944489479065
+  train:
+    auc: 1.0
+    average_precision: 0.9999999999999999
+    model_name: xty__lightgbm_train
+    accuracy: 1.0
+    recall: 1.0
+    precision: 1.0
+    f1: 1.0
+    tn: 421
+    fp: 0
+    fn: 0
+    tp: 362
+  test:
+    auc: 0.6299948105864037
+    average_precision: 0.5470332056101951
+    model_name: xty__lightgbm_test
+    accuracy: 0.5568181818181818
+    recall: 0.3902439024390244
+    precision: 0.5333333333333333
+    f1: 0.4507042253521127
+    tn: 33
+    fp: 14
+    fn: 25
+    tp: 16

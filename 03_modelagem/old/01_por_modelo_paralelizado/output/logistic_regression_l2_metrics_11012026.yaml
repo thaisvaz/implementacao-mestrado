@@ -1,0 +1,26 @@
+- exec_time_minutes: 52.9668341199557
+  model_name: Logistic Regression L2
+  test:
+    accuracy: 0.6022727272727273
+    auc: 0.5832900882200311
+    average_precision: 0.5194494192425336
+    f1: 0.5454545454545454
+    fn: 20
+    fp: 15
+    model_name: logistic_regression_l2_test
+    precision: 0.5833333333333334
+    recall: 0.5121951219512195
+    tn: 32
+    tp: 21
+  train:
+    accuracy: 0.9974457215836526
+    auc: 0.9999803152189604
+    average_precision: 0.999977106809452
+    f1: 0.9972375690607734
+    fn: 1
+    fp: 1
+    model_name: logistic_regression_l2_train
+    precision: 0.9972375690607734
+    recall: 0.9972375690607734
+    tn: 420
+    tp: 361

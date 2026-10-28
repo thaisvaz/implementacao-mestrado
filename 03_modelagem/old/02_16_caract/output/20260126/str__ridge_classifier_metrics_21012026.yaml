@@ -1,0 +1,27 @@
+- feature_set: str
+  model_name: str__Ridge Classifier
+  exec_time_minutes: 0.03937387466430664
+  train:
+    auc: 0.9916602144328814
+    average_precision: 0.9905628787660216
+    model_name: str__ridge_classifier_train
+    accuracy: 0.9553001277139208
+    recall: 0.9502762430939227
+    precision: 0.9529085872576177
+    f1: 0.9515905947441217
+    tn: 404
+    fp: 17
+    fn: 18
+    tp: 344
+  test:
+    auc: 0.5402179553710431
+    average_precision: 0.5129687345322669
+    model_name: str__ridge_classifier_test
+    accuracy: 0.5454545454545454
+    recall: 0.4146341463414634
+    precision: 0.5151515151515151
+    f1: 0.4594594594594595
+    tn: 31
+    fp: 16
+    fn: 24
+    tp: 17

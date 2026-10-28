@@ -1,0 +1,27 @@
+- feature_set: rtr
+  model_name: rtr__Logistic Regression ElasticNet
+  exec_time_minutes: 0.04214448134104411
+  train:
+    auc: 0.5
+    average_precision: 0.4623243933588761
+    model_name: rtr__logistic_regression_elasticnet_train
+    accuracy: 0.5376756066411239
+    recall: 0.0
+    precision: 0.0
+    f1: 0.0
+    tn: 421
+    fp: 0
+    fn: 362
+    tp: 0
+  test:
+    auc: 0.5
+    average_precision: 0.4659090909090909
+    model_name: rtr__logistic_regression_elasticnet_test
+    accuracy: 0.5340909090909091
+    recall: 0.0
+    precision: 0.0
+    f1: 0.0
+    tn: 47
+    fp: 0
+    fn: 41
+    tp: 0

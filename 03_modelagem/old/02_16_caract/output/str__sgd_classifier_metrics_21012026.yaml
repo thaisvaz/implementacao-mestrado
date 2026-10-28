@@ -1,0 +1,27 @@
+- feature_set: str
+  model_name: str__SGD Classifier
+  exec_time_minutes: 0.018847123781840006
+  train:
+    auc: 1.0
+    average_precision: 0.9999999999999999
+    model_name: str__sgd_classifier_train
+    accuracy: 1.0
+    recall: 1.0
+    precision: 1.0
+    f1: 1.0
+    tn: 421
+    fp: 0
+    fn: 0
+    tp: 362
+  test:
+    auc: 0.5864037363777892
+    average_precision: 0.5290397295946337
+    model_name: str__sgd_classifier_test
+    accuracy: 0.5795454545454546
+    recall: 0.4146341463414634
+    precision: 0.5666666666666667
+    f1: 0.4788732394366197
+    tn: 34
+    fp: 13
+    fn: 24
+    tp: 17

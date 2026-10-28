@@ -1,0 +1,27 @@
+- feature_set: sts
+  model_name: sts__LinearSVC L2
+  exec_time_minutes: 0.2605656186739604
+  train:
+    auc: 1.0
+    average_precision: 0.9999999999999999
+    model_name: sts__linearsvc_l2_train
+    accuracy: 1.0
+    recall: 1.0
+    precision: 1.0
+    f1: 1.0
+    tn: 421
+    fp: 0
+    fn: 0
+    tp: 362
+  test:
+    auc: 0.5620134924753503
+    average_precision: 0.5277118200408362
+    model_name: sts__linearsvc_l2_test
+    accuracy: 0.5568181818181818
+    recall: 0.5365853658536586
+    precision: 0.5238095238095238
+    f1: 0.5301204819277109
+    tn: 27
+    fp: 20
+    fn: 19
+    tp: 22

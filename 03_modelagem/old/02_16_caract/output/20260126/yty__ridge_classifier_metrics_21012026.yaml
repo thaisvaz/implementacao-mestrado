@@ -1,0 +1,27 @@
+- feature_set: yty
+  model_name: yty__Ridge Classifier
+  exec_time_minutes: 0.03455096880594889
+  train:
+    auc: 0.989868899358276
+    average_precision: 0.9877849433688005
+    model_name: yty__ridge_classifier_train
+    accuracy: 0.946360153256705
+    recall: 0.9392265193370166
+    precision: 0.9444444444444444
+    f1: 0.9418282548476454
+    tn: 401
+    fp: 20
+    fn: 22
+    tp: 340
+  test:
+    auc: 0.5282823040996367
+    average_precision: 0.4912340880781424
+    model_name: yty__ridge_classifier_test
+    accuracy: 0.48863636363636365
+    recall: 0.3902439024390244
+    precision: 0.4444444444444444
+    f1: 0.4155844155844156
+    tn: 27
+    fp: 20
+    fn: 25
+    tp: 16

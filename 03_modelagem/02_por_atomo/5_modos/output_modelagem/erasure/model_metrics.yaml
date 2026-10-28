@@ -1,0 +1,224 @@
+- dataset: erasure
+  features_file: erasure.parquet
+  model_name: SVC L2
+  exec_time_minutes: 0.06683746576309205
+  train:
+    auc: 1.0
+    average_precision: 0.9999999999999999
+    model_name: SVC L2_train
+    accuracy: 1.0
+    recall: 1.0
+    precision: 1.0
+    f1: 1.0
+    tn: 421
+    fp: 0
+    fn: 0
+    tp: 362
+  test:
+    auc: 0.6279190451478982
+    average_precision: 0.5674438647955098
+    model_name: SVC L2_test
+    accuracy: 0.625
+    recall: 0.6341463414634146
+    precision: 0.5909090909090909
+    f1: 0.611764705882353
+    tn: 29
+    fp: 18
+    fn: 15
+    tp: 26
+- dataset: erasure
+  features_file: erasure.parquet
+  model_name: SVC
+  exec_time_minutes: 0.7958354433377584
+  train:
+    auc: 1.0
+    average_precision: 0.9999999999999999
+    model_name: SVC_train
+    accuracy: 1.0
+    recall: 1.0
+    precision: 1.0
+    f1: 1.0
+    tn: 421
+    fp: 0
+    fn: 0
+    tp: 362
+  test:
+    auc: 0.6377789309807992
+    average_precision: 0.5780066790062974
+    model_name: SVC_test
+    accuracy: 0.6136363636363636
+    recall: 0.5853658536585366
+    precision: 0.5853658536585366
+    f1: 0.5853658536585366
+    tn: 30
+    fp: 17
+    fn: 17
+    tp: 24
+- dataset: erasure
+  features_file: erasure.parquet
+  model_name: Logistic Regression L2
+  exec_time_minutes: 6.191389385859171
+  train:
+    auc: 1.0
+    average_precision: 1.0
+    model_name: Logistic Regression L2_train
+    accuracy: 1.0
+    recall: 1.0
+    precision: 1.0
+    f1: 1.0
+    tn: 421
+    fp: 0
+    fn: 0
+    tp: 362
+  test:
+    auc: 0.6346652828230409
+    average_precision: 0.5681895261616267
+    model_name: Logistic Regression L2_test
+    accuracy: 0.6022727272727273
+    recall: 0.6097560975609756
+    precision: 0.5681818181818182
+    f1: 0.5882352941176471
+    tn: 28
+    fp: 19
+    fn: 16
+    tp: 25
+- dataset: erasure
+  features_file: erasure.parquet
+  model_name: Logistic Regression ElasticNet
+  exec_time_minutes: 24.571729532877605
+  train:
+    auc: 1.0
+    average_precision: 0.9999999999999999
+    model_name: Logistic Regression ElasticNet_train
+    accuracy: 1.0
+    recall: 1.0
+    precision: 1.0
+    f1: 1.0
+    tn: 421
+    fp: 0
+    fn: 0
+    tp: 362
+  test:
+    auc: 0.6844836533471716
+    average_precision: 0.6635725140030845
+    model_name: Logistic Regression ElasticNet_test
+    accuracy: 0.6590909090909091
+    recall: 0.6341463414634146
+    precision: 0.6341463414634146
+    f1: 0.6341463414634146
+    tn: 32
+    fp: 15
+    fn: 15
+    tp: 26
+- dataset: erasure
+  features_file: erasure.parquet
+  model_name: Ridge Classifier
+  exec_time_minutes: 0.01008591651916504
+  train:
+    auc: 1.0
+    average_precision: 1.0
+    model_name: Ridge Classifier_train
+    accuracy: 1.0
+    recall: 1.0
+    precision: 1.0
+    f1: 1.0
+    tn: 421
+    fp: 0
+    fn: 0
+    tp: 362
+  test:
+    auc: 0.63622210690192
+    average_precision: 0.5746523208790846
+    model_name: Ridge Classifier_test
+    accuracy: 0.6363636363636364
+    recall: 0.6097560975609756
+    precision: 0.6097560975609756
+    f1: 0.6097560975609756
+    tn: 31
+    fp: 16
+    fn: 16
+    tp: 25
+- dataset: erasure
+  features_file: erasure.parquet
+  model_name: SGD Classifier
+  exec_time_minutes: 0.06478751103083293
+  train:
+    auc: 1.0
+    average_precision: 0.9999999999999999
+    model_name: SGD Classifier_train
+    accuracy: 1.0
+    recall: 1.0
+    precision: 1.0
+    f1: 1.0
+    tn: 421
+    fp: 0
+    fn: 0
+    tp: 362
+  test:
+    auc: 0.6471198754540737
+    average_precision: 0.5867539722997799
+    model_name: SGD Classifier_test
+    accuracy: 0.6022727272727273
+    recall: 0.34146341463414637
+    precision: 0.6363636363636364
+    f1: 0.4444444444444444
+    tn: 39
+    fp: 8
+    fn: 27
+    tp: 14
+- dataset: erasure
+  features_file: erasure.parquet
+  model_name: Decision Tree
+  exec_time_minutes: 0.18641900221506755
+  train:
+    auc: 0.90806223015446
+    average_precision: 0.870681874765699
+    model_name: Decision Tree_train
+    accuracy: 0.8275862068965517
+    recall: 0.8480662983425414
+    precision: 0.7932816537467701
+    f1: 0.8197596795727636
+    tn: 341
+    fp: 80
+    fn: 55
+    tp: 307
+  test:
+    auc: 0.4603009859885832
+    average_precision: 0.44883948266457147
+    model_name: Decision Tree_test
+    accuracy: 0.48863636363636365
+    recall: 0.5121951219512195
+    precision: 0.45652173913043476
+    f1: 0.4827586206896552
+    tn: 22
+    fp: 25
+    fn: 20
+    tp: 21
+- dataset: erasure
+  features_file: erasure.parquet
+  model_name: LightGBM
+  exec_time_minutes: 0.20469439029693604
+  train:
+    auc: 0.9802496030235823
+    average_precision: 0.9766043796425679
+    model_name: lgbm_train
+    accuracy: 0.8441890166028098
+    recall: 0.6767955801104972
+    precision: 0.98
+    f1: 0.8006535947712419
+    tn: 416
+    fp: 5
+    fn: 117
+    tp: 245
+  test:
+    auc: 0.5926310326933055
+    average_precision: 0.5840790406649402
+    model_name: lgbm_test
+    accuracy: 0.5568181818181818
+    recall: 0.2682926829268293
+    precision: 0.55
+    f1: 0.36065573770491804
+    tn: 38
+    fp: 9
+    fn: 30
+    tp: 11

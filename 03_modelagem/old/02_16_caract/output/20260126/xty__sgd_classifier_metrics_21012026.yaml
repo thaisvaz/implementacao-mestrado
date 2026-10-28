@@ -1,0 +1,27 @@
+- feature_set: xty
+  model_name: xty__SGD Classifier
+  exec_time_minutes: 0.01506898005803426
+  train:
+    auc: 1.0
+    average_precision: 0.9999999999999999
+    model_name: xty__sgd_classifier_train
+    accuracy: 1.0
+    recall: 1.0
+    precision: 1.0
+    f1: 1.0
+    tn: 421
+    fp: 0
+    fn: 0
+    tp: 362
+  test:
+    auc: 0.6528282304099637
+    average_precision: 0.5479435914269208
+    model_name: xty__sgd_classifier_test
+    accuracy: 0.5227272727272727
+    recall: 0.1951219512195122
+    precision: 0.47058823529411764
+    f1: 0.27586206896551724
+    tn: 38
+    fp: 9
+    fn: 33
+    tp: 8

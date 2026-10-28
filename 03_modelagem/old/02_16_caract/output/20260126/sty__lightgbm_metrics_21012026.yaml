@@ -1,0 +1,27 @@
+- feature_set: sty
+  model_name: sty__LightGBM
+  exec_time_minutes: 2.6310927788416545
+  train:
+    auc: 1.0
+    average_precision: 0.9999999999999999
+    model_name: sty__lightgbm_train
+    accuracy: 1.0
+    recall: 1.0
+    precision: 1.0
+    f1: 1.0
+    tn: 421
+    fp: 0
+    fn: 0
+    tp: 362
+  test:
+    auc: 0.6346652828230409
+    average_precision: 0.6004124407450477
+    model_name: sty__lightgbm_test
+    accuracy: 0.6477272727272727
+    recall: 0.43902439024390244
+    precision: 0.6923076923076923
+    f1: 0.5373134328358209
+    tn: 39
+    fp: 8
+    fn: 23
+    tp: 18

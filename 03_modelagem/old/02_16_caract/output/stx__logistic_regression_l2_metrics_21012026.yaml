@@ -1,0 +1,27 @@
+- feature_set: stx
+  model_name: stx__Logistic Regression L2
+  exec_time_minutes: 0.9210374037424723
+  train:
+    auc: 0.9442855080641986
+    average_precision: 0.9389489181625423
+    model_name: stx__logistic_regression_l2_train
+    accuracy: 0.8697318007662835
+    recall: 0.8287292817679558
+    precision: 0.8823529411764706
+    f1: 0.8547008547008547
+    tn: 381
+    fp: 40
+    fn: 62
+    tp: 300
+  test:
+    auc: 0.5376232485729113
+    average_precision: 0.4994932868413213
+    model_name: stx__logistic_regression_l2_test
+    accuracy: 0.5
+    recall: 0.2926829268292683
+    precision: 0.4444444444444444
+    f1: 0.35294117647058826
+    tn: 32
+    fp: 15
+    fn: 29
+    tp: 12

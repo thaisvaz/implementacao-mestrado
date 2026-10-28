@@ -1,0 +1,165 @@
+- number: 0
+  penalized_ap: -0.529939
+  params:
+    num_leaves: 9
+    learning_rate: 0.13318586530405446
+    feature_fraction: 0.6234689865831635
+    bagging_fraction: 0.5690658437381597
+    min_child_samples: 20
+  ap_train: 0.7377
+  ap_val: 0.5222
+  gap: 0.2154
+- number: 1
+  penalized_ap: -0.930945
+  params:
+    num_leaves: 8
+    learning_rate: 0.09830862671752746
+    feature_fraction: 0.9032968990808288
+    bagging_fraction: 0.991370957272107
+    min_child_samples: 34
+  ap_train: 0.7503
+  ap_val: 0.4659
+  gap: 0.2844
+- number: 2
+  penalized_ap: -1.323592
+  params:
+    num_leaves: 14
+    learning_rate: 0.06471129475590995
+    feature_fraction: 0.772779979004613
+    bagging_fraction: 0.6170380365735009
+    min_child_samples: 10
+  ap_train: 0.9267
+  ap_val: 0.5475
+  gap: 0.3792
+- number: 3
+  penalized_ap: -0.611399
+  params:
+    num_leaves: 27
+    learning_rate: 0.016775774657292436
+    feature_fraction: 0.7663430402786349
+    bagging_fraction: 0.6935033842232745
+    min_child_samples: 36
+  ap_train: 0.7572
+  ap_val: 0.5249
+  gap: 0.2323
+- number: 4
+  penalized_ap: -1.45916
+  params:
+    num_leaves: 22
+    learning_rate: 0.2498003904040836
+    feature_fraction: 0.8886789590533535
+    bagging_fraction: 0.8040171515337272
+    min_child_samples: 33
+  ap_train: 0.9281
+  ap_val: 0.526
+  gap: 0.402
+- number: 5
+  penalized_ap: -1.719335
+  params:
+    num_leaves: 34
+    learning_rate: 0.02492198870895431
+    feature_fraction: 0.8750780743016133
+    bagging_fraction: 0.6434152447100767
+    min_child_samples: 37
+  ap_train: 0.9281
+  ap_val: 0.4827
+  gap: 0.4454
+- number: 6
+  penalized_ap: -0.372199
+  params:
+    num_leaves: 7
+    learning_rate: 0.10447313388066339
+    feature_fraction: 0.7760839167348388
+    bagging_fraction: 0.7769132401552803
+    min_child_samples: 20
+  ap_train: 0.6756
+  ap_val: 0.4968
+  gap: 0.1788
+- number: 7
+  penalized_ap: -1.791617
+  params:
+    num_leaves: 12
+    learning_rate: 0.06316844957458528
+    feature_fraction: 0.5258845215078872
+    bagging_fraction: 0.9127788067021051
+    min_child_samples: 37
+  ap_train: 0.9857
+  ap_val: 0.5187
+  gap: 0.4671
+- number: 8
+  penalized_ap: -0.515806
+  params:
+    num_leaves: 7
+    learning_rate: 0.012973399199642613
+    feature_fraction: 0.5051719475551228
+    bagging_fraction: 0.9971524111289711
+    min_child_samples: 32
+  ap_train: 0.7308
+  ap_val: 0.5188
+  gap: 0.2119
+- number: 9
+  penalized_ap: -0.786547
+  params:
+    num_leaves: 13
+    learning_rate: 0.034532743458552145
+    feature_fraction: 0.931918363521576
+    bagging_fraction: 0.7251277504812517
+    min_child_samples: 49
+  ap_train: 0.8045
+  ap_val: 0.5351
+  gap: 0.2693
+- number: 10
+  penalized_ap: -2.136721
+  params:
+    num_leaves: 50
+    learning_rate: 0.2973117793986193
+    feature_fraction: 0.6687423985059516
+    bagging_fraction: 0.8650142955252056
+    min_child_samples: 19
+  ap_train: 0.9789
+  ap_val: 0.4554
+  gap: 0.5234
+- number: 11
+  penalized_ap: 0.418618
+  params:
+    num_leaves: 5
+    learning_rate: 0.010107172702045
+    feature_fraction: 0.5172457644844949
+    bagging_fraction: 0.5025551362117993
+    min_child_samples: 23
+  ap_train: 0.6092
+  ap_val: 0.5732
+  gap: 0.0359
+- number: 12
+  penalized_ap: 0.237208
+  params:
+    num_leaves: 18
+    learning_rate: 0.13256063760797865
+    feature_fraction: 0.6780952930643576
+    bagging_fraction: 0.5241054740062446
+    min_child_samples: 22
+  ap_train: 0.7857
+  ap_val: 0.6901
+  gap: 0.0956
+- number: 13
+  penalized_ap: -0.794058
+  params:
+    num_leaves: 21
+    learning_rate: 0.010236990382472331
+    feature_fraction: 0.6251363994096865
+    bagging_fraction: 0.5202890100191112
+    min_child_samples: 6
+  ap_train: 0.7853
+  ap_val: 0.5179
+  gap: 0.2674
+- number: 14
+  penalized_ap: -0.207549
+  params:
+    num_leaves: 37
+    learning_rate: 0.16362583262902056
+    feature_fraction: 0.581384291008628
+    bagging_fraction: 0.5231526411620607
+    min_child_samples: 26
+  ap_train: 0.665
+  ap_val: 0.5154
+  gap: 0.1496

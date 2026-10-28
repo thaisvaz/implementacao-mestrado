@@ -1,0 +1,27 @@
+- feature_set: rts
+  model_name: rts__LightGBM
+  exec_time_minutes: 2.561928403377533
+  train:
+    auc: 1.0
+    average_precision: 0.9999999999999999
+    model_name: rts__lightgbm_train
+    accuracy: 1.0
+    recall: 1.0
+    precision: 1.0
+    f1: 1.0
+    tn: 421
+    fp: 0
+    fn: 0
+    tp: 362
+  test:
+    auc: 0.45303580695381424
+    average_precision: 0.45728186009634125
+    model_name: rts__lightgbm_test
+    accuracy: 0.45454545454545453
+    recall: 0.2926829268292683
+    precision: 0.3870967741935484
+    f1: 0.3333333333333333
+    tn: 28
+    fp: 19
+    fn: 29
+    tp: 12

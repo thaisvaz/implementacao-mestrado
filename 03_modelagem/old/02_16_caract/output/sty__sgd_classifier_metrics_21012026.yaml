@@ -1,0 +1,27 @@
+- feature_set: sty
+  model_name: sty__SGD Classifier
+  exec_time_minutes: 0.017802099386850994
+  train:
+    auc: 0.8480728599362214
+    average_precision: 0.8285544063481749
+    model_name: sty__sgd_classifier_train
+    accuracy: 0.6194125159642401
+    recall: 0.17679558011049723
+    precision: 1.0
+    f1: 0.3004694835680751
+    tn: 421
+    fp: 0
+    fn: 298
+    tp: 64
+  test:
+    auc: 0.5640892579138558
+    average_precision: 0.5432121585198306
+    model_name: sty__sgd_classifier_test
+    accuracy: 0.5340909090909091
+    recall: 0.04878048780487805
+    precision: 0.5
+    f1: 0.08888888888888889
+    tn: 45
+    fp: 2
+    fn: 39
+    tp: 2

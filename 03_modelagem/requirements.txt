@@ -1,0 +1,12 @@
+pandas==3.0.1
+numpy==2.4.3
+scikit-learn==1.8.0
+lightgbm==4.6.0
+nilearn==0.13.1
+seaborn==0.13.2
+matplotlib==3.10.8
+
+tqdm==4.67.3
+PyYAML==6.0.3
+pyarrow==23.0.1
+fastparquet==2026.3.0

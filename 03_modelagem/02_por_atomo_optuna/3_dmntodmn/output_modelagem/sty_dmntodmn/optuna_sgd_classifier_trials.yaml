@@ -1,0 +1,105 @@
+- number: 0
+  penalized_ap: -0.518613
+  params:
+    alpha: 2.4554687252815718e-05
+  ap_train: 0.6404
+  ap_val: 0.4431
+  gap: 0.1973
+- number: 1
+  penalized_ap: -0.453506
+  params:
+    alpha: 0.011091719208511945
+  ap_train: 0.6986
+  ap_val: 0.5024
+  gap: 0.1962
+- number: 2
+  penalized_ap: 0.096031
+  params:
+    alpha: 9.721916634251462e-05
+  ap_train: 0.5949
+  ap_val: 0.5076
+  gap: 0.0873
+- number: 3
+  penalized_ap: -0.711948
+  params:
+    alpha: 3.5688373047915124e-05
+  ap_train: 0.6336
+  ap_val: 0.4052
+  gap: 0.2284
+- number: 4
+  penalized_ap: -0.380648
+  params:
+    alpha: 0.0002117318796992674
+  ap_train: 0.599
+  ap_val: 0.4315
+  gap: 0.1674
+- number: 5
+  penalized_ap: -0.49656
+  params:
+    alpha: 2.1478218690054963e-05
+  ap_train: 0.6249
+  ap_val: 0.4338
+  gap: 0.1911
+- number: 6
+  penalized_ap: -0.398446
+  params:
+    alpha: 0.004874255889616766
+  ap_train: 0.6177
+  ap_val: 0.4441
+  gap: 0.1735
+- number: 7
+  penalized_ap: -0.621167
+  params:
+    alpha: 0.01684128373167507
+  ap_train: 0.6977
+  ap_val: 0.4737
+  gap: 0.224
+- number: 8
+  penalized_ap: -0.516326
+  params:
+    alpha: 0.08530365861883267
+  ap_train: 0.6903
+  ap_val: 0.485
+  gap: 0.2053
+- number: 9
+  penalized_ap: -0.492867
+  params:
+    alpha: 0.0034885338323147035
+  ap_train: 0.6063
+  ap_val: 0.419
+  gap: 0.1874
+- number: 10
+  penalized_ap: -0.465978
+  params:
+    alpha: 0.00030047944839370274
+  ap_train: 0.6566
+  ap_val: 0.4653
+  gap: 0.1913
+- number: 11
+  penalized_ap: 0.006255
+  params:
+    alpha: 0.0002607067247799539
+  ap_train: 0.6598
+  ap_val: 0.5467
+  gap: 0.1131
+- number: 12
+  penalized_ap: 0.468203
+  params:
+    alpha: 0.00020902939834190626
+  ap_train: 0.5824
+  ap_val: 0.5592
+  gap: 0.0232
+- number: 13
+  penalized_ap: -0.403713
+  params:
+    alpha: 8.068638895760912e-05
+  ap_train: 0.6204
+  ap_val: 0.4455
+  gap: 0.1748
+- number: 14
+  penalized_ap: -0.417872
+  params:
+    alpha: 0.0007747662973251822
+  ap_train: 0.6537
+  ap_val: 0.471
+  gap: 0.1828

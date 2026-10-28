@@ -1,0 +1,27 @@
+- feature_set: yts
+  model_name: yts__Ridge Classifier
+  exec_time_minutes: 0.031511159737904866
+  train:
+    auc: 0.9980249603023582
+    average_precision: 0.9977431559103576
+    model_name: yts__ridge_classifier_train
+    accuracy: 0.9821200510855683
+    recall: 0.9751381215469613
+    precision: 0.9860335195530726
+    f1: 0.9805555555555555
+    tn: 416
+    fp: 5
+    fn: 9
+    tp: 353
+  test:
+    auc: 0.5537104307213285
+    average_precision: 0.50845231828761
+    model_name: yts__ridge_classifier_test
+    accuracy: 0.5227272727272727
+    recall: 0.4146341463414634
+    precision: 0.4857142857142857
+    f1: 0.4473684210526316
+    tn: 29
+    fp: 18
+    fn: 24
+    tp: 17

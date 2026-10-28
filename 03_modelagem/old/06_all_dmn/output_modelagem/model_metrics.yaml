@@ -1,0 +1,182 @@
+- model_name: SVC L2
+  exec_time_minutes: 0.17596379518508912
+  train:
+    auc: 1.0
+    average_precision: 0.9999999999999999
+    model_name: SVC L2_train
+    accuracy: 1.0
+    recall: 1.0
+    precision: 1.0
+    f1: 1.0
+    tn: 421
+    fp: 0
+    fn: 0
+    tp: 362
+  test:
+    auc: 0.5926310326933056
+    average_precision: 0.5788905037267618
+    model_name: SVC L2_test
+    accuracy: 0.5681818181818182
+    recall: 0.4878048780487805
+    precision: 0.5405405405405406
+    f1: 0.5128205128205128
+    tn: 30
+    fp: 17
+    fn: 21
+    tp: 20
+- model_name: SVC
+  exec_time_minutes: 213.3144781470299
+  train:
+    auc: 1.0
+    average_precision: 0.9999999999999999
+    model_name: SVC_train
+    accuracy: 1.0
+    recall: 1.0
+    precision: 1.0
+    f1: 1.0
+    tn: 421
+    fp: 0
+    fn: 0
+    tp: 362
+  test:
+    auc: 0.6107939802802282
+    average_precision: 0.5919104549567364
+    model_name: SVC_test
+    accuracy: 0.6022727272727273
+    recall: 0.5121951219512195
+    precision: 0.5833333333333334
+    f1: 0.5454545454545454
+    tn: 32
+    fp: 15
+    fn: 20
+    tp: 21
+- model_name: Logistic Regression L2
+  exec_time_minutes: 17.93644299507141
+  train:
+    auc: 1.0
+    average_precision: 0.9999999999999999
+    model_name: Logistic Regression L2_train
+    accuracy: 1.0
+    recall: 1.0
+    precision: 1.0
+    f1: 1.0
+    tn: 421
+    fp: 0
+    fn: 0
+    tp: 362
+  test:
+    auc: 0.5967825635703166
+    average_precision: 0.5674911517935053
+    model_name: Logistic Regression L2_test
+    accuracy: 0.5909090909090909
+    recall: 0.5365853658536586
+    precision: 0.5641025641025641
+    f1: 0.55
+    tn: 30
+    fp: 17
+    fn: 19
+    tp: 22
+- model_name: Logistic Regression ElasticNet
+  exec_time_minutes: 61.28692043224971
+  train:
+    auc: 1.0
+    average_precision: 0.9999999999999999
+    model_name: Logistic Regression ElasticNet_train
+    accuracy: 1.0
+    recall: 1.0
+    precision: 1.0
+    f1: 1.0
+    tn: 421
+    fp: 0
+    fn: 0
+    tp: 362
+  test:
+    auc: 0.6372599896211728
+    average_precision: 0.577497649138437
+    model_name: Logistic Regression ElasticNet_test
+    accuracy: 0.6136363636363636
+    recall: 0.5853658536585366
+    precision: 0.5853658536585366
+    f1: 0.5853658536585366
+    tn: 30
+    fp: 17
+    fn: 17
+    tp: 24
+- model_name: Ridge Classifier
+  exec_time_minutes: 0.09699066877365112
+  train:
+    auc: 1.0
+    average_precision: 1.0
+    model_name: Ridge Classifier_train
+    accuracy: 1.0
+    recall: 1.0
+    precision: 1.0
+    f1: 1.0
+    tn: 421
+    fp: 0
+    fn: 0
+    tp: 362
+  test:
+    auc: 0.6170212765957447
+    average_precision: 0.5999566371712205
+    model_name: Ridge Classifier_test
+    accuracy: 0.6136363636363636
+    recall: 0.5365853658536586
+    precision: 0.5945945945945946
+    f1: 0.5641025641025641
+    tn: 32
+    fp: 15
+    fn: 19
+    tp: 22
+- model_name: SGD Classifier
+  exec_time_minutes: 0.23262343804041544
+  train:
+    auc: 1.0
+    average_precision: 0.9999999999999999
+    model_name: SGD Classifier_train
+    accuracy: 0.9987228607918263
+    recall: 0.9972375690607734
+    precision: 1.0
+    f1: 0.9986168741355463
+    tn: 421
+    fp: 0
+    fn: 1
+    tp: 361
+  test:
+    auc: 0.640373637778931
+    average_precision: 0.588862338641549
+    model_name: SGD Classifier_test
+    accuracy: 0.6136363636363636
+    recall: 0.36585365853658536
+    precision: 0.6521739130434783
+    f1: 0.46875
+    tn: 39
+    fp: 8
+    fn: 26
+    tp: 15
+- model_name: LightGBM
+  exec_time_minutes: 1.5720280051231383
+  train:
+    auc: 0.9819556173803494
+    average_precision: 0.9783685371079641
+    model_name: lgbm_train
+    accuracy: 0.8773946360153256
+    recall: 0.7513812154696132
+    precision: 0.9784172661870504
+    f1: 0.85
+    tn: 415
+    fp: 6
+    fn: 90
+    tp: 272
+  test:
+    auc: 0.6756616502335236
+    average_precision: 0.6376294732239562
+    model_name: lgbm_test
+    accuracy: 0.6136363636363636
+    recall: 0.34146341463414637
+    precision: 0.6666666666666666
+    f1: 0.45161290322580644
+    tn: 40
+    fp: 7
+    fn: 27
+    tp: 14

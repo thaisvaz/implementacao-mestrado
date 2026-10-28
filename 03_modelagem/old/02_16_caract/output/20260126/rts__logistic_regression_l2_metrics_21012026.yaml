@@ -1,0 +1,27 @@
+- feature_set: rts
+  model_name: rts__Logistic Regression L2
+  exec_time_minutes: 0.8404402454694112
+  train:
+    auc: 0.9213396149656828
+    average_precision: 0.9129482341831161
+    model_name: rts__logistic_regression_l2_train
+    accuracy: 0.8390804597701149
+    recall: 0.8066298342541437
+    precision: 0.8390804597701149
+    f1: 0.8225352112676056
+    tn: 365
+    fp: 56
+    fn: 70
+    tp: 292
+  test:
+    auc: 0.523092890503373
+    average_precision: 0.4836740979934251
+    model_name: rts__logistic_regression_l2_test
+    accuracy: 0.48863636363636365
+    recall: 0.34146341463414637
+    precision: 0.4375
+    f1: 0.3835616438356164
+    tn: 29
+    fp: 18
+    fn: 27
+    tp: 14

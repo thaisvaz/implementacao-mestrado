@@ -1,0 +1,27 @@
+- feature_set: rtx
+  model_name: rtx__Logistic Regression L2
+  exec_time_minutes: 0.1114787499109904
+  train:
+    auc: 0.9219826511463104
+    average_precision: 0.9154520015303524
+    model_name: rtx__logistic_regression_l2_train
+    accuracy: 0.7535121328224776
+    recall: 0.49171270718232046
+    precision: 0.9518716577540107
+    f1: 0.6484517304189436
+    tn: 412
+    fp: 9
+    fn: 184
+    tp: 178
+  test:
+    auc: 0.5921120913336794
+    average_precision: 0.5729562707684699
+    model_name: rtx__logistic_regression_l2_test
+    accuracy: 0.5909090909090909
+    recall: 0.17073170731707318
+    precision: 0.7777777777777778
+    f1: 0.28
+    tn: 45
+    fp: 2
+    fn: 34
+    tp: 7

@@ -1,0 +1,4761 @@
+/home/thaisvaz/.venv/pesquisa/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/thaisvaz/.venv/pesquisa/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+======================================
+CONFIGURAÇÃO DA EXECUÇÃO
+test_mode: False
+test_nrows: 50
+base_path: /home/thaisvaz/_bases
+output_root: /home/thaisvaz/dmn_16/output_modelagem
+======================================
+..ler var resposta
+[fetch_abide_pcp] Dataset found in /home/thaisvaz/nilearn_data/ABIDE_pcp
+y.valuecounts()
+DX_GROUP
+0    468
+1    403
+Name: count, dtype: int64
+Bases DMN encontradas:
+ - rtr_dmn.parquet
+ - rts_dmn.parquet
+ - rtx_dmn.parquet
+ - rty_dmn.parquet
+ - str_dmn.parquet
+ - sts_dmn.parquet
+ - stx_dmn.parquet
+ - sty_dmn.parquet
+ - xtr_dmn.parquet
+ - xts_dmn.parquet
+ - xtx_dmn.parquet
+ - xty_dmn.parquet
+ - ytr_dmn.parquet
+ - yts_dmn.parquet
+ - ytx_dmn.parquet
+ - yty_dmn.parquet
+
+======================================
+Rodando: rtr_dmn
+======================================
+features_path: /home/thaisvaz/_bases/rtr_dmn.parquet
+output_dir: /home/thaisvaz/dmn_16/output_modelagem/rtr_dmn
+..ler features de complexidade: rtr_dmn.parquet
+   subid       1_7-rtr  1_10-rtr  ...  166_199-rtr  166_200-rtr  target
+0  50003  3.070228e-03  0.000731  ...     0.037964     0.034361       1
+1  50004  2.310192e-03  0.001567  ...     0.007768     0.010870       1
+2  50005  3.661879e-07  0.026214  ...     0.002057     0.001291       1
+3  50006  4.613324e-04  0.008576  ...     0.002686     0.007189       1
+4  50007  5.782826e-03  0.018773  ...     0.000577     0.002445       1
+
+[5 rows x 3431 columns]
+Ler a base levou: 0.005913762251536051 minutos!
+X e y estão alinhados? True
+X_train shape: (783, 3430)
+X_test shape: (88, 3430)
+y_train shape: (783, 1)
+y_test shape: (88, 1)
+Train alinhado? True
+Test alinhado? True
+..treino modelo SVC L2
+treinar SVC L2 levou: 0.0216 minutos!
+Average Precision SVC L2 train: 1.0000
+AUC SVC L2 train: 1.0000
+Average Precision SVC L2 test: 0.9932
+AUC SVC L2 test: 0.9938
+
+Métricas – SVC L2_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – SVC L2_test
+----------------------
+Acurácia : 0.9545
+Recall   : 1.0000
+Precision: 0.9111
+F1       : 0.9535
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 43
+FP (Controle → TEA)     : 4
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 41
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/rtr_dmn/svc_l2_feature_importance.csv
+..treino modelo SVC
+treinar SVC levou: 0.0169 minutos!
+Average Precision SVC train: 1.0000
+AUC SVC train: 1.0000
+Average Precision SVC test: 0.9905
+AUC SVC test: 0.9912
+
+Métricas – SVC_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – SVC_test
+----------------------
+Acurácia : 0.9318
+Recall   : 0.9512
+Precision: 0.9070
+F1       : 0.9286
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 43
+FP (Controle → TEA)     : 4
+FN (TEA → Controle)     : 2
+TP (TEA → TEA)          : 39
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/rtr_dmn/svc_feature_importance.csv
+..treino modelo Logistic Regression L2
+treinar Logistic Regression L2 levou: 0.6929 minutos!
+Average Precision Logistic Regression L2 train: 1.0000
+AUC Logistic Regression L2 train: 1.0000
+Average Precision Logistic Regression L2 test: 0.9394
+AUC Logistic Regression L2 test: 0.9549
+
+Métricas – Logistic Regression L2_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – Logistic Regression L2_test
+----------------------
+Acurácia : 0.8864
+Recall   : 0.9268
+Precision: 0.8444
+F1       : 0.8837
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 40
+FP (Controle → TEA)     : 7
+FN (TEA → Controle)     : 3
+TP (TEA → TEA)          : 38
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/rtr_dmn/logistic_regression_l2_feature_importance.csv
+..treino modelo Logistic Regression ElasticNet
+treinar Logistic Regression ElasticNet levou: 1.2565 minutos!
+Average Precision Logistic Regression ElasticNet train: 1.0000
+AUC Logistic Regression ElasticNet train: 1.0000
+Average Precision Logistic Regression ElasticNet test: 1.0000
+AUC Logistic Regression ElasticNet test: 1.0000
+
+Métricas – Logistic Regression ElasticNet_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – Logistic Regression ElasticNet_test
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 47
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 41
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/rtr_dmn/logistic_regression_elasticnet_feature_importance.csv
+..treino modelo Ridge Classifier
+treinar Ridge Classifier levou: 0.0181 minutos!
+Average Precision Ridge Classifier train: 1.0000
+AUC Ridge Classifier train: 1.0000
+Average Precision Ridge Classifier test: 0.9932
+AUC Ridge Classifier test: 0.9938
+
+Métricas – Ridge Classifier_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – Ridge Classifier_test
+----------------------
+Acurácia : 0.9545
+Recall   : 0.9756
+Precision: 0.9302
+F1       : 0.9524
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 44
+FP (Controle → TEA)     : 3
+FN (TEA → Controle)     : 1
+TP (TEA → TEA)          : 40
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/rtr_dmn/ridge_classifier_feature_importance.csv
+..treino modelo SGD Classifier
+treinar SGD Classifier levou: 0.0062 minutos!
+Average Precision SGD Classifier train: 1.0000
+AUC SGD Classifier train: 1.0000
+Average Precision SGD Classifier test: 0.9001
+AUC SGD Classifier test: 0.8926
+
+Métricas – SGD Classifier_train
+----------------------
+Acurácia : 0.9974
+Recall   : 0.9945
+Precision: 1.0000
+F1       : 0.9972
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 2
+TP (TEA → TEA)          : 360
+
+
+Métricas – SGD Classifier_test
+----------------------
+Acurácia : 0.7500
+Recall   : 0.5122
+Precision: 0.9130
+F1       : 0.6562
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 45
+FP (Controle → TEA)     : 2
+FN (TEA → Controle)     : 20
+TP (TEA → TEA)          : 21
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/rtr_dmn/sgd_classifier_feature_importance.csv
+..treino modelo LightGBM
+Training until validation scores don't improve for 10 rounds
+Early stopping, best iteration is:
+[1]	valid_0's auc: 1
+treinar o lgbm levou: 0.32809138695398965 minutos!
+Average LGBM train: 1.0
+AUC LGBM train: 1.0
+Average LGBM test: 1.0
+AUC LGBM test: 1.0
+
+Métricas – lgbm_train
+----------------------
+Acurácia : 0.5377
+Recall   : 0.0000
+Precision: 0.0000
+F1       : 0.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 362
+TP (TEA → TEA)          : 0
+
+
+Métricas – lgbm_test
+----------------------
+Acurácia : 0.5341
+Recall   : 0.0000
+Precision: 0.0000
+F1       : 0.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 47
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 41
+TP (TEA → TEA)          : 0
+
+/home/thaisvaz/.venv/pesquisa/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/thaisvaz/.venv/pesquisa/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/rtr_dmn/lightgbm_feature_importance.csv
+Métricas salvas em /home/thaisvaz/dmn_16/output_modelagem/rtr_dmn/model_metrics.yaml
+Feature importance consolidada salva em /home/thaisvaz/dmn_16/output_modelagem/rtr_dmn/all_models_feature_importance.csv
+✔ Dataset rtr_dmn finalizado
+Melhor test AP : 1.0000
+Melhor test AUC: 1.0000
+
+======================================
+Rodando: rts_dmn
+======================================
+features_path: /home/thaisvaz/_bases/rts_dmn.parquet
+output_dir: /home/thaisvaz/dmn_16/output_modelagem/rts_dmn
+..ler features de complexidade: rts_dmn.parquet
+   subid   1_7-rts  1_10-rts  ...  166_199-rts  166_200-rts  target
+0  50003  0.180678  0.004348  ...     0.061131     0.066344       1
+1  50004  0.001602  0.002685  ...     0.018924     0.005675       1
+2  50005  0.036617  0.014219  ...     0.010680     0.009751       1
+3  50006  0.081687  0.008220  ...     0.009072     0.035474       1
+4  50007  0.042702  0.033246  ...     0.000185     0.012451       1
+
+[5 rows x 3431 columns]
+Ler a base levou: 0.0037228306134541827 minutos!
+X e y estão alinhados? True
+X_train shape: (783, 3430)
+X_test shape: (88, 3430)
+y_train shape: (783, 1)
+y_test shape: (88, 1)
+Train alinhado? True
+Test alinhado? True
+..treino modelo SVC L2
+treinar SVC L2 levou: 0.0675 minutos!
+Average Precision SVC L2 train: 1.0000
+AUC SVC L2 train: 1.0000
+Average Precision SVC L2 test: 0.9874
+AUC SVC L2 test: 0.9881
+
+Métricas – SVC L2_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – SVC L2_test
+----------------------
+Acurácia : 0.9659
+Recall   : 0.9756
+Precision: 0.9524
+F1       : 0.9639
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 45
+FP (Controle → TEA)     : 2
+FN (TEA → Controle)     : 1
+TP (TEA → TEA)          : 40
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/rts_dmn/svc_l2_feature_importance.csv
+..treino modelo SVC
+treinar SVC levou: 0.0168 minutos!
+Average Precision SVC train: 1.0000
+AUC SVC train: 1.0000
+Average Precision SVC test: 0.9884
+AUC SVC test: 0.9881
+
+Métricas – SVC_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – SVC_test
+----------------------
+Acurácia : 0.9659
+Recall   : 0.9756
+Precision: 0.9524
+F1       : 0.9639
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 45
+FP (Controle → TEA)     : 2
+FN (TEA → Controle)     : 1
+TP (TEA → TEA)          : 40
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/rts_dmn/svc_feature_importance.csv
+..treino modelo Logistic Regression L2
+treinar Logistic Regression L2 levou: 0.5631 minutos!
+Average Precision Logistic Regression L2 train: 1.0000
+AUC Logistic Regression L2 train: 1.0000
+Average Precision Logistic Regression L2 test: 0.9416
+AUC Logistic Regression L2 test: 0.9559
+
+Métricas – Logistic Regression L2_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – Logistic Regression L2_test
+----------------------
+Acurácia : 0.9205
+Recall   : 0.9024
+Precision: 0.9250
+F1       : 0.9136
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 44
+FP (Controle → TEA)     : 3
+FN (TEA → Controle)     : 4
+TP (TEA → TEA)          : 37
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/rts_dmn/logistic_regression_l2_feature_importance.csv
+..treino modelo Logistic Regression ElasticNet
+treinar Logistic Regression ElasticNet levou: 0.9284 minutos!
+Average Precision Logistic Regression ElasticNet train: 1.0000
+AUC Logistic Regression ElasticNet train: 1.0000
+Average Precision Logistic Regression ElasticNet test: 1.0000
+AUC Logistic Regression ElasticNet test: 1.0000
+
+Métricas – Logistic Regression ElasticNet_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – Logistic Regression ElasticNet_test
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 47
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 41
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/rts_dmn/logistic_regression_elasticnet_feature_importance.csv
+..treino modelo Ridge Classifier
+treinar Ridge Classifier levou: 0.0145 minutos!
+Average Precision Ridge Classifier train: 1.0000
+AUC Ridge Classifier train: 1.0000
+Average Precision Ridge Classifier test: 0.9933
+AUC Ridge Classifier test: 0.9927
+
+Métricas – Ridge Classifier_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – Ridge Classifier_test
+----------------------
+Acurácia : 0.9773
+Recall   : 0.9756
+Precision: 0.9756
+F1       : 0.9756
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 46
+FP (Controle → TEA)     : 1
+FN (TEA → Controle)     : 1
+TP (TEA → TEA)          : 40
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/rts_dmn/ridge_classifier_feature_importance.csv
+..treino modelo SGD Classifier
+treinar SGD Classifier levou: 0.0050 minutos!
+Average Precision SGD Classifier train: 1.0000
+AUC SGD Classifier train: 1.0000
+Average Precision SGD Classifier test: 0.8564
+AUC SGD Classifier test: 0.8542
+
+Métricas – SGD Classifier_train
+----------------------
+Acurácia : 0.9872
+Recall   : 0.9724
+Precision: 1.0000
+F1       : 0.9860
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 10
+TP (TEA → TEA)          : 352
+
+
+Métricas – SGD Classifier_test
+----------------------
+Acurácia : 0.7500
+Recall   : 0.5366
+Precision: 0.8800
+F1       : 0.6667
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 44
+FP (Controle → TEA)     : 3
+FN (TEA → Controle)     : 19
+TP (TEA → TEA)          : 22
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/rts_dmn/sgd_classifier_feature_importance.csv
+..treino modelo LightGBM
+Training until validation scores don't improve for 10 rounds
+Early stopping, best iteration is:
+[1]	valid_0's auc: 1
+treinar o lgbm levou: 0.2903361479441325 minutos!
+Average LGBM train: 1.0
+AUC LGBM train: 1.0
+Average LGBM test: 1.0
+AUC LGBM test: 1.0
+
+Métricas – lgbm_train
+----------------------
+Acurácia : 0.5377
+Recall   : 0.0000
+Precision: 0.0000
+F1       : 0.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 362
+TP (TEA → TEA)          : 0
+
+
+Métricas – lgbm_test
+----------------------
+Acurácia : 0.5341
+Recall   : 0.0000
+Precision: 0.0000
+F1       : 0.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 47
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 41
+TP (TEA → TEA)          : 0
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/rts_dmn/lightgbm_feature_importance.csv
+Métricas salvas em /home/thaisvaz/dmn_16/output_modelagem/rts_dmn/model_metrics.yaml
+Feature importance consolidada salva em /home/thaisvaz/dmn_16/output_modelagem/rts_dmn/all_models_feature_importance.csv
+✔ Dataset rts_dmn finalizado
+/home/thaisvaz/.venv/pesquisa/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/thaisvaz/.venv/pesquisa/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+Melhor test AP : 1.0000
+Melhor test AUC: 1.0000
+
+======================================
+Rodando: rtx_dmn
+======================================
+features_path: /home/thaisvaz/_bases/rtx_dmn.parquet
+output_dir: /home/thaisvaz/dmn_16/output_modelagem/rtx_dmn
+..ler features de complexidade: rtx_dmn.parquet
+   subid       1_7-rtx      1_10-rtx  ...   166_199-rtx   166_200-rtx  target
+0  50003  8.558509e-17  3.202180e-04  ... -8.154354e-17 -4.871682e-17       1
+1  50004 -4.038646e-17  5.185996e-17  ... -4.850276e-18  4.844409e-03       1
+2  50005  7.652969e-05 -1.770910e-16  ...  3.756177e-17  1.055216e-04       1
+3  50006  5.135338e-03  4.863440e-03  ...  1.238658e-16  4.652402e-03       1
+4  50007  2.286535e-03 -1.144539e-16  ...  1.542788e-03  3.667314e-04       1
+
+[5 rows x 3431 columns]
+Ler a base levou: 0.004329176743825277 minutos!
+X e y estão alinhados? True
+X_train shape: (783, 3430)
+X_test shape: (88, 3430)
+y_train shape: (783, 1)
+y_test shape: (88, 1)
+Train alinhado? True
+Test alinhado? True
+..treino modelo SVC L2
+treinar SVC L2 levou: 0.0072 minutos!
+Average Precision SVC L2 train: 1.0000
+AUC SVC L2 train: 1.0000
+Average Precision SVC L2 test: 0.8245
+AUC SVC L2 test: 0.8682
+
+Métricas – SVC L2_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – SVC L2_test
+----------------------
+Acurácia : 0.8182
+Recall   : 0.7805
+Precision: 0.8205
+F1       : 0.8000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 40
+FP (Controle → TEA)     : 7
+FN (TEA → Controle)     : 9
+TP (TEA → TEA)          : 32
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/rtx_dmn/svc_l2_feature_importance.csv
+..treino modelo SVC
+treinar SVC levou: 0.0175 minutos!
+Average Precision SVC train: 1.0000
+AUC SVC train: 1.0000
+Average Precision SVC test: 0.8288
+AUC SVC test: 0.8734
+
+Métricas – SVC_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – SVC_test
+----------------------
+Acurácia : 0.8295
+Recall   : 0.8049
+Precision: 0.8250
+F1       : 0.8148
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 40
+FP (Controle → TEA)     : 7
+FN (TEA → Controle)     : 8
+TP (TEA → TEA)          : 33
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/rtx_dmn/svc_feature_importance.csv
+..treino modelo Logistic Regression L2
+treinar Logistic Regression L2 levou: 0.4902 minutos!
+Average Precision Logistic Regression L2 train: 1.0000
+AUC Logistic Regression L2 train: 1.0000
+Average Precision Logistic Regression L2 test: 0.7982
+AUC Logistic Regression L2 test: 0.8464
+
+Métricas – Logistic Regression L2_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – Logistic Regression L2_test
+----------------------
+Acurácia : 0.7841
+Recall   : 0.8049
+Precision: 0.7500
+F1       : 0.7765
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 36
+FP (Controle → TEA)     : 11
+FN (TEA → Controle)     : 8
+TP (TEA → TEA)          : 33
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/rtx_dmn/logistic_regression_l2_feature_importance.csv
+..treino modelo Logistic Regression ElasticNet
+treinar Logistic Regression ElasticNet levou: 1.0949 minutos!
+Average Precision Logistic Regression ElasticNet train: 1.0000
+AUC Logistic Regression ElasticNet train: 1.0000
+Average Precision Logistic Regression ElasticNet test: 1.0000
+AUC Logistic Regression ElasticNet test: 1.0000
+
+Métricas – Logistic Regression ElasticNet_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – Logistic Regression ElasticNet_test
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 47
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 41
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/rtx_dmn/logistic_regression_elasticnet_feature_importance.csv
+..treino modelo Ridge Classifier
+treinar Ridge Classifier levou: 0.0138 minutos!
+Average Precision Ridge Classifier train: 1.0000
+AUC Ridge Classifier train: 1.0000
+Average Precision Ridge Classifier test: 0.8466
+AUC Ridge Classifier test: 0.8791
+
+Métricas – Ridge Classifier_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – Ridge Classifier_test
+----------------------
+Acurácia : 0.8409
+Recall   : 0.8293
+Precision: 0.8293
+F1       : 0.8293
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 40
+FP (Controle → TEA)     : 7
+FN (TEA → Controle)     : 7
+TP (TEA → TEA)          : 34
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/rtx_dmn/ridge_classifier_feature_importance.csv
+..treino modelo SGD Classifier
+treinar SGD Classifier levou: 0.0052 minutos!
+Average Precision SGD Classifier train: 1.0000
+AUC SGD Classifier train: 1.0000
+Average Precision SGD Classifier test: 0.8143
+AUC SGD Classifier test: 0.8116
+
+Métricas – SGD Classifier_train
+----------------------
+Acurácia : 0.9936
+Recall   : 0.9862
+Precision: 1.0000
+F1       : 0.9930
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 5
+TP (TEA → TEA)          : 357
+
+
+Métricas – SGD Classifier_test
+----------------------
+Acurácia : 0.6932
+Recall   : 0.4146
+Precision: 0.8500
+F1       : 0.5574
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 44
+FP (Controle → TEA)     : 3
+FN (TEA → Controle)     : 24
+TP (TEA → TEA)          : 17
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/rtx_dmn/sgd_classifier_feature_importance.csv
+..treino modelo LightGBM
+Training until validation scores don't improve for 10 rounds
+Early stopping, best iteration is:
+[1]	valid_0's auc: 1
+treinar o lgbm levou: 0.32956222295761106 minutos!
+Average LGBM train: 1.0
+AUC LGBM train: 1.0
+Average LGBM test: 1.0
+AUC LGBM test: 1.0
+
+Métricas – lgbm_train
+----------------------
+Acurácia : 0.5377
+Recall   : 0.0000
+Precision: 0.0000
+F1       : 0.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 362
+TP (TEA → TEA)          : 0
+
+
+Métricas – lgbm_test
+----------------------
+Acurácia : 0.5341
+Recall   : 0.0000
+Precision: 0.0000
+F1       : 0.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 47
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 41
+TP (TEA → TEA)          : 0
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/rtx_dmn/lightgbm_feature_importance.csv
+Métricas salvas em /home/thaisvaz/dmn_16/output_modelagem/rtx_dmn/model_metrics.yaml
+Feature importance consolidada salva em /home/thaisvaz/dmn_16/output_modelagem/rtx_dmn/all_models_feature_importance.csv
+✔ Dataset rtx_dmn finalizado
+Melhor test AP : 1.0000
+Melhor test AUC: 1.0000
+
+======================================
+Rodando: rty_dmn
+======================================
+features_path: /home/thaisvaz/_bases/rty_dmn.parquet
+output_dir: /home/thaisvaz/dmn_16/output_modelagem/rty_dmn
+/home/thaisvaz/.venv/pesquisa/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/thaisvaz/.venv/pesquisa/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+..ler features de complexidade: rty_dmn.parquet
+   subid       1_7-rty      1_10-rty  ...   166_199-rty   166_200-rty  target
+0  50003  4.298894e-03  1.653081e-16  ...  9.326470e-03  2.908999e-02       1
+1  50004  1.265901e-03  3.944987e-03  ...  1.123212e-02  4.418541e-18       1
+2  50005 -6.129293e-17  8.489423e-03  ...  4.047565e-03  9.503505e-17       1
+3  50006  1.140756e-16 -5.224381e-17  ...  3.660097e-03  7.802086e-18       1
+4  50007  2.737472e-17  7.517948e-04  ... -1.794918e-17  9.148475e-17       1
+
+[5 rows x 3431 columns]
+Ler a base levou: 0.0043293356895446776 minutos!
+X e y estão alinhados? True
+X_train shape: (783, 3430)
+X_test shape: (88, 3430)
+y_train shape: (783, 1)
+y_test shape: (88, 1)
+Train alinhado? True
+Test alinhado? True
+..treino modelo SVC L2
+treinar SVC L2 levou: 0.0072 minutos!
+Average Precision SVC L2 train: 1.0000
+AUC SVC L2 train: 1.0000
+Average Precision SVC L2 test: 0.8558
+AUC SVC L2 test: 0.8677
+
+Métricas – SVC L2_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – SVC L2_test
+----------------------
+Acurácia : 0.7841
+Recall   : 0.7561
+Precision: 0.7750
+F1       : 0.7654
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 38
+FP (Controle → TEA)     : 9
+FN (TEA → Controle)     : 10
+TP (TEA → TEA)          : 31
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/rty_dmn/svc_l2_feature_importance.csv
+..treino modelo SVC
+treinar SVC levou: 0.0169 minutos!
+Average Precision SVC train: 1.0000
+AUC SVC train: 1.0000
+Average Precision SVC test: 0.8570
+AUC SVC test: 0.8614
+
+Métricas – SVC_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – SVC_test
+----------------------
+Acurácia : 0.7955
+Recall   : 0.7317
+Precision: 0.8108
+F1       : 0.7692
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 40
+FP (Controle → TEA)     : 7
+FN (TEA → Controle)     : 11
+TP (TEA → TEA)          : 30
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/rty_dmn/svc_feature_importance.csv
+..treino modelo Logistic Regression L2
+treinar Logistic Regression L2 levou: 0.4538 minutos!
+Average Precision Logistic Regression L2 train: 1.0000
+AUC Logistic Regression L2 train: 1.0000
+Average Precision Logistic Regression L2 test: 0.8425
+AUC Logistic Regression L2 test: 0.8537
+
+Métricas – Logistic Regression L2_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – Logistic Regression L2_test
+----------------------
+Acurácia : 0.7841
+Recall   : 0.7561
+Precision: 0.7750
+F1       : 0.7654
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 38
+FP (Controle → TEA)     : 9
+FN (TEA → Controle)     : 10
+TP (TEA → TEA)          : 31
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/rty_dmn/logistic_regression_l2_feature_importance.csv
+..treino modelo Logistic Regression ElasticNet
+treinar Logistic Regression ElasticNet levou: 0.9940 minutos!
+Average Precision Logistic Regression ElasticNet train: 1.0000
+AUC Logistic Regression ElasticNet train: 1.0000
+Average Precision Logistic Regression ElasticNet test: 1.0000
+AUC Logistic Regression ElasticNet test: 1.0000
+
+Métricas – Logistic Regression ElasticNet_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – Logistic Regression ElasticNet_test
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 47
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 41
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/rty_dmn/logistic_regression_elasticnet_feature_importance.csv
+..treino modelo Ridge Classifier
+treinar Ridge Classifier levou: 0.0235 minutos!
+Average Precision Ridge Classifier train: 1.0000
+AUC Ridge Classifier train: 1.0000
+Average Precision Ridge Classifier test: 0.8807
+AUC Ridge Classifier test: 0.8734
+
+Métricas – Ridge Classifier_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – Ridge Classifier_test
+----------------------
+Acurácia : 0.7955
+Recall   : 0.7317
+Precision: 0.8108
+F1       : 0.7692
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 40
+FP (Controle → TEA)     : 7
+FN (TEA → Controle)     : 11
+TP (TEA → TEA)          : 30
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/rty_dmn/ridge_classifier_feature_importance.csv
+..treino modelo SGD Classifier
+treinar SGD Classifier levou: 0.0059 minutos!
+Average Precision SGD Classifier train: 1.0000
+AUC SGD Classifier train: 1.0000
+Average Precision SGD Classifier test: 0.7667
+AUC SGD Classifier test: 0.7670
+
+Métricas – SGD Classifier_train
+----------------------
+Acurácia : 0.9974
+Recall   : 0.9945
+Precision: 1.0000
+F1       : 0.9972
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 2
+TP (TEA → TEA)          : 360
+
+
+Métricas – SGD Classifier_test
+----------------------
+Acurácia : 0.6477
+Recall   : 0.3415
+Precision: 0.7778
+F1       : 0.4746
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 43
+FP (Controle → TEA)     : 4
+FN (TEA → Controle)     : 27
+TP (TEA → TEA)          : 14
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/rty_dmn/sgd_classifier_feature_importance.csv
+..treino modelo LightGBM
+Training until validation scores don't improve for 10 rounds
+Early stopping, best iteration is:
+[1]	valid_0's auc: 1
+treinar o lgbm levou: 0.28310123284657795 minutos!
+Average LGBM train: 1.0
+AUC LGBM train: 1.0
+Average LGBM test: 1.0
+AUC LGBM test: 1.0
+
+Métricas – lgbm_train
+----------------------
+Acurácia : 0.5377
+Recall   : 0.0000
+Precision: 0.0000
+F1       : 0.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 362
+TP (TEA → TEA)          : 0
+
+
+Métricas – lgbm_test
+----------------------
+Acurácia : 0.5341
+Recall   : 0.0000
+Precision: 0.0000
+F1       : 0.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 47
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 41
+TP (TEA → TEA)          : 0
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/rty_dmn/lightgbm_feature_importance.csv
+Métricas salvas em /home/thaisvaz/dmn_16/output_modelagem/rty_dmn/model_metrics.yaml
+Feature importance consolidada salva em /home/thaisvaz/dmn_16/output_modelagem/rty_dmn/all_models_feature_importance.csv
+✔ Dataset rty_dmn finalizado
+Melhor test AP : 1.0000
+Melhor test AUC: 1.0000
+
+======================================
+Rodando: str_dmn
+======================================
+features_path: /home/thaisvaz/_bases/str_dmn.parquet
+output_dir: /home/thaisvaz/dmn_16/output_modelagem/str_dmn
+..ler features de complexidade: str_dmn.parquet
+/home/thaisvaz/.venv/pesquisa/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/thaisvaz/.venv/pesquisa/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+   subid   1_7-str  1_10-str  ...  166_199-str  166_200-str  target
+0  50003  0.181588  0.003657  ...     0.065185     0.076251       1
+1  50004  0.000980  0.001414  ...     0.033124     0.005803       1
+2  50005  0.036778  0.008820  ...     0.015574     0.009653       1
+3  50006  0.081413  0.004885  ...     0.012092     0.030858       1
+4  50007  0.043892  0.033428  ...     0.000022     0.012243       1
+
+[5 rows x 3431 columns]
+Ler a base levou: 0.004517018795013428 minutos!
+X e y estão alinhados? True
+X_train shape: (783, 3430)
+X_test shape: (88, 3430)
+y_train shape: (783, 1)
+y_test shape: (88, 1)
+Train alinhado? True
+Test alinhado? True
+..treino modelo SVC L2
+treinar SVC L2 levou: 0.0635 minutos!
+Average Precision SVC L2 train: 1.0000
+AUC SVC L2 train: 1.0000
+Average Precision SVC L2 test: 0.9908
+AUC SVC L2 test: 0.9901
+
+Métricas – SVC L2_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – SVC L2_test
+----------------------
+Acurácia : 0.9545
+Recall   : 0.9512
+Precision: 0.9512
+F1       : 0.9512
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 45
+FP (Controle → TEA)     : 2
+FN (TEA → Controle)     : 2
+TP (TEA → TEA)          : 39
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/str_dmn/svc_l2_feature_importance.csv
+..treino modelo SVC
+treinar SVC levou: 0.0161 minutos!
+Average Precision SVC train: 1.0000
+AUC SVC train: 1.0000
+Average Precision SVC test: 0.9895
+AUC SVC test: 0.9891
+
+Métricas – SVC_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – SVC_test
+----------------------
+Acurácia : 0.9545
+Recall   : 0.9512
+Precision: 0.9512
+F1       : 0.9512
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 45
+FP (Controle → TEA)     : 2
+FN (TEA → Controle)     : 2
+TP (TEA → TEA)          : 39
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/str_dmn/svc_feature_importance.csv
+..treino modelo Logistic Regression L2
+treinar Logistic Regression L2 levou: 0.5535 minutos!
+Average Precision Logistic Regression L2 train: 1.0000
+AUC Logistic Regression L2 train: 1.0000
+Average Precision Logistic Regression L2 test: 0.9502
+AUC Logistic Regression L2 test: 0.9517
+
+Métricas – Logistic Regression L2_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – Logistic Regression L2_test
+----------------------
+Acurácia : 0.9205
+Recall   : 0.9024
+Precision: 0.9250
+F1       : 0.9136
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 44
+FP (Controle → TEA)     : 3
+FN (TEA → Controle)     : 4
+TP (TEA → TEA)          : 37
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/str_dmn/logistic_regression_l2_feature_importance.csv
+..treino modelo Logistic Regression ElasticNet
+treinar Logistic Regression ElasticNet levou: 0.8992 minutos!
+Average Precision Logistic Regression ElasticNet train: 1.0000
+AUC Logistic Regression ElasticNet train: 1.0000
+Average Precision Logistic Regression ElasticNet test: 1.0000
+AUC Logistic Regression ElasticNet test: 1.0000
+
+Métricas – Logistic Regression ElasticNet_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – Logistic Regression ElasticNet_test
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 47
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 41
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/str_dmn/logistic_regression_elasticnet_feature_importance.csv
+..treino modelo Ridge Classifier
+treinar Ridge Classifier levou: 0.0209 minutos!
+Average Precision Ridge Classifier train: 1.0000
+AUC Ridge Classifier train: 1.0000
+Average Precision Ridge Classifier test: 0.9960
+AUC Ridge Classifier test: 0.9958
+
+Métricas – Ridge Classifier_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – Ridge Classifier_test
+----------------------
+Acurácia : 0.9886
+Recall   : 0.9756
+Precision: 1.0000
+F1       : 0.9877
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 47
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 1
+TP (TEA → TEA)          : 40
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/str_dmn/ridge_classifier_feature_importance.csv
+..treino modelo SGD Classifier
+treinar SGD Classifier levou: 0.0044 minutos!
+Average Precision SGD Classifier train: 1.0000
+AUC SGD Classifier train: 1.0000
+Average Precision SGD Classifier test: 0.8468
+AUC SGD Classifier test: 0.8412
+
+Métricas – SGD Classifier_train
+----------------------
+Acurácia : 0.9936
+Recall   : 0.9862
+Precision: 1.0000
+F1       : 0.9930
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 5
+TP (TEA → TEA)          : 357
+
+
+Métricas – SGD Classifier_test
+----------------------
+Acurácia : 0.7045
+Recall   : 0.4878
+Precision: 0.8000
+F1       : 0.6061
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 42
+FP (Controle → TEA)     : 5
+FN (TEA → Controle)     : 21
+TP (TEA → TEA)          : 20
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/str_dmn/sgd_classifier_feature_importance.csv
+..treino modelo LightGBM
+Training until validation scores don't improve for 10 rounds
+Early stopping, best iteration is:
+[1]	valid_0's auc: 1
+treinar o lgbm levou: 0.7680831154187521 minutos!
+Average LGBM train: 1.0
+AUC LGBM train: 1.0
+Average LGBM test: 1.0
+AUC LGBM test: 1.0
+
+Métricas – lgbm_train
+----------------------
+Acurácia : 0.5377
+Recall   : 0.0000
+Precision: 0.0000
+F1       : 0.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 362
+TP (TEA → TEA)          : 0
+
+
+Métricas – lgbm_test
+----------------------
+Acurácia : 0.5341
+Recall   : 0.0000
+Precision: 0.0000
+F1       : 0.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 47
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 41
+TP (TEA → TEA)          : 0
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/str_dmn/lightgbm_feature_importance.csv
+Métricas salvas em /home/thaisvaz/dmn_16/output_modelagem/str_dmn/model_metrics.yaml
+Feature importance consolidada salva em /home/thaisvaz/dmn_16/output_modelagem/str_dmn/all_models_feature_importance.csv
+✔ Dataset str_dmn finalizado
+Melhor test AP : 1.0000
+Melhor test AUC: 1.0000
+
+======================================
+Rodando: sts_dmn
+======================================
+features_path: /home/thaisvaz/_bases/sts_dmn.parquet
+output_dir: /home/thaisvaz/dmn_16/output_modelagem/sts_dmn
+..ler features de complexidade: sts_dmn.parquet
+/home/thaisvaz/.venv/pesquisa/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/thaisvaz/.venv/pesquisa/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+   subid   1_7-sts  1_10-sts  ...  166_199-sts  166_200-sts  target
+0  50003  0.366280  0.007392  ...     0.141364     0.181540       1
+1  50004  0.001002  0.002461  ...     0.040219     0.006654       1
+2  50005  0.073526  0.020149  ...     0.023127     0.017229       1
+3  50006  0.169863  0.011238  ...     0.019465     0.061672       1
+4  50007  0.087476  0.066787  ...     0.000012     0.027333       1
+
+[5 rows x 3431 columns]
+Ler a base levou: 0.004729751745859782 minutos!
+X e y estão alinhados? True
+X_train shape: (783, 3430)
+X_test shape: (88, 3430)
+y_train shape: (783, 1)
+y_test shape: (88, 1)
+Train alinhado? True
+Test alinhado? True
+..treino modelo SVC L2
+treinar SVC L2 levou: 0.0847 minutos!
+Average Precision SVC L2 train: 1.0000
+AUC SVC L2 train: 1.0000
+Average Precision SVC L2 test: 0.9938
+AUC SVC L2 test: 0.9938
+
+Métricas – SVC L2_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – SVC L2_test
+----------------------
+Acurácia : 0.9545
+Recall   : 0.9512
+Precision: 0.9512
+F1       : 0.9512
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 45
+FP (Controle → TEA)     : 2
+FN (TEA → Controle)     : 2
+TP (TEA → TEA)          : 39
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/sts_dmn/svc_l2_feature_importance.csv
+..treino modelo SVC
+treinar SVC levou: 0.0136 minutos!
+Average Precision SVC train: 1.0000
+AUC SVC train: 1.0000
+Average Precision SVC test: 0.9949
+AUC SVC test: 0.9948
+
+Métricas – SVC_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – SVC_test
+----------------------
+Acurácia : 0.9545
+Recall   : 0.9512
+Precision: 0.9512
+F1       : 0.9512
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 45
+FP (Controle → TEA)     : 2
+FN (TEA → Controle)     : 2
+TP (TEA → TEA)          : 39
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/sts_dmn/svc_feature_importance.csv
+..treino modelo Logistic Regression L2
+treinar Logistic Regression L2 levou: 0.5617 minutos!
+Average Precision Logistic Regression L2 train: 1.0000
+AUC Logistic Regression L2 train: 1.0000
+Average Precision Logistic Regression L2 test: 0.9562
+AUC Logistic Regression L2 test: 0.9564
+
+Métricas – Logistic Regression L2_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – Logistic Regression L2_test
+----------------------
+Acurácia : 0.9205
+Recall   : 0.9024
+Precision: 0.9250
+F1       : 0.9136
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 44
+FP (Controle → TEA)     : 3
+FN (TEA → Controle)     : 4
+TP (TEA → TEA)          : 37
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/sts_dmn/logistic_regression_l2_feature_importance.csv
+..treino modelo Logistic Regression ElasticNet
+treinar Logistic Regression ElasticNet levou: 0.9345 minutos!
+Average Precision Logistic Regression ElasticNet train: 1.0000
+AUC Logistic Regression ElasticNet train: 1.0000
+Average Precision Logistic Regression ElasticNet test: 1.0000
+AUC Logistic Regression ElasticNet test: 1.0000
+
+Métricas – Logistic Regression ElasticNet_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – Logistic Regression ElasticNet_test
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 47
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 41
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/sts_dmn/logistic_regression_elasticnet_feature_importance.csv
+..treino modelo Ridge Classifier
+treinar Ridge Classifier levou: 0.0223 minutos!
+Average Precision Ridge Classifier train: 1.0000
+AUC Ridge Classifier train: 1.0000
+Average Precision Ridge Classifier test: 0.9983
+AUC Ridge Classifier test: 0.9984
+
+Métricas – Ridge Classifier_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – Ridge Classifier_test
+----------------------
+Acurácia : 0.9773
+Recall   : 0.9756
+Precision: 0.9756
+F1       : 0.9756
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 46
+FP (Controle → TEA)     : 1
+FN (TEA → Controle)     : 1
+TP (TEA → TEA)          : 40
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/sts_dmn/ridge_classifier_feature_importance.csv
+..treino modelo SGD Classifier
+treinar SGD Classifier levou: 0.0040 minutos!
+Average Precision SGD Classifier train: 1.0000
+AUC SGD Classifier train: 1.0000
+Average Precision SGD Classifier test: 0.9059
+AUC SGD Classifier test: 0.8796
+
+Métricas – SGD Classifier_train
+----------------------
+Acurácia : 0.9987
+Recall   : 0.9972
+Precision: 1.0000
+F1       : 0.9986
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 1
+TP (TEA → TEA)          : 361
+
+
+Métricas – SGD Classifier_test
+----------------------
+Acurácia : 0.7841
+Recall   : 0.5854
+Precision: 0.9231
+F1       : 0.7164
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 45
+FP (Controle → TEA)     : 2
+FN (TEA → Controle)     : 17
+TP (TEA → TEA)          : 24
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/sts_dmn/sgd_classifier_feature_importance.csv
+..treino modelo LightGBM
+Training until validation scores don't improve for 10 rounds
+Early stopping, best iteration is:
+[1]	valid_0's auc: 1
+treinar o lgbm levou: 0.6236571629842123 minutos!
+Average LGBM train: 1.0
+AUC LGBM train: 1.0
+Average LGBM test: 1.0
+AUC LGBM test: 1.0
+
+Métricas – lgbm_train
+----------------------
+Acurácia : 0.5377
+Recall   : 0.0000
+Precision: 0.0000
+F1       : 0.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 362
+TP (TEA → TEA)          : 0
+
+
+Métricas – lgbm_test
+----------------------
+Acurácia : 0.5341
+Recall   : 0.0000
+Precision: 0.0000
+F1       : 0.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 47
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 41
+TP (TEA → TEA)          : 0
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/sts_dmn/lightgbm_feature_importance.csv
+Métricas salvas em /home/thaisvaz/dmn_16/output_modelagem/sts_dmn/model_metrics.yaml
+Feature importance consolidada salva em /home/thaisvaz/dmn_16/output_modelagem/sts_dmn/all_models_feature_importance.csv
+✔ Dataset sts_dmn finalizado
+Melhor test AP : 1.0000
+Melhor test AUC: 1.0000
+
+======================================
+Rodando: stx_dmn
+======================================
+features_path: /home/thaisvaz/_bases/stx_dmn.parquet
+output_dir: /home/thaisvaz/dmn_16/output_modelagem/stx_dmn
+..ler features de complexidade: stx_dmn.parquet
+/home/thaisvaz/.venv/pesquisa/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/thaisvaz/.venv/pesquisa/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+   subid       1_7-stx      1_10-stx  ...  166_199-stx  166_200-stx  target
+0  50003 -1.811409e-01  1.195712e-03  ...    -0.063831    -0.069780       1
+1  50004 -4.097061e-17  5.050381e-17  ...    -0.030677    -0.005690       1
+2  50005 -3.659646e-02 -1.969748e-03  ...    -0.015482    -0.004393       1
+3  50006 -8.066957e-02 -4.376328e-03  ...    -0.011859    -0.018998       1
+4  50007 -4.219808e-02 -3.074217e-02  ...     0.002960    -0.009995       1
+
+[5 rows x 3431 columns]
+Ler a base levou: 0.005181165536244711 minutos!
+X e y estão alinhados? True
+X_train shape: (783, 3430)
+X_test shape: (88, 3430)
+y_train shape: (783, 1)
+y_test shape: (88, 1)
+Train alinhado? True
+Test alinhado? True
+..treino modelo SVC L2
+treinar SVC L2 levou: 0.0532 minutos!
+Average Precision SVC L2 train: 1.0000
+AUC SVC L2 train: 1.0000
+Average Precision SVC L2 test: 0.9797
+AUC SVC L2 test: 0.9818
+
+Métricas – SVC L2_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – SVC L2_test
+----------------------
+Acurácia : 0.9318
+Recall   : 0.9024
+Precision: 0.9487
+F1       : 0.9250
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 45
+FP (Controle → TEA)     : 2
+FN (TEA → Controle)     : 4
+TP (TEA → TEA)          : 37
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/stx_dmn/svc_l2_feature_importance.csv
+..treino modelo SVC
+treinar SVC levou: 0.0144 minutos!
+Average Precision SVC train: 1.0000
+AUC SVC train: 1.0000
+Average Precision SVC test: 0.9793
+AUC SVC test: 0.9818
+
+Métricas – SVC_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – SVC_test
+----------------------
+Acurácia : 0.9318
+Recall   : 0.9024
+Precision: 0.9487
+F1       : 0.9250
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 45
+FP (Controle → TEA)     : 2
+FN (TEA → Controle)     : 4
+TP (TEA → TEA)          : 37
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/stx_dmn/svc_feature_importance.csv
+..treino modelo Logistic Regression L2
+treinar Logistic Regression L2 levou: 0.5100 minutos!
+Average Precision Logistic Regression L2 train: 1.0000
+AUC Logistic Regression L2 train: 1.0000
+Average Precision Logistic Regression L2 test: 0.9328
+AUC Logistic Regression L2 test: 0.9393
+
+Métricas – Logistic Regression L2_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – Logistic Regression L2_test
+----------------------
+Acurácia : 0.8750
+Recall   : 0.8537
+Precision: 0.8750
+F1       : 0.8642
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 42
+FP (Controle → TEA)     : 5
+FN (TEA → Controle)     : 6
+TP (TEA → TEA)          : 35
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/stx_dmn/logistic_regression_l2_feature_importance.csv
+..treino modelo Logistic Regression ElasticNet
+treinar Logistic Regression ElasticNet levou: 0.9240 minutos!
+Average Precision Logistic Regression ElasticNet train: 1.0000
+AUC Logistic Regression ElasticNet train: 1.0000
+Average Precision Logistic Regression ElasticNet test: 1.0000
+AUC Logistic Regression ElasticNet test: 1.0000
+
+Métricas – Logistic Regression ElasticNet_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – Logistic Regression ElasticNet_test
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 47
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 41
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/stx_dmn/logistic_regression_elasticnet_feature_importance.csv
+..treino modelo Ridge Classifier
+treinar Ridge Classifier levou: 0.0207 minutos!
+Average Precision Ridge Classifier train: 1.0000
+AUC Ridge Classifier train: 1.0000
+Average Precision Ridge Classifier test: 0.9909
+AUC Ridge Classifier test: 0.9917
+
+Métricas – Ridge Classifier_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – Ridge Classifier_test
+----------------------
+Acurácia : 0.9545
+Recall   : 0.9512
+Precision: 0.9512
+F1       : 0.9512
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 45
+FP (Controle → TEA)     : 2
+FN (TEA → Controle)     : 2
+TP (TEA → TEA)          : 39
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/stx_dmn/ridge_classifier_feature_importance.csv
+..treino modelo SGD Classifier
+treinar SGD Classifier levou: 0.0050 minutos!
+Average Precision SGD Classifier train: 1.0000
+AUC SGD Classifier train: 1.0000
+Average Precision SGD Classifier test: 0.8724
+AUC SGD Classifier test: 0.8537
+
+Métricas – SGD Classifier_train
+----------------------
+Acurácia : 0.9987
+Recall   : 0.9972
+Precision: 1.0000
+F1       : 0.9986
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 1
+TP (TEA → TEA)          : 361
+
+
+Métricas – SGD Classifier_test
+----------------------
+Acurácia : 0.7614
+Recall   : 0.5366
+Precision: 0.9167
+F1       : 0.6769
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 45
+FP (Controle → TEA)     : 2
+FN (TEA → Controle)     : 19
+TP (TEA → TEA)          : 22
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/stx_dmn/sgd_classifier_feature_importance.csv
+..treino modelo LightGBM
+Training until validation scores don't improve for 10 rounds
+Early stopping, best iteration is:
+[1]	valid_0's auc: 1
+treinar o lgbm levou: 0.6050920724868775 minutos!
+Average LGBM train: 1.0
+AUC LGBM train: 1.0
+Average LGBM test: 1.0
+AUC LGBM test: 1.0
+
+Métricas – lgbm_train
+----------------------
+Acurácia : 0.5377
+Recall   : 0.0000
+Precision: 0.0000
+F1       : 0.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 362
+TP (TEA → TEA)          : 0
+
+
+Métricas – lgbm_test
+----------------------
+Acurácia : 0.5341
+Recall   : 0.0000
+Precision: 0.0000
+F1       : 0.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 47
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 41
+TP (TEA → TEA)          : 0
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/stx_dmn/lightgbm_feature_importance.csv
+Métricas salvas em /home/thaisvaz/dmn_16/output_modelagem/stx_dmn/model_metrics.yaml
+Feature importance consolidada salva em /home/thaisvaz/dmn_16/output_modelagem/stx_dmn/all_models_feature_importance.csv
+✔ Dataset stx_dmn finalizado
+Melhor test AP : 1.0000
+Melhor test AUC: 1.0000
+
+======================================
+Rodando: sty_dmn
+======================================
+features_path: /home/thaisvaz/_bases/sty_dmn.parquet
+output_dir: /home/thaisvaz/dmn_16/output_modelagem/sty_dmn
+..ler features de complexidade: sty_dmn.parquet
+/home/thaisvaz/.venv/pesquisa/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/thaisvaz/.venv/pesquisa/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+   subid   1_7-sty  1_10-sty  ...   166_199-sty   166_200-sty  target
+0  50003 -0.180671 -0.003062  ... -5.686757e-02 -6.590585e-02       1
+1  50004 -0.000961  0.005859  ... -6.591787e-03  4.519177e-18       1
+2  50005 -0.036729 -0.008279  ... -7.467330e-03 -8.659692e-03       1
+3  50006 -0.078486 -0.001914  ... -7.550140e-03 -2.437204e-02       1
+4  50007 -0.043800 -0.032666  ... -1.795995e-17 -1.159393e-02       1
+
+[5 rows x 3431 columns]
+Ler a base levou: 0.00650334358215332 minutos!
+X e y estão alinhados? True
+X_train shape: (783, 3430)
+X_test shape: (88, 3430)
+y_train shape: (783, 1)
+y_test shape: (88, 1)
+Train alinhado? True
+Test alinhado? True
+..treino modelo SVC L2
+treinar SVC L2 levou: 0.0345 minutos!
+Average Precision SVC L2 train: 1.0000
+AUC SVC L2 train: 1.0000
+Average Precision SVC L2 test: 0.9858
+AUC SVC L2 test: 0.9839
+
+Métricas – SVC L2_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – SVC L2_test
+----------------------
+Acurácia : 0.9318
+Recall   : 0.9268
+Precision: 0.9268
+F1       : 0.9268
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 44
+FP (Controle → TEA)     : 3
+FN (TEA → Controle)     : 3
+TP (TEA → TEA)          : 38
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/sty_dmn/svc_l2_feature_importance.csv
+..treino modelo SVC
+treinar SVC levou: 0.0143 minutos!
+Average Precision SVC train: 1.0000
+AUC SVC train: 1.0000
+Average Precision SVC test: 0.9833
+AUC SVC test: 0.9808
+
+Métricas – SVC_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – SVC_test
+----------------------
+Acurácia : 0.9318
+Recall   : 0.9268
+Precision: 0.9268
+F1       : 0.9268
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 44
+FP (Controle → TEA)     : 3
+FN (TEA → Controle)     : 3
+TP (TEA → TEA)          : 38
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/sty_dmn/svc_feature_importance.csv
+..treino modelo Logistic Regression L2
+treinar Logistic Regression L2 levou: 0.5185 minutos!
+Average Precision Logistic Regression L2 train: 1.0000
+AUC Logistic Regression L2 train: 1.0000
+Average Precision Logistic Regression L2 test: 0.9499
+AUC Logistic Regression L2 test: 0.9471
+
+Métricas – Logistic Regression L2_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – Logistic Regression L2_test
+----------------------
+Acurácia : 0.8864
+Recall   : 0.8780
+Precision: 0.8780
+F1       : 0.8780
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 42
+FP (Controle → TEA)     : 5
+FN (TEA → Controle)     : 5
+TP (TEA → TEA)          : 36
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/sty_dmn/logistic_regression_l2_feature_importance.csv
+..treino modelo Logistic Regression ElasticNet
+treinar Logistic Regression ElasticNet levou: 0.8878 minutos!
+Average Precision Logistic Regression ElasticNet train: 1.0000
+AUC Logistic Regression ElasticNet train: 1.0000
+Average Precision Logistic Regression ElasticNet test: 1.0000
+AUC Logistic Regression ElasticNet test: 1.0000
+
+Métricas – Logistic Regression ElasticNet_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – Logistic Regression ElasticNet_test
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 47
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 41
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/sty_dmn/logistic_regression_elasticnet_feature_importance.csv
+..treino modelo Ridge Classifier
+treinar Ridge Classifier levou: 0.0198 minutos!
+Average Precision Ridge Classifier train: 1.0000
+AUC Ridge Classifier train: 1.0000
+Average Precision Ridge Classifier test: 0.9902
+AUC Ridge Classifier test: 0.9891
+
+Métricas – Ridge Classifier_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – Ridge Classifier_test
+----------------------
+Acurácia : 0.9773
+Recall   : 0.9512
+Precision: 1.0000
+F1       : 0.9750
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 47
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 2
+TP (TEA → TEA)          : 39
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/sty_dmn/ridge_classifier_feature_importance.csv
+..treino modelo SGD Classifier
+treinar SGD Classifier levou: 0.0064 minutos!
+Average Precision SGD Classifier train: 1.0000
+AUC SGD Classifier train: 1.0000
+Average Precision SGD Classifier test: 0.8490
+AUC SGD Classifier test: 0.8749
+
+Métricas – SGD Classifier_train
+----------------------
+Acurácia : 0.9974
+Recall   : 0.9945
+Precision: 1.0000
+F1       : 0.9972
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 2
+TP (TEA → TEA)          : 360
+
+
+Métricas – SGD Classifier_test
+----------------------
+Acurácia : 0.6932
+Recall   : 0.3902
+Precision: 0.8889
+F1       : 0.5424
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 45
+FP (Controle → TEA)     : 2
+FN (TEA → Controle)     : 25
+TP (TEA → TEA)          : 16
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/sty_dmn/sgd_classifier_feature_importance.csv
+..treino modelo LightGBM
+Training until validation scores don't improve for 10 rounds
+Early stopping, best iteration is:
+[1]	valid_0's auc: 1
+treinar o lgbm levou: 0.8057517568270366 minutos!
+Average LGBM train: 1.0
+AUC LGBM train: 1.0
+Average LGBM test: 1.0
+AUC LGBM test: 1.0
+
+Métricas – lgbm_train
+----------------------
+Acurácia : 0.5377
+Recall   : 0.0000
+Precision: 0.0000
+F1       : 0.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 362
+TP (TEA → TEA)          : 0
+
+
+Métricas – lgbm_test
+----------------------
+Acurácia : 0.5341
+Recall   : 0.0000
+Precision: 0.0000
+F1       : 0.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 47
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 41
+TP (TEA → TEA)          : 0
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/sty_dmn/lightgbm_feature_importance.csv
+Métricas salvas em /home/thaisvaz/dmn_16/output_modelagem/sty_dmn/model_metrics.yaml
+Feature importance consolidada salva em /home/thaisvaz/dmn_16/output_modelagem/sty_dmn/all_models_feature_importance.csv
+✔ Dataset sty_dmn finalizado
+Melhor test AP : 1.0000
+Melhor test AUC: 1.0000
+
+======================================
+Rodando: xtr_dmn
+======================================
+features_path: /home/thaisvaz/_bases/xtr_dmn.parquet
+output_dir: /home/thaisvaz/dmn_16/output_modelagem/xtr_dmn
+..ler features de complexidade: xtr_dmn.parquet
+/home/thaisvaz/.venv/pesquisa/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/thaisvaz/.venv/pesquisa/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+   subid       1_7-xtr      1_10-xtr  ...  166_199-xtr   166_200-xtr  target
+0  50003  4.298894e-03  1.653081e-16  ...     0.009326  2.908999e-02       1
+1  50004 -4.038646e-17  7.426983e-04  ...     0.011232  4.418541e-18       1
+2  50005 -6.129293e-17  8.489423e-03  ...     0.004048  9.503505e-17       1
+3  50006  1.140756e-16 -5.224381e-17  ...     0.003660  7.802086e-18       1
+4  50007  2.737472e-17  7.517948e-04  ...     0.019167  9.148475e-17       1
+
+[5 rows x 3431 columns]
+Ler a base levou: 0.006252801418304444 minutos!
+X e y estão alinhados? True
+X_train shape: (783, 3430)
+X_test shape: (88, 3430)
+y_train shape: (783, 1)
+y_test shape: (88, 1)
+Train alinhado? True
+Test alinhado? True
+..treino modelo SVC L2
+treinar SVC L2 levou: 0.0054 minutos!
+Average Precision SVC L2 train: 1.0000
+AUC SVC L2 train: 1.0000
+Average Precision SVC L2 test: 0.8739
+AUC SVC L2 test: 0.8812
+
+Métricas – SVC L2_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – SVC L2_test
+----------------------
+Acurácia : 0.8068
+Recall   : 0.7073
+Precision: 0.8529
+F1       : 0.7733
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 42
+FP (Controle → TEA)     : 5
+FN (TEA → Controle)     : 12
+TP (TEA → TEA)          : 29
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/xtr_dmn/svc_l2_feature_importance.csv
+..treino modelo SVC
+treinar SVC levou: 0.0150 minutos!
+Average Precision SVC train: 1.0000
+AUC SVC train: 1.0000
+Average Precision SVC test: 0.8727
+AUC SVC test: 0.8822
+
+Métricas – SVC_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – SVC_test
+----------------------
+Acurácia : 0.7727
+Recall   : 0.6341
+Precision: 0.8387
+F1       : 0.7222
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 42
+FP (Controle → TEA)     : 5
+FN (TEA → Controle)     : 15
+TP (TEA → TEA)          : 26
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/xtr_dmn/svc_feature_importance.csv
+..treino modelo Logistic Regression L2
+treinar Logistic Regression L2 levou: 0.4176 minutos!
+Average Precision Logistic Regression L2 train: 1.0000
+AUC Logistic Regression L2 train: 1.0000
+Average Precision Logistic Regression L2 test: 0.8285
+AUC Logistic Regression L2 test: 0.8448
+
+Métricas – Logistic Regression L2_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – Logistic Regression L2_test
+----------------------
+Acurácia : 0.7386
+Recall   : 0.6098
+Precision: 0.7812
+F1       : 0.6849
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 40
+FP (Controle → TEA)     : 7
+FN (TEA → Controle)     : 16
+TP (TEA → TEA)          : 25
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/xtr_dmn/logistic_regression_l2_feature_importance.csv
+..treino modelo Logistic Regression ElasticNet
+treinar Logistic Regression ElasticNet levou: 0.9276 minutos!
+Average Precision Logistic Regression ElasticNet train: 1.0000
+AUC Logistic Regression ElasticNet train: 1.0000
+Average Precision Logistic Regression ElasticNet test: 1.0000
+AUC Logistic Regression ElasticNet test: 1.0000
+
+Métricas – Logistic Regression ElasticNet_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – Logistic Regression ElasticNet_test
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 47
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 41
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/xtr_dmn/logistic_regression_elasticnet_feature_importance.csv
+..treino modelo Ridge Classifier
+treinar Ridge Classifier levou: 0.0187 minutos!
+Average Precision Ridge Classifier train: 1.0000
+AUC Ridge Classifier train: 1.0000
+Average Precision Ridge Classifier test: 0.8884
+AUC Ridge Classifier test: 0.8936
+
+Métricas – Ridge Classifier_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – Ridge Classifier_test
+----------------------
+Acurácia : 0.7841
+Recall   : 0.6585
+Precision: 0.8438
+F1       : 0.7397
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 42
+FP (Controle → TEA)     : 5
+FN (TEA → Controle)     : 14
+TP (TEA → TEA)          : 27
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/xtr_dmn/ridge_classifier_feature_importance.csv
+..treino modelo SGD Classifier
+treinar SGD Classifier levou: 0.0057 minutos!
+Average Precision SGD Classifier train: 1.0000
+AUC SGD Classifier train: 1.0000
+Average Precision SGD Classifier test: 0.7983
+AUC SGD Classifier test: 0.7924
+
+Métricas – SGD Classifier_train
+----------------------
+Acurácia : 0.9885
+Recall   : 0.9751
+Precision: 1.0000
+F1       : 0.9874
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 9
+TP (TEA → TEA)          : 353
+
+
+Métricas – SGD Classifier_test
+----------------------
+Acurácia : 0.6932
+Recall   : 0.3902
+Precision: 0.8889
+F1       : 0.5424
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 45
+FP (Controle → TEA)     : 2
+FN (TEA → Controle)     : 25
+TP (TEA → TEA)          : 16
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/xtr_dmn/sgd_classifier_feature_importance.csv
+..treino modelo LightGBM
+Training until validation scores don't improve for 10 rounds
+Early stopping, best iteration is:
+[1]	valid_0's auc: 1
+treinar o lgbm levou: 0.7763764301935832 minutos!
+Average LGBM train: 1.0
+AUC LGBM train: 1.0
+Average LGBM test: 1.0
+AUC LGBM test: 1.0
+
+Métricas – lgbm_train
+----------------------
+Acurácia : 0.5377
+Recall   : 0.0000
+Precision: 0.0000
+F1       : 0.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 362
+TP (TEA → TEA)          : 0
+
+
+Métricas – lgbm_test
+----------------------
+Acurácia : 0.5341
+Recall   : 0.0000
+Precision: 0.0000
+F1       : 0.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 47
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 41
+TP (TEA → TEA)          : 0
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/xtr_dmn/lightgbm_feature_importance.csv
+Métricas salvas em /home/thaisvaz/dmn_16/output_modelagem/xtr_dmn/model_metrics.yaml
+Feature importance consolidada salva em /home/thaisvaz/dmn_16/output_modelagem/xtr_dmn/all_models_feature_importance.csv
+✔ Dataset xtr_dmn finalizado
+Melhor test AP : 1.0000
+Melhor test AUC: 1.0000
+
+======================================
+Rodando: xts_dmn
+======================================
+features_path: /home/thaisvaz/_bases/xts_dmn.parquet
+output_dir: /home/thaisvaz/dmn_16/output_modelagem/xts_dmn
+..ler features de complexidade: xts_dmn.parquet
+/home/thaisvaz/.venv/pesquisa/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/thaisvaz/.venv/pesquisa/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+   subid       1_7-xts      1_10-xts  ...  166_199-xts  166_200-xts  target
+0  50003 -1.800788e-01 -4.326848e-03  ...    -0.061122    -0.066057       1
+1  50004 -4.038646e-17  5.126108e-17  ...    -0.007070    -0.005445       1
+2  50005 -3.659646e-02 -1.969748e-03  ...    -0.008146    -0.004795       1
+3  50006 -8.066957e-02 -8.202702e-03  ...    -0.006888    -0.028826       1
+4  50007 -4.219808e-02 -3.074217e-02  ...     0.002225    -0.009796       1
+
+[5 rows x 3431 columns]
+Ler a base levou: 0.006476851304372152 minutos!
+X e y estão alinhados? True
+X_train shape: (783, 3430)
+X_test shape: (88, 3430)
+y_train shape: (783, 1)
+y_test shape: (88, 1)
+Train alinhado? True
+Test alinhado? True
+..treino modelo SVC L2
+treinar SVC L2 levou: 0.0410 minutos!
+Average Precision SVC L2 train: 1.0000
+AUC SVC L2 train: 1.0000
+Average Precision SVC L2 test: 0.9843
+AUC SVC L2 test: 0.9787
+
+Métricas – SVC L2_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – SVC L2_test
+----------------------
+Acurácia : 0.9545
+Recall   : 0.9268
+Precision: 0.9744
+F1       : 0.9500
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 46
+FP (Controle → TEA)     : 1
+FN (TEA → Controle)     : 3
+TP (TEA → TEA)          : 38
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/xts_dmn/svc_l2_feature_importance.csv
+..treino modelo SVC
+treinar SVC levou: 0.0149 minutos!
+Average Precision SVC train: 1.0000
+AUC SVC train: 1.0000
+Average Precision SVC test: 0.9847
+AUC SVC test: 0.9787
+
+Métricas – SVC_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – SVC_test
+----------------------
+Acurácia : 0.9432
+Recall   : 0.9268
+Precision: 0.9500
+F1       : 0.9383
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 45
+FP (Controle → TEA)     : 2
+FN (TEA → Controle)     : 3
+TP (TEA → TEA)          : 38
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/xts_dmn/svc_feature_importance.csv
+..treino modelo Logistic Regression L2
+treinar Logistic Regression L2 levou: 0.5447 minutos!
+Average Precision Logistic Regression L2 train: 1.0000
+AUC Logistic Regression L2 train: 1.0000
+Average Precision Logistic Regression L2 test: 0.9598
+AUC Logistic Regression L2 test: 0.9528
+
+Métricas – Logistic Regression L2_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – Logistic Regression L2_test
+----------------------
+Acurácia : 0.8864
+Recall   : 0.8537
+Precision: 0.8974
+F1       : 0.8750
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 43
+FP (Controle → TEA)     : 4
+FN (TEA → Controle)     : 6
+TP (TEA → TEA)          : 35
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/xts_dmn/logistic_regression_l2_feature_importance.csv
+..treino modelo Logistic Regression ElasticNet
+treinar Logistic Regression ElasticNet levou: 0.9131 minutos!
+Average Precision Logistic Regression ElasticNet train: 1.0000
+AUC Logistic Regression ElasticNet train: 1.0000
+Average Precision Logistic Regression ElasticNet test: 1.0000
+AUC Logistic Regression ElasticNet test: 1.0000
+
+Métricas – Logistic Regression ElasticNet_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – Logistic Regression ElasticNet_test
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 47
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 41
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/xts_dmn/logistic_regression_elasticnet_feature_importance.csv
+..treino modelo Ridge Classifier
+treinar Ridge Classifier levou: 0.0221 minutos!
+Average Precision Ridge Classifier train: 1.0000
+AUC Ridge Classifier train: 1.0000
+Average Precision Ridge Classifier test: 0.9877
+AUC Ridge Classifier test: 0.9813
+
+Métricas – Ridge Classifier_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – Ridge Classifier_test
+----------------------
+Acurácia : 0.9659
+Recall   : 0.9512
+Precision: 0.9750
+F1       : 0.9630
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 46
+FP (Controle → TEA)     : 1
+FN (TEA → Controle)     : 2
+TP (TEA → TEA)          : 39
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/xts_dmn/ridge_classifier_feature_importance.csv
+..treino modelo SGD Classifier
+treinar SGD Classifier levou: 0.0038 minutos!
+Average Precision SGD Classifier train: 1.0000
+AUC SGD Classifier train: 1.0000
+Average Precision SGD Classifier test: 0.9098
+AUC SGD Classifier test: 0.8926
+
+Métricas – SGD Classifier_train
+----------------------
+Acurácia : 0.9936
+Recall   : 0.9862
+Precision: 1.0000
+F1       : 0.9930
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 5
+TP (TEA → TEA)          : 357
+
+
+Métricas – SGD Classifier_test
+----------------------
+Acurácia : 0.7386
+Recall   : 0.4634
+Precision: 0.9500
+F1       : 0.6230
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 46
+FP (Controle → TEA)     : 1
+FN (TEA → Controle)     : 22
+TP (TEA → TEA)          : 19
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/xts_dmn/sgd_classifier_feature_importance.csv
+..treino modelo LightGBM
+Training until validation scores don't improve for 10 rounds
+Early stopping, best iteration is:
+[1]	valid_0's auc: 1
+treinar o lgbm levou: 0.7610309878985088 minutos!
+Average LGBM train: 1.0
+AUC LGBM train: 1.0
+Average LGBM test: 1.0
+AUC LGBM test: 1.0
+
+Métricas – lgbm_train
+----------------------
+Acurácia : 0.5377
+Recall   : 0.0000
+Precision: 0.0000
+F1       : 0.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 362
+TP (TEA → TEA)          : 0
+
+
+Métricas – lgbm_test
+----------------------
+Acurácia : 0.5341
+Recall   : 0.0000
+Precision: 0.0000
+F1       : 0.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 47
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 41
+TP (TEA → TEA)          : 0
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/xts_dmn/lightgbm_feature_importance.csv
+Métricas salvas em /home/thaisvaz/dmn_16/output_modelagem/xts_dmn/model_metrics.yaml
+Feature importance consolidada salva em /home/thaisvaz/dmn_16/output_modelagem/xts_dmn/all_models_feature_importance.csv
+✔ Dataset xts_dmn finalizado
+Melhor test AP : 1.0000
+Melhor test AUC: 1.0000
+
+======================================
+Rodando: xtx_dmn
+======================================
+features_path: /home/thaisvaz/_bases/xtx_dmn.parquet
+output_dir: /home/thaisvaz/dmn_16/output_modelagem/xtx_dmn
+..ler features de complexidade: xtx_dmn.parquet
+/home/thaisvaz/.venv/pesquisa/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/thaisvaz/.venv/pesquisa/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+   subid       1_7-xtx      1_10-xtx  ...  166_199-xtx  166_200-xtx  target
+0  50003  2.732805e-01  2.795983e-01  ...     0.250315     0.234155       1
+1  50004  4.038646e-17 -5.126108e-17  ...     0.161626     0.164912       1
+2  50005  3.659646e-02  1.969748e-03  ...     0.219907     0.224615       1
+3  50006  8.066957e-02  7.282719e-02  ...     0.117951     0.112456       1
+4  50007  4.219808e-02  3.074217e-02  ...     0.210072     0.228547       1
+
+[5 rows x 3431 columns]
+Ler a base levou: 0.0052344004313151045 minutos!
+X e y estão alinhados? True
+X_train shape: (783, 3430)
+X_test shape: (88, 3430)
+y_train shape: (783, 1)
+y_test shape: (88, 1)
+Train alinhado? True
+Test alinhado? True
+..treino modelo SVC L2
+treinar SVC L2 levou: 0.1645 minutos!
+Average Precision SVC L2 train: 1.0000
+AUC SVC L2 train: 1.0000
+Average Precision SVC L2 test: 1.0000
+AUC SVC L2 test: 1.0000
+
+Métricas – SVC L2_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – SVC L2_test
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 47
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 41
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/xtx_dmn/svc_l2_feature_importance.csv
+..treino modelo SVC
+treinar SVC levou: 0.0164 minutos!
+Average Precision SVC train: 1.0000
+AUC SVC train: 1.0000
+Average Precision SVC test: 1.0000
+AUC SVC test: 1.0000
+
+Métricas – SVC_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – SVC_test
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 47
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 41
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/xtx_dmn/svc_feature_importance.csv
+..treino modelo Logistic Regression L2
+treinar Logistic Regression L2 levou: 0.5827 minutos!
+Average Precision Logistic Regression L2 train: 1.0000
+AUC Logistic Regression L2 train: 1.0000
+Average Precision Logistic Regression L2 test: 1.0000
+AUC Logistic Regression L2 test: 1.0000
+
+Métricas – Logistic Regression L2_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – Logistic Regression L2_test
+----------------------
+Acurácia : 0.9886
+Recall   : 1.0000
+Precision: 0.9762
+F1       : 0.9880
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 46
+FP (Controle → TEA)     : 1
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 41
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/xtx_dmn/logistic_regression_l2_feature_importance.csv
+..treino modelo Logistic Regression ElasticNet
+treinar Logistic Regression ElasticNet levou: 0.9298 minutos!
+Average Precision Logistic Regression ElasticNet train: 1.0000
+AUC Logistic Regression ElasticNet train: 1.0000
+Average Precision Logistic Regression ElasticNet test: 1.0000
+AUC Logistic Regression ElasticNet test: 1.0000
+
+Métricas – Logistic Regression ElasticNet_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – Logistic Regression ElasticNet_test
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 47
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 41
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/xtx_dmn/logistic_regression_elasticnet_feature_importance.csv
+..treino modelo Ridge Classifier
+treinar Ridge Classifier levou: 0.0252 minutos!
+Average Precision Ridge Classifier train: 1.0000
+AUC Ridge Classifier train: 1.0000
+Average Precision Ridge Classifier test: 1.0000
+AUC Ridge Classifier test: 1.0000
+
+Métricas – Ridge Classifier_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – Ridge Classifier_test
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 47
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 41
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/xtx_dmn/ridge_classifier_feature_importance.csv
+..treino modelo SGD Classifier
+treinar SGD Classifier levou: 0.0061 minutos!
+Average Precision SGD Classifier train: 1.0000
+AUC SGD Classifier train: 1.0000
+Average Precision SGD Classifier test: 0.9671
+AUC SGD Classifier test: 0.9574
+
+Métricas – SGD Classifier_train
+----------------------
+Acurácia : 0.9987
+Recall   : 0.9972
+Precision: 1.0000
+F1       : 0.9986
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 1
+TP (TEA → TEA)          : 361
+
+
+Métricas – SGD Classifier_test
+----------------------
+Acurácia : 0.8295
+Recall   : 0.6341
+Precision: 1.0000
+F1       : 0.7761
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 47
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 15
+TP (TEA → TEA)          : 26
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/xtx_dmn/sgd_classifier_feature_importance.csv
+..treino modelo LightGBM
+Training until validation scores don't improve for 10 rounds
+Early stopping, best iteration is:
+[1]	valid_0's auc: 1
+treinar o lgbm levou: 0.7681140740712483 minutos!
+Average LGBM train: 1.0
+AUC LGBM train: 1.0
+Average LGBM test: 1.0
+AUC LGBM test: 1.0
+
+Métricas – lgbm_train
+----------------------
+Acurácia : 0.5377
+Recall   : 0.0000
+Precision: 0.0000
+F1       : 0.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 362
+TP (TEA → TEA)          : 0
+
+
+Métricas – lgbm_test
+----------------------
+Acurácia : 0.5341
+Recall   : 0.0000
+Precision: 0.0000
+F1       : 0.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 47
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 41
+TP (TEA → TEA)          : 0
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/xtx_dmn/lightgbm_feature_importance.csv
+Métricas salvas em /home/thaisvaz/dmn_16/output_modelagem/xtx_dmn/model_metrics.yaml
+Feature importance consolidada salva em /home/thaisvaz/dmn_16/output_modelagem/xtx_dmn/all_models_feature_importance.csv
+✔ Dataset xtx_dmn finalizado
+Melhor test AP : 1.0000
+Melhor test AUC: 1.0000
+
+======================================
+Rodando: xty_dmn
+======================================
+features_path: /home/thaisvaz/_bases/xty_dmn.parquet
+output_dir: /home/thaisvaz/dmn_16/output_modelagem/xty_dmn
+..ler features de complexidade: xty_dmn.parquet
+/home/thaisvaz/.venv/pesquisa/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/thaisvaz/.venv/pesquisa/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+   subid       1_7-xty      1_10-xty  ...   166_199-xty   166_200-xty  target
+0  50003 -4.298894e-03 -1.653081e-16  ... -9.326470e-03 -2.908999e-02       1
+1  50004  4.038646e-17 -7.426983e-04  ... -1.123212e-02 -4.418541e-18       1
+2  50005  6.129293e-17 -8.489423e-03  ... -4.047565e-03 -9.503505e-17       1
+3  50006 -1.140756e-16  5.224381e-17  ... -3.660097e-03 -7.802086e-18       1
+4  50007 -2.737472e-17 -7.517948e-04  ...  1.816789e-17 -9.148475e-17       1
+
+[5 rows x 3431 columns]
+Ler a base levou: 0.0059495051701863606 minutos!
+X e y estão alinhados? True
+X_train shape: (783, 3430)
+X_test shape: (88, 3430)
+y_train shape: (783, 1)
+y_test shape: (88, 1)
+Train alinhado? True
+Test alinhado? True
+..treino modelo SVC L2
+treinar SVC L2 levou: 0.0055 minutos!
+Average Precision SVC L2 train: 1.0000
+AUC SVC L2 train: 1.0000
+Average Precision SVC L2 test: 0.8408
+AUC SVC L2 test: 0.8454
+
+Métricas – SVC L2_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – SVC L2_test
+----------------------
+Acurácia : 0.7841
+Recall   : 0.7073
+Precision: 0.8056
+F1       : 0.7532
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 40
+FP (Controle → TEA)     : 7
+FN (TEA → Controle)     : 12
+TP (TEA → TEA)          : 29
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/xty_dmn/svc_l2_feature_importance.csv
+..treino modelo SVC
+treinar SVC levou: 0.0158 minutos!
+Average Precision SVC train: 1.0000
+AUC SVC train: 1.0000
+Average Precision SVC test: 0.8243
+AUC SVC test: 0.8402
+
+Métricas – SVC_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – SVC_test
+----------------------
+Acurácia : 0.7841
+Recall   : 0.7073
+Precision: 0.8056
+F1       : 0.7532
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 40
+FP (Controle → TEA)     : 7
+FN (TEA → Controle)     : 12
+TP (TEA → TEA)          : 29
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/xty_dmn/svc_feature_importance.csv
+..treino modelo Logistic Regression L2
+treinar Logistic Regression L2 levou: 0.3980 minutos!
+Average Precision Logistic Regression L2 train: 1.0000
+AUC Logistic Regression L2 train: 1.0000
+Average Precision Logistic Regression L2 test: 0.7865
+AUC Logistic Regression L2 test: 0.8106
+
+Métricas – Logistic Regression L2_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – Logistic Regression L2_test
+----------------------
+Acurácia : 0.7614
+Recall   : 0.6829
+Precision: 0.7778
+F1       : 0.7273
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 39
+FP (Controle → TEA)     : 8
+FN (TEA → Controle)     : 13
+TP (TEA → TEA)          : 28
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/xty_dmn/logistic_regression_l2_feature_importance.csv
+..treino modelo Logistic Regression ElasticNet
+treinar Logistic Regression ElasticNet levou: 0.8838 minutos!
+Average Precision Logistic Regression ElasticNet train: 1.0000
+AUC Logistic Regression ElasticNet train: 1.0000
+Average Precision Logistic Regression ElasticNet test: 1.0000
+AUC Logistic Regression ElasticNet test: 1.0000
+
+Métricas – Logistic Regression ElasticNet_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – Logistic Regression ElasticNet_test
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 47
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 41
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/xty_dmn/logistic_regression_elasticnet_feature_importance.csv
+..treino modelo Ridge Classifier
+treinar Ridge Classifier levou: 0.0255 minutos!
+Average Precision Ridge Classifier train: 1.0000
+AUC Ridge Classifier train: 1.0000
+Average Precision Ridge Classifier test: 0.8425
+AUC Ridge Classifier test: 0.8547
+
+Métricas – Ridge Classifier_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – Ridge Classifier_test
+----------------------
+Acurácia : 0.8068
+Recall   : 0.7317
+Precision: 0.8333
+F1       : 0.7792
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 41
+FP (Controle → TEA)     : 6
+FN (TEA → Controle)     : 11
+TP (TEA → TEA)          : 30
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/xty_dmn/ridge_classifier_feature_importance.csv
+..treino modelo SGD Classifier
+treinar SGD Classifier levou: 0.0059 minutos!
+Average Precision SGD Classifier train: 1.0000
+AUC SGD Classifier train: 1.0000
+Average Precision SGD Classifier test: 0.6708
+AUC SGD Classifier test: 0.7462
+
+Métricas – SGD Classifier_train
+----------------------
+Acurácia : 0.9974
+Recall   : 0.9945
+Precision: 1.0000
+F1       : 0.9972
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 2
+TP (TEA → TEA)          : 360
+
+
+Métricas – SGD Classifier_test
+----------------------
+Acurácia : 0.6136
+Recall   : 0.2927
+Precision: 0.7059
+F1       : 0.4138
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 42
+FP (Controle → TEA)     : 5
+FN (TEA → Controle)     : 29
+TP (TEA → TEA)          : 12
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/xty_dmn/sgd_classifier_feature_importance.csv
+..treino modelo LightGBM
+Training until validation scores don't improve for 10 rounds
+Early stopping, best iteration is:
+[1]	valid_0's auc: 1
+treinar o lgbm levou: 0.698153805732727 minutos!
+Average LGBM train: 1.0
+AUC LGBM train: 1.0
+Average LGBM test: 1.0
+AUC LGBM test: 1.0
+
+Métricas – lgbm_train
+----------------------
+Acurácia : 0.5377
+Recall   : 0.0000
+Precision: 0.0000
+F1       : 0.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 362
+TP (TEA → TEA)          : 0
+
+
+Métricas – lgbm_test
+----------------------
+Acurácia : 0.5341
+Recall   : 0.0000
+Precision: 0.0000
+F1       : 0.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 47
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 41
+TP (TEA → TEA)          : 0
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/xty_dmn/lightgbm_feature_importance.csv
+Métricas salvas em /home/thaisvaz/dmn_16/output_modelagem/xty_dmn/model_metrics.yaml
+Feature importance consolidada salva em /home/thaisvaz/dmn_16/output_modelagem/xty_dmn/all_models_feature_importance.csv
+✔ Dataset xty_dmn finalizado
+Melhor test AP : 1.0000
+Melhor test AUC: 1.0000
+
+======================================
+Rodando: ytr_dmn
+======================================
+features_path: /home/thaisvaz/_bases/ytr_dmn.parquet
+output_dir: /home/thaisvaz/dmn_16/output_modelagem/ytr_dmn
+..ler features de complexidade: ytr_dmn.parquet
+/home/thaisvaz/.venv/pesquisa/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/thaisvaz/.venv/pesquisa/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+   subid       1_7-ytr      1_10-ytr  ...   166_199-ytr   166_200-ytr  target
+0  50003  8.406737e-17  3.202180e-04  ... -8.314218e-17 -5.133002e-17       1
+1  50004  1.071440e-02  5.096139e-17  ... -4.243401e-18  8.400669e-04       1
+2  50005  7.652969e-05 -1.757586e-16  ...  3.700744e-17  1.055216e-04       1
+3  50006  5.135338e-03  4.863440e-03  ...  1.229452e-16  4.652402e-03       1
+4  50007  2.286535e-03 -1.158262e-16  ... -1.795995e-17  3.667314e-04       1
+
+[5 rows x 3431 columns]
+Ler a base levou: 0.006034672260284424 minutos!
+X e y estão alinhados? True
+X_train shape: (783, 3430)
+X_test shape: (88, 3430)
+y_train shape: (783, 1)
+y_test shape: (88, 1)
+Train alinhado? True
+Test alinhado? True
+..treino modelo SVC L2
+treinar SVC L2 levou: 0.0069 minutos!
+Average Precision SVC L2 train: 1.0000
+AUC SVC L2 train: 1.0000
+Average Precision SVC L2 test: 0.9072
+AUC SVC L2 test: 0.9180
+
+Métricas – SVC L2_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – SVC L2_test
+----------------------
+Acurácia : 0.8523
+Recall   : 0.8780
+Precision: 0.8182
+F1       : 0.8471
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 39
+FP (Controle → TEA)     : 8
+FN (TEA → Controle)     : 5
+TP (TEA → TEA)          : 36
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/ytr_dmn/svc_l2_feature_importance.csv
+..treino modelo SVC
+treinar SVC levou: 0.0157 minutos!
+Average Precision SVC train: 1.0000
+AUC SVC train: 1.0000
+Average Precision SVC test: 0.9112
+AUC SVC test: 0.9165
+
+Métricas – SVC_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – SVC_test
+----------------------
+Acurácia : 0.8636
+Recall   : 0.8537
+Precision: 0.8537
+F1       : 0.8537
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 41
+FP (Controle → TEA)     : 6
+FN (TEA → Controle)     : 6
+TP (TEA → TEA)          : 35
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/ytr_dmn/svc_feature_importance.csv
+..treino modelo Logistic Regression L2
+treinar Logistic Regression L2 levou: 0.4891 minutos!
+Average Precision Logistic Regression L2 train: 1.0000
+AUC Logistic Regression L2 train: 1.0000
+Average Precision Logistic Regression L2 test: 0.8712
+AUC Logistic Regression L2 test: 0.8978
+
+Métricas – Logistic Regression L2_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – Logistic Regression L2_test
+----------------------
+Acurácia : 0.8182
+Recall   : 0.8049
+Precision: 0.8049
+F1       : 0.8049
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 39
+FP (Controle → TEA)     : 8
+FN (TEA → Controle)     : 8
+TP (TEA → TEA)          : 33
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/ytr_dmn/logistic_regression_l2_feature_importance.csv
+..treino modelo Logistic Regression ElasticNet
+treinar Logistic Regression ElasticNet levou: 1.0283 minutos!
+Average Precision Logistic Regression ElasticNet train: 1.0000
+AUC Logistic Regression ElasticNet train: 1.0000
+Average Precision Logistic Regression ElasticNet test: 1.0000
+AUC Logistic Regression ElasticNet test: 1.0000
+
+Métricas – Logistic Regression ElasticNet_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – Logistic Regression ElasticNet_test
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 47
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 41
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/ytr_dmn/logistic_regression_elasticnet_feature_importance.csv
+..treino modelo Ridge Classifier
+treinar Ridge Classifier levou: 0.0208 minutos!
+Average Precision Ridge Classifier train: 1.0000
+AUC Ridge Classifier train: 1.0000
+Average Precision Ridge Classifier test: 0.9075
+AUC Ridge Classifier test: 0.9133
+
+Métricas – Ridge Classifier_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – Ridge Classifier_test
+----------------------
+Acurácia : 0.8636
+Recall   : 0.8537
+Precision: 0.8537
+F1       : 0.8537
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 41
+FP (Controle → TEA)     : 6
+FN (TEA → Controle)     : 6
+TP (TEA → TEA)          : 35
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/ytr_dmn/ridge_classifier_feature_importance.csv
+..treino modelo SGD Classifier
+treinar SGD Classifier levou: 0.0059 minutos!
+Average Precision SGD Classifier train: 1.0000
+AUC SGD Classifier train: 1.0000
+Average Precision SGD Classifier test: 0.8601
+AUC SGD Classifier test: 0.8656
+
+Métricas – SGD Classifier_train
+----------------------
+Acurácia : 0.9936
+Recall   : 0.9862
+Precision: 1.0000
+F1       : 0.9930
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 5
+TP (TEA → TEA)          : 357
+
+
+Métricas – SGD Classifier_test
+----------------------
+Acurácia : 0.6818
+Recall   : 0.3659
+Precision: 0.8824
+F1       : 0.5172
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 45
+FP (Controle → TEA)     : 2
+FN (TEA → Controle)     : 26
+TP (TEA → TEA)          : 15
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/ytr_dmn/sgd_classifier_feature_importance.csv
+..treino modelo LightGBM
+Training until validation scores don't improve for 10 rounds
+Early stopping, best iteration is:
+[1]	valid_0's auc: 1
+treinar o lgbm levou: 0.6673791170120239 minutos!
+Average LGBM train: 1.0
+AUC LGBM train: 1.0
+Average LGBM test: 1.0
+AUC LGBM test: 1.0
+
+Métricas – lgbm_train
+----------------------
+Acurácia : 0.5377
+Recall   : 0.0000
+Precision: 0.0000
+F1       : 0.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 362
+TP (TEA → TEA)          : 0
+
+
+Métricas – lgbm_test
+----------------------
+Acurácia : 0.5341
+Recall   : 0.0000
+Precision: 0.0000
+F1       : 0.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 47
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 41
+TP (TEA → TEA)          : 0
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/ytr_dmn/lightgbm_feature_importance.csv
+Métricas salvas em /home/thaisvaz/dmn_16/output_modelagem/ytr_dmn/model_metrics.yaml
+Feature importance consolidada salva em /home/thaisvaz/dmn_16/output_modelagem/ytr_dmn/all_models_feature_importance.csv
+✔ Dataset ytr_dmn finalizado
+Melhor test AP : 1.0000
+Melhor test AUC: 1.0000
+
+======================================
+Rodando: yts_dmn
+======================================
+features_path: /home/thaisvaz/_bases/yts_dmn.parquet
+output_dir: /home/thaisvaz/dmn_16/output_modelagem/yts_dmn
+..ler features de complexidade: yts_dmn.parquet
+/home/thaisvaz/.venv/pesquisa/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/thaisvaz/.venv/pesquisa/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+   subid   1_7-yts  1_10-yts  ...   166_199-yts   166_200-yts  target
+0  50003 -0.180671 -0.003062  ... -5.686757e-02 -6.590585e-02       1
+1  50004  0.002988 -0.001639  ... -6.591787e-03  4.519177e-18       1
+2  50005 -0.036263 -0.014168  ... -7.467330e-03 -8.659692e-03       1
+3  50006 -0.081601 -0.001914  ... -7.550140e-03 -2.437204e-02       1
+4  50007 -0.042319 -0.032937  ... -1.795995e-17 -1.159393e-02       1
+
+[5 rows x 3431 columns]
+Ler a base levou: 0.005428377787272135 minutos!
+X e y estão alinhados? True
+X_train shape: (783, 3430)
+X_test shape: (88, 3430)
+y_train shape: (783, 1)
+y_test shape: (88, 1)
+Train alinhado? True
+Test alinhado? True
+..treino modelo SVC L2
+treinar SVC L2 levou: 0.0475 minutos!
+Average Precision SVC L2 train: 1.0000
+AUC SVC L2 train: 1.0000
+Average Precision SVC L2 test: 0.9811
+AUC SVC L2 test: 0.9818
+
+Métricas – SVC L2_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – SVC L2_test
+----------------------
+Acurácia : 0.9545
+Recall   : 0.9512
+Precision: 0.9512
+F1       : 0.9512
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 45
+FP (Controle → TEA)     : 2
+FN (TEA → Controle)     : 2
+TP (TEA → TEA)          : 39
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/yts_dmn/svc_l2_feature_importance.csv
+..treino modelo SVC
+treinar SVC levou: 0.0142 minutos!
+Average Precision SVC train: 1.0000
+AUC SVC train: 1.0000
+Average Precision SVC test: 0.9831
+AUC SVC test: 0.9829
+
+Métricas – SVC_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – SVC_test
+----------------------
+Acurácia : 0.9432
+Recall   : 0.9268
+Precision: 0.9500
+F1       : 0.9383
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 45
+FP (Controle → TEA)     : 2
+FN (TEA → Controle)     : 3
+TP (TEA → TEA)          : 38
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/yts_dmn/svc_feature_importance.csv
+..treino modelo Logistic Regression L2
+treinar Logistic Regression L2 levou: 0.5524 minutos!
+Average Precision Logistic Regression L2 train: 1.0000
+AUC Logistic Regression L2 train: 1.0000
+Average Precision Logistic Regression L2 test: 0.9356
+AUC Logistic Regression L2 test: 0.9408
+
+Métricas – Logistic Regression L2_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – Logistic Regression L2_test
+----------------------
+Acurácia : 0.9091
+Recall   : 0.9024
+Precision: 0.9024
+F1       : 0.9024
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 43
+FP (Controle → TEA)     : 4
+FN (TEA → Controle)     : 4
+TP (TEA → TEA)          : 37
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/yts_dmn/logistic_regression_l2_feature_importance.csv
+..treino modelo Logistic Regression ElasticNet
+treinar Logistic Regression ElasticNet levou: 0.9559 minutos!
+Average Precision Logistic Regression ElasticNet train: 1.0000
+AUC Logistic Regression ElasticNet train: 1.0000
+Average Precision Logistic Regression ElasticNet test: 1.0000
+AUC Logistic Regression ElasticNet test: 1.0000
+
+Métricas – Logistic Regression ElasticNet_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – Logistic Regression ElasticNet_test
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 47
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 41
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/yts_dmn/logistic_regression_elasticnet_feature_importance.csv
+..treino modelo Ridge Classifier
+treinar Ridge Classifier levou: 0.0224 minutos!
+Average Precision Ridge Classifier train: 1.0000
+AUC Ridge Classifier train: 1.0000
+Average Precision Ridge Classifier test: 0.9905
+AUC Ridge Classifier test: 0.9901
+
+Métricas – Ridge Classifier_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – Ridge Classifier_test
+----------------------
+Acurácia : 0.9432
+Recall   : 0.9268
+Precision: 0.9500
+F1       : 0.9383
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 45
+FP (Controle → TEA)     : 2
+FN (TEA → Controle)     : 3
+TP (TEA → TEA)          : 38
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/yts_dmn/ridge_classifier_feature_importance.csv
+..treino modelo SGD Classifier
+treinar SGD Classifier levou: 0.0047 minutos!
+Average Precision SGD Classifier train: 1.0000
+AUC SGD Classifier train: 1.0000
+Average Precision SGD Classifier test: 0.8607
+AUC SGD Classifier test: 0.9061
+
+Métricas – SGD Classifier_train
+----------------------
+Acurácia : 0.9974
+Recall   : 0.9945
+Precision: 1.0000
+F1       : 0.9972
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 2
+TP (TEA → TEA)          : 360
+
+
+Métricas – SGD Classifier_test
+----------------------
+Acurácia : 0.7727
+Recall   : 0.5610
+Precision: 0.9200
+F1       : 0.6970
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 45
+FP (Controle → TEA)     : 2
+FN (TEA → Controle)     : 18
+TP (TEA → TEA)          : 23
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/yts_dmn/sgd_classifier_feature_importance.csv
+..treino modelo LightGBM
+Training until validation scores don't improve for 10 rounds
+Early stopping, best iteration is:
+[1]	valid_0's auc: 1
+treinar o lgbm levou: 0.7310115655263265 minutos!
+Average LGBM train: 1.0
+AUC LGBM train: 1.0
+Average LGBM test: 1.0
+AUC LGBM test: 1.0
+
+Métricas – lgbm_train
+----------------------
+Acurácia : 0.5377
+Recall   : 0.0000
+Precision: 0.0000
+F1       : 0.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 362
+TP (TEA → TEA)          : 0
+
+
+Métricas – lgbm_test
+----------------------
+Acurácia : 0.5341
+Recall   : 0.0000
+Precision: 0.0000
+F1       : 0.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 47
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 41
+TP (TEA → TEA)          : 0
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/yts_dmn/lightgbm_feature_importance.csv
+Métricas salvas em /home/thaisvaz/dmn_16/output_modelagem/yts_dmn/model_metrics.yaml
+Feature importance consolidada salva em /home/thaisvaz/dmn_16/output_modelagem/yts_dmn/all_models_feature_importance.csv
+✔ Dataset yts_dmn finalizado
+Melhor test AP : 1.0000
+Melhor test AUC: 1.0000
+
+======================================
+Rodando: ytx_dmn
+======================================
+features_path: /home/thaisvaz/_bases/ytx_dmn.parquet
+output_dir: /home/thaisvaz/dmn_16/output_modelagem/ytx_dmn
+..ler features de complexidade: ytx_dmn.parquet
+/home/thaisvaz/.venv/pesquisa/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/thaisvaz/.venv/pesquisa/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+   subid       1_7-ytx      1_10-ytx  ...   166_199-ytx   166_200-ytx  target
+0  50003 -8.406737e-17 -3.202180e-04  ...  8.314218e-17  5.133002e-17       1
+1  50004  4.097061e-17 -5.096139e-17  ...  4.243401e-18 -8.400669e-04       1
+2  50005 -7.652969e-05  1.757586e-16  ... -3.700744e-17 -1.055216e-04       1
+3  50006 -5.135338e-03 -4.863440e-03  ... -1.229452e-16 -4.652402e-03       1
+4  50007 -2.286535e-03  1.158262e-16  ...  1.795995e-17 -3.667314e-04       1
+
+[5 rows x 3431 columns]
+Ler a base levou: 0.00570908784866333 minutos!
+X e y estão alinhados? True
+X_train shape: (783, 3430)
+X_test shape: (88, 3430)
+y_train shape: (783, 1)
+y_test shape: (88, 1)
+Train alinhado? True
+Test alinhado? True
+..treino modelo SVC L2
+treinar SVC L2 levou: 0.0075 minutos!
+Average Precision SVC L2 train: 1.0000
+AUC SVC L2 train: 1.0000
+Average Precision SVC L2 test: 0.7996
+AUC SVC L2 test: 0.8505
+
+Métricas – SVC L2_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – SVC L2_test
+----------------------
+Acurácia : 0.8409
+Recall   : 0.8293
+Precision: 0.8293
+F1       : 0.8293
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 40
+FP (Controle → TEA)     : 7
+FN (TEA → Controle)     : 7
+TP (TEA → TEA)          : 34
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/ytx_dmn/svc_l2_feature_importance.csv
+..treino modelo SVC
+treinar SVC levou: 0.0198 minutos!
+Average Precision SVC train: 1.0000
+AUC SVC train: 1.0000
+Average Precision SVC test: 0.7853
+AUC SVC test: 0.8495
+
+Métricas – SVC_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – SVC_test
+----------------------
+Acurácia : 0.8295
+Recall   : 0.8049
+Precision: 0.8250
+F1       : 0.8148
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 40
+FP (Controle → TEA)     : 7
+FN (TEA → Controle)     : 8
+TP (TEA → TEA)          : 33
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/ytx_dmn/svc_feature_importance.csv
+..treino modelo Logistic Regression L2
+treinar Logistic Regression L2 levou: 0.4066 minutos!
+Average Precision Logistic Regression L2 train: 1.0000
+AUC Logistic Regression L2 train: 1.0000
+Average Precision Logistic Regression L2 test: 0.7988
+AUC Logistic Regression L2 test: 0.8464
+
+Métricas – Logistic Regression L2_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – Logistic Regression L2_test
+----------------------
+Acurácia : 0.7955
+Recall   : 0.7805
+Precision: 0.7805
+F1       : 0.7805
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 38
+FP (Controle → TEA)     : 9
+FN (TEA → Controle)     : 9
+TP (TEA → TEA)          : 32
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/ytx_dmn/logistic_regression_l2_feature_importance.csv
+..treino modelo Logistic Regression ElasticNet
+treinar Logistic Regression ElasticNet levou: 0.9062 minutos!
+Average Precision Logistic Regression ElasticNet train: 1.0000
+AUC Logistic Regression ElasticNet train: 1.0000
+Average Precision Logistic Regression ElasticNet test: 1.0000
+AUC Logistic Regression ElasticNet test: 1.0000
+
+Métricas – Logistic Regression ElasticNet_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – Logistic Regression ElasticNet_test
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 47
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 41
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/ytx_dmn/logistic_regression_elasticnet_feature_importance.csv
+..treino modelo Ridge Classifier
+treinar Ridge Classifier levou: 0.0196 minutos!
+Average Precision Ridge Classifier train: 1.0000
+AUC Ridge Classifier train: 1.0000
+Average Precision Ridge Classifier test: 0.8121
+AUC Ridge Classifier test: 0.8656
+
+Métricas – Ridge Classifier_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – Ridge Classifier_test
+----------------------
+Acurácia : 0.8409
+Recall   : 0.8049
+Precision: 0.8462
+F1       : 0.8250
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 41
+FP (Controle → TEA)     : 6
+FN (TEA → Controle)     : 8
+TP (TEA → TEA)          : 33
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/ytx_dmn/ridge_classifier_feature_importance.csv
+..treino modelo SGD Classifier
+treinar SGD Classifier levou: 0.0069 minutos!
+Average Precision SGD Classifier train: 1.0000
+AUC SGD Classifier train: 1.0000
+Average Precision SGD Classifier test: 0.7792
+AUC SGD Classifier test: 0.8262
+
+Métricas – SGD Classifier_train
+----------------------
+Acurácia : 0.9974
+Recall   : 0.9945
+Precision: 1.0000
+F1       : 0.9972
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 2
+TP (TEA → TEA)          : 360
+
+
+Métricas – SGD Classifier_test
+----------------------
+Acurácia : 0.6818
+Recall   : 0.4146
+Precision: 0.8095
+F1       : 0.5484
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 43
+FP (Controle → TEA)     : 4
+FN (TEA → Controle)     : 24
+TP (TEA → TEA)          : 17
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/ytx_dmn/sgd_classifier_feature_importance.csv
+..treino modelo LightGBM
+Training until validation scores don't improve for 10 rounds
+Early stopping, best iteration is:
+[1]	valid_0's auc: 1
+treinar o lgbm levou: 0.784567101796468 minutos!
+Average LGBM train: 1.0
+AUC LGBM train: 1.0
+Average LGBM test: 1.0
+AUC LGBM test: 1.0
+
+Métricas – lgbm_train
+----------------------
+Acurácia : 0.5377
+Recall   : 0.0000
+Precision: 0.0000
+F1       : 0.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 362
+TP (TEA → TEA)          : 0
+
+
+Métricas – lgbm_test
+----------------------
+Acurácia : 0.5341
+Recall   : 0.0000
+Precision: 0.0000
+F1       : 0.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 47
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 41
+TP (TEA → TEA)          : 0
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/ytx_dmn/lightgbm_feature_importance.csv
+Métricas salvas em /home/thaisvaz/dmn_16/output_modelagem/ytx_dmn/model_metrics.yaml
+Feature importance consolidada salva em /home/thaisvaz/dmn_16/output_modelagem/ytx_dmn/all_models_feature_importance.csv
+✔ Dataset ytx_dmn finalizado
+Melhor test AP : 1.0000
+Melhor test AUC: 1.0000
+
+======================================
+Rodando: yty_dmn
+======================================
+features_path: /home/thaisvaz/_bases/yty_dmn.parquet
+output_dir: /home/thaisvaz/dmn_16/output_modelagem/yty_dmn
+..ler features de complexidade: yty_dmn.parquet
+/home/thaisvaz/.venv/pesquisa/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/thaisvaz/.venv/pesquisa/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+   subid   1_7-yty  1_10-yty  ...   166_199-yty   166_200-yty  target
+0  50003  0.180671  0.003062  ...  5.686757e-02  6.590585e-02       1
+1  50004  0.190685  0.028774  ...  6.591787e-03 -4.519177e-18       1
+2  50005  0.105139  0.101583  ...  7.467330e-03  8.659692e-03       1
+3  50006  0.159267  0.001914  ...  7.550140e-03  2.437204e-02       1
+4  50007  0.081237  0.063860  ...  1.795995e-17  1.159393e-02       1
+
+[5 rows x 3431 columns]
+Ler a base levou: 0.007138442993164062 minutos!
+X e y estão alinhados? True
+X_train shape: (783, 3430)
+X_test shape: (88, 3430)
+y_train shape: (783, 1)
+y_test shape: (88, 1)
+Train alinhado? True
+Test alinhado? True
+..treino modelo SVC L2
+treinar SVC L2 levou: 0.1834 minutos!
+Average Precision SVC L2 train: 1.0000
+AUC SVC L2 train: 1.0000
+Average Precision SVC L2 test: 1.0000
+AUC SVC L2 test: 1.0000
+
+Métricas – SVC L2_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – SVC L2_test
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 47
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 41
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/yty_dmn/svc_l2_feature_importance.csv
+..treino modelo SVC
+treinar SVC levou: 0.0153 minutos!
+Average Precision SVC train: 1.0000
+AUC SVC train: 1.0000
+Average Precision SVC test: 1.0000
+AUC SVC test: 1.0000
+
+Métricas – SVC_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – SVC_test
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 47
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 41
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/yty_dmn/svc_feature_importance.csv
+..treino modelo Logistic Regression L2
+treinar Logistic Regression L2 levou: 0.4971 minutos!
+Average Precision Logistic Regression L2 train: 1.0000
+AUC Logistic Regression L2 train: 1.0000
+Average Precision Logistic Regression L2 test: 0.9976
+AUC Logistic Regression L2 test: 0.9979
+
+Métricas – Logistic Regression L2_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – Logistic Regression L2_test
+----------------------
+Acurácia : 0.9773
+Recall   : 0.9756
+Precision: 0.9756
+F1       : 0.9756
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 46
+FP (Controle → TEA)     : 1
+FN (TEA → Controle)     : 1
+TP (TEA → TEA)          : 40
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/yty_dmn/logistic_regression_l2_feature_importance.csv
+..treino modelo Logistic Regression ElasticNet
+treinar Logistic Regression ElasticNet levou: 0.8067 minutos!
+Average Precision Logistic Regression ElasticNet train: 1.0000
+AUC Logistic Regression ElasticNet train: 1.0000
+Average Precision Logistic Regression ElasticNet test: 1.0000
+AUC Logistic Regression ElasticNet test: 1.0000
+
+Métricas – Logistic Regression ElasticNet_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – Logistic Regression ElasticNet_test
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 47
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 41
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/yty_dmn/logistic_regression_elasticnet_feature_importance.csv
+..treino modelo Ridge Classifier
+treinar Ridge Classifier levou: 0.0242 minutos!
+Average Precision Ridge Classifier train: 1.0000
+AUC Ridge Classifier train: 1.0000
+Average Precision Ridge Classifier test: 1.0000
+AUC Ridge Classifier test: 1.0000
+
+Métricas – Ridge Classifier_train
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 362
+
+
+Métricas – Ridge Classifier_test
+----------------------
+Acurácia : 1.0000
+Recall   : 1.0000
+Precision: 1.0000
+F1       : 1.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 47
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 0
+TP (TEA → TEA)          : 41
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/yty_dmn/ridge_classifier_feature_importance.csv
+..treino modelo SGD Classifier
+treinar SGD Classifier levou: 0.0050 minutos!
+Average Precision SGD Classifier train: 0.9959
+AUC SGD Classifier train: 0.9962
+Average Precision SGD Classifier test: 0.8959
+AUC SGD Classifier test: 0.8895
+
+Métricas – SGD Classifier_train
+----------------------
+Acurácia : 0.9617
+Recall   : 0.9309
+Precision: 0.9854
+F1       : 0.9574
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 416
+FP (Controle → TEA)     : 5
+FN (TEA → Controle)     : 25
+TP (TEA → TEA)          : 337
+
+
+Métricas – SGD Classifier_test
+----------------------
+Acurácia : 0.7841
+Recall   : 0.5854
+Precision: 0.9231
+F1       : 0.7164
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 45
+FP (Controle → TEA)     : 2
+FN (TEA → Controle)     : 17
+TP (TEA → TEA)          : 24
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/yty_dmn/sgd_classifier_feature_importance.csv
+..treino modelo LightGBM
+Training until validation scores don't improve for 10 rounds
+Early stopping, best iteration is:
+[1]	valid_0's auc: 1
+treinar o lgbm levou: 0.7724040031433106 minutos!
+Average LGBM train: 1.0
+AUC LGBM train: 1.0
+Average LGBM test: 1.0
+AUC LGBM test: 1.0
+
+Métricas – lgbm_train
+----------------------
+Acurácia : 0.5377
+Recall   : 0.0000
+Precision: 0.0000
+F1       : 0.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 421
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 362
+TP (TEA → TEA)          : 0
+
+
+Métricas – lgbm_test
+----------------------
+Acurácia : 0.5341
+Recall   : 0.0000
+Precision: 0.0000
+F1       : 0.0000
+
+Matriz de Confusão
+-----------------
+TN (Controle → Controle): 47
+FP (Controle → TEA)     : 0
+FN (TEA → Controle)     : 41
+TP (TEA → TEA)          : 0
+
+Feature importance salva em: /home/thaisvaz/dmn_16/output_modelagem/yty_dmn/lightgbm_feature_importance.csv
+Métricas salvas em /home/thaisvaz/dmn_16/output_modelagem/yty_dmn/model_metrics.yaml
+Feature importance consolidada salva em /home/thaisvaz/dmn_16/output_modelagem/yty_dmn/all_models_feature_importance.csv
+✔ Dataset yty_dmn finalizado
+Melhor test AP : 1.0000
+Melhor test AUC: 1.0000
+
+Resumo salvo em /home/thaisvaz/dmn_16/output_modelagem/run_summary.csv
+
+Resumo das bases:
+    dataset  ...                                      output_dir
+0   rtr_dmn  ...  /home/thaisvaz/dmn_16/output_modelagem/rtr_dmn
+1   rts_dmn  ...  /home/thaisvaz/dmn_16/output_modelagem/rts_dmn
+2   rtx_dmn  ...  /home/thaisvaz/dmn_16/output_modelagem/rtx_dmn
+3   rty_dmn  ...  /home/thaisvaz/dmn_16/output_modelagem/rty_dmn
+4   str_dmn  ...  /home/thaisvaz/dmn_16/output_modelagem/str_dmn
+5   sts_dmn  ...  /home/thaisvaz/dmn_16/output_modelagem/sts_dmn
+6   stx_dmn  ...  /home/thaisvaz/dmn_16/output_modelagem/stx_dmn
+7   sty_dmn  ...  /home/thaisvaz/dmn_16/output_modelagem/sty_dmn
+8   xtr_dmn  ...  /home/thaisvaz/dmn_16/output_modelagem/xtr_dmn
+9   xts_dmn  ...  /home/thaisvaz/dmn_16/output_modelagem/xts_dmn
+10  xtx_dmn  ...  /home/thaisvaz/dmn_16/output_modelagem/xtx_dmn
+11  xty_dmn  ...  /home/thaisvaz/dmn_16/output_modelagem/xty_dmn
+12  ytr_dmn  ...  /home/thaisvaz/dmn_16/output_modelagem/ytr_dmn
+13  yts_dmn  ...  /home/thaisvaz/dmn_16/output_modelagem/yts_dmn
+14  ytx_dmn  ...  /home/thaisvaz/dmn_16/output_modelagem/ytx_dmn
+15  yty_dmn  ...  /home/thaisvaz/dmn_16/output_modelagem/yty_dmn
+
+[16 rows x 8 columns]
+
+Tempo total: 36.28730690876643 minutos!
+✔ Pipeline multi-bases finalizado com sucesso

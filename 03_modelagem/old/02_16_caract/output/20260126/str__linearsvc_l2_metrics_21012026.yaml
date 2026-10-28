@@ -1,0 +1,27 @@
+- feature_set: str
+  model_name: str__LinearSVC L2
+  exec_time_minutes: 0.17269470691680908
+  train:
+    auc: 0.9988582826997021
+    average_precision: 0.9986778845280833
+    model_name: str__linearsvc_l2_train
+    accuracy: 0.9833971902937421
+    recall: 0.9834254143646409
+    precision: 0.9807162534435262
+    f1: 0.9820689655172414
+    tn: 414
+    fp: 7
+    fn: 6
+    tp: 356
+  test:
+    auc: 0.5485210171250648
+    average_precision: 0.5264106150153374
+    model_name: str__linearsvc_l2_test
+    accuracy: 0.5795454545454546
+    recall: 0.5121951219512195
+    precision: 0.5526315789473685
+    f1: 0.5316455696202531
+    tn: 30
+    fp: 17
+    fn: 20
+    tp: 21

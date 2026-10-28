@@ -1,0 +1,27 @@
+- feature_set: xtr
+  model_name: xtr__LinearSVC L2
+  exec_time_minutes: 0.05112211704254151
+  train:
+    auc: 0.9985695725777877
+    average_precision: 0.9984364247948944
+    model_name: xtr__linearsvc_l2_train
+    accuracy: 0.979565772669221
+    recall: 0.9834254143646409
+    precision: 0.9726775956284153
+    f1: 0.978021978021978
+    tn: 411
+    fp: 10
+    fn: 6
+    tp: 356
+  test:
+    auc: 0.6414115204981837
+    average_precision: 0.6236944253955521
+    model_name: xtr__linearsvc_l2_test
+    accuracy: 0.6022727272727273
+    recall: 0.5365853658536586
+    precision: 0.5789473684210527
+    f1: 0.5569620253164557
+    tn: 31
+    fp: 16
+    fn: 19
+    tp: 22

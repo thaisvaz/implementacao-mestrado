@@ -1,0 +1,27 @@
+- feature_set: rtr
+  model_name: rtr__LinearSVC L2
+  exec_time_minutes: 0.07165480057398478
+  train:
+    auc: 0.9864240626763427
+    average_precision: 0.9850130716838874
+    model_name: rtr__linearsvc_l2_train
+    accuracy: 0.9386973180076629
+    recall: 0.93646408839779
+    precision: 0.9313186813186813
+    f1: 0.9338842975206612
+    tn: 396
+    fp: 25
+    fn: 23
+    tp: 339
+  test:
+    auc: 0.6855215360664245
+    average_precision: 0.6709833000848051
+    model_name: rtr__linearsvc_l2_test
+    accuracy: 0.6590909090909091
+    recall: 0.5609756097560976
+    precision: 0.6571428571428571
+    f1: 0.6052631578947368
+    tn: 35
+    fp: 12
+    fn: 18
+    tp: 23

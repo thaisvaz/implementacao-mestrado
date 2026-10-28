@@ -1,0 +1,27 @@
+- feature_set: sts
+  model_name: sts__Logistic Regression ElasticNet
+  exec_time_minutes: 4.643293770154317
+  train:
+    auc: 0.5957074054146271
+    average_precision: 0.5420483013273858
+    model_name: sts__logistic_regression_elasticnet_train
+    accuracy: 0.5376756066411239
+    recall: 0.0
+    precision: 0.0
+    f1: 0.0
+    tn: 421
+    fp: 0
+    fn: 362
+    tp: 0
+  test:
+    auc: 0.5614945511157239
+    average_precision: 0.5435317211279973
+    model_name: sts__logistic_regression_elasticnet_test
+    accuracy: 0.5340909090909091
+    recall: 0.0
+    precision: 0.0
+    f1: 0.0
+    tn: 47
+    fp: 0
+    fn: 41
+    tp: 0

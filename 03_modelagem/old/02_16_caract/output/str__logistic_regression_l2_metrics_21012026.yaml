@@ -1,0 +1,27 @@
+- feature_set: str
+  model_name: str__Logistic Regression L2
+  exec_time_minutes: 0.8811714768409729
+  train:
+    auc: 0.9206965787850554
+    average_precision: 0.9109373416486408
+    model_name: str__logistic_regression_l2_train
+    accuracy: 0.8352490421455939
+    recall: 0.7900552486187845
+    precision: 0.8436578171091446
+    f1: 0.8159771754636234
+    tn: 368
+    fp: 53
+    fn: 76
+    tp: 286
+  test:
+    auc: 0.5360664244940322
+    average_precision: 0.501143448534128
+    model_name: str__logistic_regression_l2_test
+    accuracy: 0.5113636363636364
+    recall: 0.3902439024390244
+    precision: 0.47058823529411764
+    f1: 0.4266666666666667
+    tn: 29
+    fp: 18
+    fn: 25
+    tp: 16

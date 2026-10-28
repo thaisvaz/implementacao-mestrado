@@ -1,0 +1,27 @@
+- feature_set: rtr
+  model_name: rtr__LightGBM
+  exec_time_minutes: 2.9662604252497355
+  train:
+    auc: 1.0
+    average_precision: 0.9999999999999999
+    model_name: rtr__lightgbm_train
+    accuracy: 1.0
+    recall: 1.0
+    precision: 1.0
+    f1: 1.0
+    tn: 421
+    fp: 0
+    fn: 0
+    tp: 362
+  test:
+    auc: 0.6901920083030618
+    average_precision: 0.6998354327739051
+    model_name: rtr__lightgbm_test
+    accuracy: 0.6363636363636364
+    recall: 0.4878048780487805
+    precision: 0.6451612903225806
+    f1: 0.5555555555555556
+    tn: 36
+    fp: 11
+    fn: 21
+    tp: 20

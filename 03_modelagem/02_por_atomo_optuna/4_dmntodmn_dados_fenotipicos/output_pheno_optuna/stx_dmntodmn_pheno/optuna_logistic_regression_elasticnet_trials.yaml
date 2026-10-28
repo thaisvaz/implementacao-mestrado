@@ -1,0 +1,120 @@
+- number: 0
+  penalized_ap: 0.465909
+  params:
+    C: 0.002455468725281573
+    l1_ratio: 0.7612497166748563
+  ap_train: 0.4623
+  ap_val: 0.4659
+  gap: -0.0036
+- number: 1
+  penalized_ap: 0.202563
+  params:
+    C: 0.009721916634251466
+    l1_ratio: 0.13813168747631954
+  ap_train: 0.6286
+  ap_val: 0.5534
+  gap: 0.0752
+- number: 2
+  penalized_ap: -0.530595
+  params:
+    C: 0.02117318796992676
+    l1_ratio: 0.08299956500689287
+  ap_train: 0.7152
+  ap_val: 0.5034
+  gap: 0.2118
+- number: 3
+  penalized_ap: -0.805729
+  params:
+    C: 0.4874255889616768
+    l1_ratio: 0.8065937981616575
+  ap_train: 0.7863
+  ap_val: 0.5168
+  gap: 0.2695
+- number: 4
+  penalized_ap: -0.93481
+  params:
+    C: 8.53036586188327
+    l1_ratio: 0.6356607347968526
+  ap_train: 0.8018
+  ap_val: 0.5082
+  gap: 0.2936
+- number: 5
+  penalized_ap: 0.465909
+  params:
+    C: 0.007306224692521041
+    l1_ratio: 0.5490274320842796
+  ap_train: 0.4623
+  ap_val: 0.4659
+  gap: -0.0036
+- number: 6
+  penalized_ap: -0.775913
+  params:
+    C: 0.15213874591771243
+    l1_ratio: 0.23407607314700163
+  ap_train: 0.7789
+  ap_val: 0.5156
+  gap: 0.2633
+- number: 7
+  penalized_ap: 0.465909
+  params:
+    C: 0.0028503840032456113
+    l1_ratio: 0.4996592670489547
+  ap_train: 0.4623
+  ap_val: 0.4659
+  gap: -0.0036
+- number: 8
+  penalized_ap: 0.465909
+  params:
+    C: 0.00405913681533415
+    l1_ratio: 0.5326860805572696
+  ap_train: 0.4623
+  ap_val: 0.4659
+  gap: -0.0036
+- number: 9
+  penalized_ap: 0.621345
+  params:
+    C: 0.035320518780986424
+    l1_ratio: 0.6883273834221644
+  ap_train: 0.602
+  ap_val: 0.6213
+  gap: -0.0193
+- number: 10
+  penalized_ap: -0.804717
+  params:
+    C: 0.5852724164017616
+    l1_ratio: 0.9973390791621801
+  ap_train: 0.7867
+  ap_val: 0.5173
+  gap: 0.2694
+- number: 11
+  penalized_ap: 0.465909
+  params:
+    C: 0.0014755547087197298
+    l1_ratio: 0.844105371279191
+  ap_train: 0.4623
+  ap_val: 0.4659
+  gap: -0.0036
+- number: 12
+  penalized_ap: 0.451993
+  params:
+    C: 0.044605219038003234
+    l1_ratio: 0.7447400777659694
+  ap_train: 0.6231
+  ap_val: 0.5904
+  gap: 0.0327
+- number: 13
+  penalized_ap: 0.465909
+  params:
+    C: 0.0010774984868702484
+    l1_ratio: 0.3123661076604883
+  ap_train: 0.4623
+  ap_val: 0.4659
+  gap: -0.0036
+- number: 14
+  penalized_ap: 0.487352
+  params:
+    C: 0.05686789800927869
+    l1_ratio: 0.9886868224219134
+  ap_train: 0.6192
+  ap_val: 0.593
+  gap: 0.0261

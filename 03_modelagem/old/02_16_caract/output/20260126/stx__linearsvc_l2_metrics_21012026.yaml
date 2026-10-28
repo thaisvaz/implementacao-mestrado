@@ -1,0 +1,27 @@
+- feature_set: stx
+  model_name: stx__LinearSVC L2
+  exec_time_minutes: 0.15627439419428507
+  train:
+    auc: 0.9999278224695214
+    average_precision: 0.9999173995950348
+    model_name: stx__linearsvc_l2_train
+    accuracy: 0.9936143039591315
+    recall: 0.9972375690607734
+    precision: 0.989041095890411
+    f1: 0.9931224209078404
+    tn: 417
+    fp: 4
+    fn: 1
+    tp: 361
+  test:
+    auc: 0.5578619615983395
+    average_precision: 0.5164045127948866
+    model_name: stx__linearsvc_l2_test
+    accuracy: 0.5454545454545454
+    recall: 0.4634146341463415
+    precision: 0.5135135135135135
+    f1: 0.48717948717948717
+    tn: 29
+    fp: 18
+    fn: 22
+    tp: 19

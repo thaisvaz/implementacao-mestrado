@@ -1,0 +1,27 @@
+- feature_set: ytr
+  model_name: ytr__Logistic Regression L2
+  exec_time_minutes: 0.12146784861882527
+  train:
+    auc: 0.9321465597564337
+    average_precision: 0.9238670838002331
+    model_name: ytr__logistic_regression_l2_train
+    accuracy: 0.735632183908046
+    recall: 0.4419889502762431
+    precision: 0.9696969696969697
+    f1: 0.6072106261859582
+    tn: 416
+    fp: 5
+    fn: 202
+    tp: 160
+  test:
+    auc: 0.5889984431759211
+    average_precision: 0.5901240732253219
+    model_name: ytr__logistic_regression_l2_test
+    accuracy: 0.5795454545454546
+    recall: 0.14634146341463414
+    precision: 0.75
+    f1: 0.24489795918367346
+    tn: 45
+    fp: 2
+    fn: 35
+    tp: 6

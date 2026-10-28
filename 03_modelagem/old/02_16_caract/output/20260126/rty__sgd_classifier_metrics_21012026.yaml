@@ -1,0 +1,27 @@
+- feature_set: rty
+  model_name: rty__SGD Classifier
+  exec_time_minutes: 0.015790597597757975
+  train:
+    auc: 1.0
+    average_precision: 0.9999999999999999
+    model_name: rty__sgd_classifier_train
+    accuracy: 1.0
+    recall: 1.0
+    precision: 1.0
+    f1: 1.0
+    tn: 421
+    fp: 0
+    fn: 0
+    tp: 362
+  test:
+    auc: 0.6953814218993254
+    average_precision: 0.6251289071724462
+    model_name: rty__sgd_classifier_test
+    accuracy: 0.6477272727272727
+    recall: 0.5121951219512195
+    precision: 0.65625
+    f1: 0.5753424657534246
+    tn: 36
+    fp: 11
+    fn: 20
+    tp: 21

@@ -1,0 +1,27 @@
+- feature_set: xtx
+  model_name: xtx__Logistic Regression L2
+  exec_time_minutes: 1.339075263341268
+  train:
+    auc: 0.9040301308381781
+    average_precision: 0.8915423334614828
+    model_name: xtx__logistic_regression_l2_train
+    accuracy: 0.822477650063857
+    recall: 0.7845303867403315
+    precision: 0.8231884057971014
+    f1: 0.8033946251768034
+    tn: 360
+    fp: 61
+    fn: 78
+    tp: 284
+  test:
+    auc: 0.5210171250648676
+    average_precision: 0.4570412046559438
+    model_name: xtx__logistic_regression_l2_test
+    accuracy: 0.5227272727272727
+    recall: 0.36585365853658536
+    precision: 0.4838709677419355
+    f1: 0.4166666666666667
+    tn: 31
+    fp: 16
+    fn: 26
+    tp: 15

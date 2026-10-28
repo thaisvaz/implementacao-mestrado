@@ -1,0 +1,105 @@
+- number: 0
+  penalized_ap: -0.450189
+  params:
+    C: 0.002455468725281573
+  ap_train: 0.7012
+  ap_val: 0.5051
+  gap: 0.1961
+- number: 1
+  penalized_ap: -0.811053
+  params:
+    C: 1.109171920851195
+  ap_train: 0.7257
+  ap_val: 0.4654
+  gap: 0.2603
+- number: 2
+  penalized_ap: -0.626415
+  params:
+    C: 0.009721916634251466
+  ap_train: 0.7198
+  ap_val: 0.4912
+  gap: 0.2285
+- number: 3
+  penalized_ap: -0.438606
+  params:
+    C: 0.003568837304791514
+  ap_train: 0.7086
+  ap_val: 0.5132
+  gap: 0.1954
+- number: 4
+  penalized_ap: -0.720598
+  params:
+    C: 0.02117318796992676
+  ap_train: 0.7242
+  ap_val: 0.4793
+  gap: 0.245
+- number: 5
+  penalized_ap: -0.401168
+  params:
+    C: 0.002147821869005497
+  ap_train: 0.6982
+  ap_val: 0.5108
+  gap: 0.1874
+- number: 6
+  penalized_ap: -0.806201
+  params:
+    C: 0.4874255889616768
+  ap_train: 0.726
+  ap_val: 0.4665
+  gap: 0.2595
+- number: 7
+  penalized_ap: -0.81652
+  params:
+    C: 1.6841283731675076
+  ap_train: 0.7259
+  ap_val: 0.4647
+  gap: 0.2612
+- number: 8
+  penalized_ap: -0.795502
+  params:
+    C: 8.53036586188327
+  ap_train: 0.7201
+  ap_val: 0.4633
+  gap: 0.2568
+- number: 9
+  penalized_ap: -0.800034
+  params:
+    C: 0.3488533832314705
+  ap_train: 0.7259
+  ap_val: 0.4674
+  gap: 0.2585
+- number: 10
+  penalized_ap: -0.773513
+  params:
+    C: 0.036075020574774255
+  ap_train: 0.7261
+  ap_val: 0.472
+  gap: 0.2541
+- number: 11
+  penalized_ap: -0.375628
+  params:
+    C: 0.0012704022197274443
+  ap_train: 0.686
+  ap_val: 0.5049
+  gap: 0.1811
+- number: 12
+  penalized_ap: -0.313664
+  params:
+    C: 0.0010964512401566398
+  ap_train: 0.6818
+  ap_val: 0.5117
+  gap: 0.1701
+- number: 13
+  penalized_ap: -0.342113
+  params:
+    C: 0.0011617071231714547
+  ap_train: 0.6836
+  ap_val: 0.5085
+  gap: 0.1751
+- number: 14
+  penalized_ap: -0.560079
+  params:
+    C: 0.007090785330410836
+  ap_train: 0.7175
+  ap_val: 0.5004
+  gap: 0.2171

@@ -1,0 +1,27 @@
+- feature_set: rty
+  model_name: rty__Logistic Regression L2
+  exec_time_minutes: 0.11351240475972493
+  train:
+    auc: 0.9023044317003714
+    average_precision: 0.8867836233357085
+    model_name: rty__logistic_regression_l2_train
+    accuracy: 0.7662835249042146
+    recall: 0.5469613259668509
+    precision: 0.9124423963133641
+    f1: 0.6839378238341969
+    tn: 402
+    fp: 19
+    fn: 164
+    tp: 198
+  test:
+    auc: 0.628956927867151
+    average_precision: 0.6017922347649056
+    model_name: rty__logistic_regression_l2_test
+    accuracy: 0.5340909090909091
+    recall: 0.1951219512195122
+    precision: 0.5
+    f1: 0.2807017543859649
+    tn: 39
+    fp: 8
+    fn: 33
+    tp: 8

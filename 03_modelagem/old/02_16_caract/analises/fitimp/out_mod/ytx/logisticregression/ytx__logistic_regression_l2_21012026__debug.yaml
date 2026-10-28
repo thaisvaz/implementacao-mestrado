@@ -1,0 +1,12 @@
+pickle: ytx__logistic_regression_l2_21012026_model.pkl
+basename: ytx__logistic_regression_l2_21012026
+feature_set: ytx
+model_key_from_filename: logistic_regression_l2
+model_python_type: LogisticRegression
+model_kind: logistic_regression
+importance_meta: abs(coef) [binary]
+names_source: model
+n_features_names: 20100
+n_rows_df: 20100
+cum_cutoff_pct_plotted: 1.0
+n_features_plotted: 27

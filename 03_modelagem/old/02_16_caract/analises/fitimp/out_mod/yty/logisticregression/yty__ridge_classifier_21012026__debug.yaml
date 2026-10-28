@@ -1,0 +1,12 @@
+pickle: yty__ridge_classifier_21012026_model.pkl
+basename: yty__ridge_classifier_21012026
+feature_set: yty
+model_key_from_filename: ridge_classifier
+model_python_type: RidgeClassifier
+model_kind: logistic_regression
+importance_meta: mean(abs(coef)) across 20100 classes
+names_source: model
+n_features_names: 20100
+n_rows_df: 1
+cum_cutoff_pct_plotted: 1.0
+n_features_plotted: 1
